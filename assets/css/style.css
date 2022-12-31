@@ -65,6 +65,12 @@ h1,h2 {
     align-items: center;
 }
 
+.btn {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
 .footer{
     margin-top: auto;
     background-color: lightgray;
