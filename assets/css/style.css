@@ -28,3 +28,7 @@ body {
 h1,h2 {
     font-family: "Quando",sans-serif;
 }
+
+.container {
+    text-align:center;
+}
