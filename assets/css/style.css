@@ -51,6 +51,15 @@ h1,h2 {
     padding: 1rem 0;
 }
 
+/* div that contains the two buttons How to play and Leaderboard */
+
+#btn--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 /* social media icons in the site footer*/ 
 
 .social-icons-list{
