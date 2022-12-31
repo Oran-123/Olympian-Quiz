@@ -44,6 +44,13 @@ h1,h2 {
 .container {
 }
 
+#start-quiz-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+}
+
 /* social media icons in the site footer*/ 
 
 .social-icons-list{
