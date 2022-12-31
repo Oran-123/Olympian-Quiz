@@ -67,6 +67,7 @@ h1,h2 {
 
 .footer{
     margin-top: auto;
+    background-color: lightgray;
 }
 
 /* social media icons in the site footer*/ 
@@ -78,4 +79,8 @@ h1,h2 {
     list-style: none;
     gap: 1rem;
     padding: 1rem;
+}
+
+.social-icons-link {
+    color: #0a0505;
 }
