@@ -63,6 +63,8 @@ h1,h2 {
     align-items: center;
 }
 
+/* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
+
 .btn {
     margin: 1rem 0;
     padding: 1rem;
