@@ -27,6 +27,8 @@ body {
 
 h1,h2 {
     font-family: "Quando",sans-serif;
+    text-align:center;
+
 }
 
 .header{
@@ -40,5 +42,4 @@ h1,h2 {
 }
 
 .container {
-    text-align:center;
 }
