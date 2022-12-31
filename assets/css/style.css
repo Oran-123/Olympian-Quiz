@@ -29,6 +29,16 @@ h1,h2 {
     font-family: "Quando",sans-serif;
 }
 
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    padding: 1rem 0;
+}
+
 .container {
     text-align:center;
 }
