@@ -43,3 +43,12 @@ h1,h2 {
 
 .container {
 }
+
+.social-icons-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 1rem;
+}
