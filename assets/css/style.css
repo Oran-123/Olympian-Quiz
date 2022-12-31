@@ -44,6 +44,8 @@ h1,h2 {
 .container {
 }
 
+/* social media icons in the site footer*/ 
+
 .social-icons-list{
     display: flex;
     align-items: center;
