@@ -47,7 +47,6 @@ h1,h2 {
 
 .container {
     max-width: 120rem;
-    width: 80%;
 }
 
 #hero-img{
@@ -64,6 +63,8 @@ h1,h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+
 }
 
 #start-quiz-form{
@@ -71,8 +72,10 @@ h1,h2 {
     flex-direction: column;
     align-items: center;
     padding: 1rem 0;
-    border: solid 1px black;
     margin: 2rem 0;
+    background-color: var(--accent-blue);
+    box-shadow: 0 0 1.6rem var(--accent-blue);
+    border-radius: .5rem;
 }
 
 /* div that contains the two buttons How to play and Leaderboard */
