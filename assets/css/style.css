@@ -161,6 +161,11 @@ h1,h2 {
     justify-content: center;
 }
 
+.btn--grid{
+    display: grid;
+    grid-template-columns: repeat(2),auto;
+}
+
 
 
 @media only screen and (min-width:768px) {
