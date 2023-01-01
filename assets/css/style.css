@@ -60,6 +60,12 @@ h1,h2 {
     overflow: hidden;
 }
 
+#quiz-signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #start-quiz-form{
     display: flex;
     flex-direction: column;
