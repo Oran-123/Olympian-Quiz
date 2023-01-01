@@ -145,3 +145,10 @@ h1,h2 {
     box-shadow: 0 0 1.6rem var(--accent-blue);
     
 }
+
+@media only screen and (min-width:768px) {
+    .btn--container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;  }
+}
