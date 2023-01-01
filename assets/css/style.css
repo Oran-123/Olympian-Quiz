@@ -150,6 +150,10 @@ h1,h2 {
     text-align: center;
 }
 
+.quiz-container{
+    display: none;
+}
+
 @media only screen and (min-width:768px) {
     .btn--container{
         display: flex;
