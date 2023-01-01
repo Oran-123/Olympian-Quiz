@@ -78,6 +78,11 @@ h1,h2 {
     border-radius: .5rem;
 }
 
+.form-label{
+    margin: 1 rem 0;
+    color: var(--primary-white);
+}
+
 /* div that contains the two buttons How to play and Leaderboard */
 
 #btn--container{
