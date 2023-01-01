@@ -45,7 +45,8 @@ h1,h2 {
     padding: 1rem 0;
 }
 
-.container {
+#hero-img{
+    background-color: red;
 }
 
 #start-quiz-form{
