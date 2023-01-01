@@ -7,5 +7,6 @@ startBtn.onclick = function (){
     } else {
         howToPlayCheck.style.display="flex"
     }
+    console.log("start quiz button clicked")
 }
 
