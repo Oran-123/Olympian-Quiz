@@ -46,7 +46,13 @@ h1,h2 {
 }
 
 #hero-img{
-    background-color: red;
+    background-image: url(../images/hero-img.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 60rem;
+    overflow: hidden;
 }
 
 #start-quiz-form{
