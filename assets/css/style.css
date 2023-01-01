@@ -150,5 +150,7 @@ h1,h2 {
     .btn--container{
         display: flex;
         flex-direction: row;
-        justify-content: center;  }
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;}
 }
