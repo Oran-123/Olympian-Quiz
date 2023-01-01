@@ -79,10 +79,18 @@ h1,h2 {
 }
 
 .form-label{
-    margin: 1 rem 0;
+    margin: 1rem 0;
     color: var(--primary-white);
 }
 
+.form-fields{
+    padding: .5rem;
+    margin: 0 1rem;
+    width: 75%;
+    border-radius: 1rem;
+    font-family: "Judson", sans-serif;
+    font-size: 1.6rem;
+}
 /* div that contains the two buttons How to play and Leaderboard */
 
 #btn--container{
