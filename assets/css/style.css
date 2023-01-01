@@ -45,10 +45,6 @@ h1,h2 {
     padding: 1rem 0;
 }
 
-.container {
-    max-width: 120rem;
-}
-
 #hero-img{
     background-image: url(../images/hero-img.jpg);
     background-size: cover;
