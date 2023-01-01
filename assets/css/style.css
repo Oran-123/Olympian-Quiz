@@ -89,7 +89,7 @@ h1,h2 {
 }
 /* div that contains the two buttons How to play and Leaderboard */
 
-#btn--container{
+.btn--container{
     display: flex;
     flex-direction: column;
     align-items: center;
