@@ -11,9 +11,12 @@ let quizContent = document.getElementsByClassName("quiz-container")
 startBtn.onclick = function (){
     if (howToPlayCheck.style.display !== "none"){
         howToPlayCheck.style.display = "none";
-        quizContent.style.display = "flex"
     } else {
         howToPlayCheck.style.display="flex";
+    }
+    if (howToPlayCheck.style.display == "none"){
+        quizContent.style.display = "flex"
+    } else {
         quizContent.style.display = "none"
     }
     console.log("start quiz button clicked")
