@@ -196,6 +196,16 @@ h1,h2 {
     color: var(--primary-black);
 }
 
+.question--btn:hover {
+    box-shadow: 0 0 .5rem var(--primary-black);
+    transform: translateY(-.5rem);
+}
+
+.question--btn:active{
+    transform: translateY(.5rem);
+
+}
+
 
 
 /* Media Query */
