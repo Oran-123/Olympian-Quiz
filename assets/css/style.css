@@ -190,7 +190,7 @@ h1,h2 {
 
 .question--btn{
     background-color: var(--primary-white);
-    box-shadow: 0 0 1.6rem var(--primary-white);
+    box-shadow: 0 0 .5rem var(--primary-white);
     border-radius: .5rem;
     padding: 1rem;
     color: var(--primary-black);
