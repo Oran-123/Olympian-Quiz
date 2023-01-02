@@ -135,6 +135,10 @@ h1,h2 {
 #correct {
     background-color: var(--accent-green);
 }
+
+#incorrect {
+    background-color: var(--accent-red);
+}
 #div-container{
     display: flex;
     align-items: center;
