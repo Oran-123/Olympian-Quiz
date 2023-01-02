@@ -29,8 +29,19 @@ startBtn.addEventListener("click",startGame)
 
     function showQuestion(question) {
         questionElement.innerText= question.question
+        question.answers.forEach(answer => {
+            let button = document.createElement("button")
+            button.innerText = answer.text
+            button.classList.add("question--btn")
+            if (answer.correct) {
+                button.dataset.correct = answer.correct
+            }
+            button.addEventListener("click",selectAnswer)
+            answersElement.appendChild(button)
+
+        });
     }
-    function selectAnswer() {
+    function selectAnswer(event) {
 
     }
 
