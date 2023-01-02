@@ -3,6 +3,7 @@ let startBtn = document.getElementById("btn--start-quiz")
 let quizContent = document.getElementById("quiz-container")
 let questionElement = document.getElementById("question")
 let answersElement = document.getElementById("answer--btns")
+let nextButton = document.getElementById("next-btn")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -24,6 +25,7 @@ startBtn.addEventListener("click",startGame)
         }
 
     function setNextQuestion() {
+        resetState()
         showQuestion(shuffledQuestions[currentQuestionIndex])
     }
 
@@ -40,6 +42,13 @@ startBtn.addEventListener("click",startGame)
             answersElement.appendChild(button)
 
         });
+    }
+
+    function resetState() {
+        nextButton.classList.add("hide")
+        while (answersElement.firstChild){
+            answersElement.removeChild(answersElement.firstChild)
+        }
     }
     function selectAnswer(event) {
 
