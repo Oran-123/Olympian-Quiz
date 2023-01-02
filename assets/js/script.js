@@ -10,10 +10,12 @@ startBtn.addEventListener("click",startGame)
  * Hides the div which asks the player if they understand the rules
  * once the player clicks on the button start quiz
  */
+
     function startGame() {
         quizContent.style.display = "flex"
         howToPlayCheck.style.display = "none";
         console.log("start quiz button clicked")
+        setNextQuestion()
         }
 
     function setNextQuestion() {
@@ -24,3 +26,12 @@ startBtn.addEventListener("click",startGame)
 
     }
 
+const questions = [ 
+    {
+        question:"what is X",
+        answers: [ 
+            {text: "This is the correct answer", correct: true},
+            {text:"This is the incorrect answer", correct:false}
+        ]
+    }
+]
