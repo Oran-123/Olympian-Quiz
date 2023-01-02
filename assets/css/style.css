@@ -207,10 +207,18 @@ h1,h2 {
 }
 
 .question--btn--correct{
+    box-shadow: 0 0 .5rem var(--accent-green);
+    border-radius: .5rem;
+    padding: 1rem;
+    color: var(--primary-white);
     background-color: var(--accent-green);
 }
 
 .question--btn--incorrect{
+    box-shadow: 0 0 .5rem var(--accent-red);
+    border-radius: .5rem;
+    padding: 1rem;
+    color: var(--primary-white);
     background-color: var(--accent-red);
 }
 
