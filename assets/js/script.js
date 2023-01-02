@@ -1,6 +1,8 @@
 let howToPlayCheck = document.getElementById("how-to-play-check");
 let startBtn = document.getElementById("btn--start-quiz")
 let quizContent = document.getElementById("quiz-container")
+let question = document.getElementById("question")
+let answers = document.getElementById("answer--btns")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -22,9 +24,12 @@ startBtn.addEventListener("click",startGame)
         }
 
     function setNextQuestion() {
-
+        showQuestion(shuffledQuestions[currentQuestionIndex])
     }
 
+    function showQuestion() {
+
+    }
     function selectAnswer() {
 
     }
