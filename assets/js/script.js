@@ -18,3 +18,18 @@ startBtn.onclick = function (){
     }
     console.log("start quiz button clicked")
     }
+
+    start
+
+    function startGame() {
+
+    }
+
+    function setNextQuestion() {
+
+    }
+
+    function selectAnswer() {
+
+    }
+
