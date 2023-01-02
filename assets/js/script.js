@@ -5,6 +5,7 @@ let questionElement = document.getElementById("question")
 let answersElement = document.getElementById("answer--btns")
 let nextButton = document.getElementById("next-btn")
 let nextButtonArea = document.getElementsByClassName("controls")
+let countDownTimer = document.getElementById("countdown-timer")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -24,6 +25,7 @@ function startGame() {
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
+    countDownTimer.style.display = "block"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
@@ -36,6 +38,15 @@ function startGame() {
  */
 
 function startTimer () {
+    let timeRemaining = document.getElementById("time")
+    let startingTime = 60 
+    let timer = setInterval(function() {
+        (startingTime--);
+        timeRemaining.innerHTML = startingTime + "s";
+        if (timeRemaining < 1){
+            clearInterval(timer)
+        }
+    }, 1000);
     setTimeout(log,60000,"Time is up")
     console.log("Timer started")
 }
@@ -121,6 +132,10 @@ function setStatusClass (element, correct) {
 function clearStatusClass(element){
     element.classList.remove("question--btn--correct")
     element.classList.remove("question--btn--incorrect")
+}
+
+function resultsModal () {
+    
 }
 
 const questions = [{

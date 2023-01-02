@@ -133,6 +133,10 @@ h1,h2 {
 
 /* style of quiz */ 
 
+#countdown-timer {
+    display: none;
+}
+
 #div-container{
     display: flex;
     align-items: center;
