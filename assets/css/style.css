@@ -132,7 +132,9 @@ h1,h2 {
 
 
 /* style of quiz */ 
-
+#correct {
+    background-color: var(--accent-green);
+}
 #div-container{
     display: flex;
     align-items: center;
