@@ -206,7 +206,13 @@ h1,h2 {
 
 }
 
+.question--btn--correct{
+    background-color: var(--accent-green);
+}
 
+.question--btn--incorrect{
+    background-color: var(--accent-red);
+}
 
 /* Media Query */
 
