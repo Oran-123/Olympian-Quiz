@@ -1,8 +1,8 @@
 let howToPlayCheck = document.getElementById("how-to-play-check");
 let startBtn = document.getElementById("btn--start-quiz")
 let quizContent = document.getElementById("quiz-container")
-let question = document.getElementById("question")
-let answers = document.getElementById("answer--btns")
+let questionElement = document.getElementById("question")
+let answersElement = document.getElementById("answer--btns")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -18,7 +18,7 @@ startBtn.addEventListener("click",startGame)
         console.log("start quiz button clicked")
         quizContent.style.display = "flex"
         howToPlayCheck.style.display = "none";
-        shuffledQuestions = questions.sort(()=>Math.random()-.5)
+        shuffledQuestions = questions.sort(() => Math.random()-.5)
         currentQuestionIndex = 0 
         setNextQuestion()
         }
@@ -27,8 +27,8 @@ startBtn.addEventListener("click",startGame)
         showQuestion(shuffledQuestions[currentQuestionIndex])
     }
 
-    function showQuestion() {
-
+    function showQuestion(question) {
+        questionElement.innerText= question.question
     }
     function selectAnswer() {
 
