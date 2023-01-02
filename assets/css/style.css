@@ -223,10 +223,17 @@ h1,h2 {
     background-color: var(--accent-red);
 }
 
-.next-btn{
+#next-btn {
     font-size: 1.6rem;
     font-weight: bold;
-    padding: 2rem;
+    padding: 1rem;
+    box-shadow: 0 0 .5rem var(--primary-white);
+    border-radius: .5rem;
+}
+
+#next-btn:active{
+    transform: translateY(-.5rem);
+
 }
 
 .controls{
