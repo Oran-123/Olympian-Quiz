@@ -4,10 +4,15 @@ let quizContent = document.getElementById("quiz-container")
 let questionElement = document.getElementById("question")
 let answersElement = document.getElementById("answer--btns")
 let nextButton = document.getElementById("next-btn")
+let nextButtonArea = document.getElementsByClassName("controls")
 
 let shuffledQuestions, currentQuestionIndex
 
 startBtn.addEventListener("click", startGame)
+nextButton.addEventListener("click", () => {
+    currentQuestionIndex++
+    setNextQuestion()
+})
 /* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
 
 /**
@@ -22,6 +27,16 @@ function startGame() {
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
+    startTimer()
+}
+
+function startTimer () {
+    setTimeout(log,60000,"Time is up")
+    console.log("Timer started")
+}
+
+function log (msg){
+    console.log(msg)
 }
 
 function setNextQuestion() {
@@ -55,7 +70,9 @@ function selectAnswer(e) {
     let selectedButton = e.target
     let correct = selectedButton.dataset.correct
     setStatusClass(selectedButton, correct)
-    
+    if (shuffledQuestions.length <= currentQuestionIndex + 1) {
+        nextButtonArea.style.display("none")
+}
 }
 
 function setStatusClass (element, correct) {
