@@ -45,7 +45,7 @@ function showQuestion(question) {
 }
 
 function resetState() {
-    nextButton.classList.add("hide")
+    nextButton
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
     }
@@ -74,13 +74,21 @@ function clearStatusClass(element){
 }
 
 const questions = [{
-    question: "what is X",
+    question: "How often are the olympic games held?",
     answers: [{
-            text: "This is the correct answer",
+            text: "4 years",
             correct: true
         },
         {
-            text: "This is the incorrect answer",
+            text: "2 years",
+            correct: false
+        },
+        {
+            text: "6 years",
+            correct: false
+        },
+        {
+            text: "8 years",
             correct: false
         }
     ]
