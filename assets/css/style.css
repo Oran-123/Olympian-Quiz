@@ -168,6 +168,7 @@ h1,h2 {
 
     text-align: center;
 }
+
 #quiz-container{
     display: none;
     flex-direction: column;
@@ -183,7 +184,19 @@ h1,h2 {
 .btn--grid{
     display: grid;
     grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin: 2rem 0 ;
 }
+
+.question--btn{
+    background-color: var(--primary-white);
+    box-shadow: 0 0 1.6rem var(--primary-white);
+    border-radius: .5rem;
+    padding: 1rem;
+    color: var(--primary-black);
+}
+
+
 
 /* Media Query */
 
