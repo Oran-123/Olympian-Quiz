@@ -51,8 +51,15 @@ startBtn.addEventListener("click",startGame)
         }
     }
     function selectAnswer(event) {
-
+        let selectedButton = event.target
+        let correct = selectedButton.dataset.correct
+        setStatusClass(document.body,correct) 
+        Array.from(answersElement.children).forEach(button => {
+            setStatusClass(button, button.dataset.correct)
+        })
     }
+
+    
 
 const questions = [ 
     {
