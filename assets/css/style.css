@@ -29,8 +29,9 @@ body {
 h1,h2 {
     font-family: "Quando",sans-serif;
     text-align:center;
-
 }
+
+/* site header */ 
 
 .header{
     display: flex;
@@ -54,6 +55,8 @@ h1,h2 {
     min-height: 60rem;
     overflow: hidden;
 }
+
+/* Start quiz form and buttons */ 
 
 #quiz-signup{
     display: flex;
@@ -103,6 +106,8 @@ h1,h2 {
     border-radius: .5rem;
 }
 
+/* footer elements */ 
+
 .footer{
     position: fixed;
     bottom: 0;
@@ -124,6 +129,9 @@ h1,h2 {
 .social-icons-link {
     color: #0a0505;
 }
+
+
+/* style of quiz */ 
 
 #div-container{
     display: flex;
@@ -166,7 +174,7 @@ h1,h2 {
     grid-template-columns: repeat(2, auto);
 }
 
-
+/* Media Query */
 
 @media only screen and (min-width:768px) {
     .btn--container{
