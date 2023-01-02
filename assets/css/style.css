@@ -173,6 +173,11 @@ h1,h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    max-width: 120rem;
+    padding: 2rem;
+    background-color: var(--accent-blue);
+    box-shadow: 0 0 1.6rem var(--accent-blue);
+    border-radius: .5rem;
 }
 
 .btn--grid{
