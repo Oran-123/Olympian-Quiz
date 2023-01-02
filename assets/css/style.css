@@ -132,7 +132,7 @@ h1,h2 {
 
 
 /* style of quiz */ 
-#correct {
+.correct {
     background-color: var(--accent-green);
 }
 

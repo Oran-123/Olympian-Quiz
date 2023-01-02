@@ -51,10 +51,9 @@ function resetState() {
     }
 }
 
-function selectAnswer(event) {
-    let selectedButton = event.target
+function selectAnswer(e) {
+    let selectedButton = e.target
     let correct = selectedButton.dataset.correct
-    setStatusClass(document.body, correct)
     Array.from(answersElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
     })
@@ -63,12 +62,16 @@ function selectAnswer(event) {
 function setStatusClass (element, correct) {
     clearStatusClass(element)
     if (correct){
-        element.classList.add("wrong")
+        element.classList.add("question--btn--correct")
+    } else {
+        element.classList.add("question--btn--incorrect")
     }
 }
 
-
-
+function clearStatusClass(element){
+    element.classList.remove("question--btn--correct")
+    element.classList.remove("question--btn--incorrect")
+}
 
 const questions = [{
     question: "what is X",
