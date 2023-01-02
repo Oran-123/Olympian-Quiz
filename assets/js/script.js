@@ -13,7 +13,6 @@ nextButton.addEventListener("click", () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-/* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
 
 /**
  * Hides the div which asks the player if they understand the rules
@@ -21,6 +20,7 @@ nextButton.addEventListener("click", () => {
  */
 
 function startGame() {
+/* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
@@ -30,19 +30,37 @@ function startGame() {
     startTimer()
 }
 
+/**
+ * Starts a timer
+ * called during the start game function
+ */
+
 function startTimer () {
     setTimeout(log,60000,"Time is up")
     console.log("Timer started")
 }
 
+/**
+ * Logs a message when a timer is finished
+ */
+
 function log (msg){
     console.log(msg)
 }
+
+/**
+ * Shows random next question 
+ */
 
 function setNextQuestion() {
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
+
+/**
+ * creates buttons for each answer 
+ * sets class and data-type
+ */
 
 function showQuestion(question) {
     questionElement.innerText = question.question
@@ -59,12 +77,19 @@ function showQuestion(question) {
     });
 }
 
+/**
+ * hides previous answer buttons 
+ */
 function resetState() {
     nextButton
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
     }
 }
+
+/**
+ * for the div currently select calls the function setStatusClass 
+ */
 
 function selectAnswer(e) {
     let selectedButton = e.target
@@ -75,6 +100,11 @@ function selectAnswer(e) {
 }
 }
 
+/**
+ * For the selected div checks if the data-type is correct,
+ * and sets a class depending on the result 
+ */
+
 function setStatusClass (element, correct) {
     clearStatusClass(element)
     if (correct){
@@ -83,6 +113,10 @@ function setStatusClass (element, correct) {
         element.classList.add("question--btn--incorrect")
     }
 }
+
+/**
+ * removes the correct/incorrect class from the answer buttons
+ */
 
 function clearStatusClass(element){
     element.classList.remove("question--btn--correct")
