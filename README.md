@@ -113,7 +113,7 @@ The font awesome library will be used throughout the site for social media links
 
 ## Colours 
 
-The inspiration for the colours was taken from the Olympic logo. I used the website colourmind to pick the specific shades for this colour scheme. I tested the colours I selected on the WebAIM contract checker which showed that they have no contrast issues. 
+The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker which showed that they have no contrast issues. 
 
  
 
