@@ -1,3 +1,5 @@
+
+
 const howToPlayCheck = document.getElementById("how-to-play-check");
 const startBtn = document.getElementById("btn--start-quiz")
 const quizContent = document.getElementById("quiz-container")
@@ -140,7 +142,7 @@ function openResultsModal() {
     modalDialogue.showModal()
     const closeResultsModalButton = document.getElementById("button-close-results-modal")
     closeResultsModalButton.addEventListener("click", () => {
-        closeResultsModalButton.closeModal()
+        closeResultsModalButton.close()
     })
 
 }
