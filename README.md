@@ -50,6 +50,7 @@
 * Form to join the membership to receive updates on prizes, competitions and updates to the quiz
 
 ## User Stories 
+
 * As a user, I want to be able to create a username 
 * As a user, I want to be able to choose between three quizzes which vary in their level of difficulty  
 * As a user, I want to see a progress bar during the quiz, so I know how many questions remain 
@@ -59,7 +60,11 @@
 
 ## Site Owner Goals 
 
-
+* Create a site that is intuitive to navigate for visitors 
+* Provide users with feedback after they finish a quiz 
+* Provide a leader board with results of all users who played the quiz 
+* Create a positive user experience through a visually appealing site 
+* Capture user emails for email marketing purposes 
 
 # Requirements and Expectations 
 
