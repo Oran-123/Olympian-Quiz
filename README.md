@@ -89,6 +89,12 @@
 
 ## Inspiration  
  
+1. Official Olympic Website 
+
+    * The color scheme of the site will follow a similar style to the Olympic website 
+    * The logo of the site will be used as the favicon for this site 
+    * The logo of this site will be used as inspiration for this site 
+
 
 ## Fonts
 
