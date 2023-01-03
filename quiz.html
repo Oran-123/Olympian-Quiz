@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"  content="quiz on olmypic sports">
+    <meta name="description" content="quiz on olmypic sports">
     <meta name="keywords" content="Olympics, Olympic Games, Sports-Quiz, Quiz,">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz</title>
 </head>
+
 <body>
     <header class="header">
         <a href="index.html"><img class="logo" src="assets/images/logo_color.png"></a>
@@ -17,11 +19,13 @@
         <p id="time">60s</p>
     </div>
     <dialog id="results-modal" class="modal">
-        <H2 id ="results-modal-title">Time is up, Let's see how you did!</H2>
+        <H2 id="results-modal-title">Time is up, Let's see how you did!</H2>
         <p>well done</p>
-        <button class="close-modal" id="button-close-results-modal">X</button>
+        <a href="index.html">
+            <button class="close-modal" id="button-close-results-modal">X</button>
+        </a>
     </dialog>
-    <dialog id ="rules-modal" class="modal">
+    <dialog id="rules-modal" class="modal">
         <H2 id="how-to-play-title">How to play the Olmypic Quiz!</H2>
         <ul id="how-to-play-list">
             <li class="how-to-play-list-item">Rule 1</li>
@@ -29,39 +33,39 @@
             <li class="how-to-play-list-item">Rule 3</li>
             <li class="how-to-play-list-item">Rule 4</li>
         </ul>
-        <a href="index.html"><button id="button-close-rules-modal" class="btn">Exit Quiz</button></a>
+            <button id="button-close-rules-modal" class="btn">X</button>
     </dialog>
     <div id="div-container">
-    <div id = "how-to-play-check">
-        <p class="check-text">Stop,are you sure you have read the rules and you know how the quiz works?</p>
-        <p class="check-text"> If you have not, then click the button below!</p>
-        <div class="btn--container">
-            <button type="button" class ="btn" id="btn--how-to-play">How To Play?</button>
-            <button type="button"  class ="btn" id="btn--start-quiz">Start Quiz!</button>
-        </div>
-    </div>
-    <div id="quiz-container">
-        <div id="question-container">
-            <div>
-               <h2 id="question"> Question</h2>
-            </div>
-            <div id="answer--btns" class="btn--grid">
-                <button class="question--btn">Question 1</button>
-                <button class="question--btn">Question 2</button>
-                <button class="question--btn">Question 3</button>
-                <button class="question--btn">Question 4</button>
+        <div id="how-to-play-check">
+            <p class="check-text">Stop,are you sure you have read the rules and you know how the quiz works?</p>
+            <p class="check-text"> If you have not, then click the button below!</p>
+            <div class="btn--container">
+                <button type="button" class="btn" id="btn--how-to-play">How To Play?</button>
+                <button type="button" class="btn" id="btn--start-quiz">Start Quiz!</button>
             </div>
         </div>
-        <div class="controls">
-            <button id="next-btn" class="next-btn--btn--hide">Next</button>
+        <div id="quiz-container">
+            <div id="question-container">
+                <div>
+                    <h2 id="question"> Question</h2>
+                </div>
+                <div id="answer--btns" class="btn--grid">
+                    <button class="question--btn">Question 1</button>
+                    <button class="question--btn">Question 2</button>
+                    <button class="question--btn">Question 3</button>
+                    <button class="question--btn">Question 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn--btn--hide">Next</button>
+            </div>
         </div>
-    </div>
     </div>
     <footer class="footer">
         <ul class="social-icons-list">
             <li class="social-icons-list-item">
-                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
-                    aria-label="Follow us on Twitter" class="social-icons-link">
+                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener" aria-label="Follow us on Twitter"
+                    class="social-icons-link">
                     <i class="fa-brands fa-twitter" id="twitter-icon"></i></a>
             </li>
             <li class="social-icons-list-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener"
@@ -73,9 +77,10 @@
                     <i class="fa-brands fa-instagram" id="instagram-icon"></i></a>
             </li>
         </ul>
-</footer>
-<script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
-<script src="assets/js/quizscript.js"></script>
-<script src="assets/js/howtoplaymodal.js.js"></script>
+    </footer>
+    <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
+    <script src="assets/js/quizscript.js"></script>
+    <script src="assets/js/howtoplaymodal.js.js"></script>
 </body>
+
 </html>
