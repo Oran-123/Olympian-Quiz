@@ -133,6 +133,10 @@ I have used Balsamic to develop my wireframes for my website. I initially create
 
 The wireframes are below:
 
+* Mobile Wireframes
+* Tablet Wireframes
+* Desktop Wireframes 
+
 # Features 
 
 ## Existing Features 
