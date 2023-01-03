@@ -6,3 +6,6 @@ openModalButton.addEventListener("click", () => {
     rulesModal.showModal()  
 })
 
+closeModalButton.addEventListener("click", () => {
+    rulesModal.closeModal() 
+})
