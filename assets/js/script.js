@@ -1,11 +1,11 @@
-let howToPlayCheck = document.getElementById("how-to-play-check");
-let startBtn = document.getElementById("btn--start-quiz")
-let quizContent = document.getElementById("quiz-container")
-let questionElement = document.getElementById("question")
-let answersElement = document.getElementById("answer--btns")
-let nextButton = document.getElementById("next-btn")
-let nextButtonArea = document.getElementsByClassName("controls")
-let countDownTimer = document.getElementById("countdown-timer")
+const howToPlayCheck = document.getElementById("how-to-play-check");
+const startBtn = document.getElementById("btn--start-quiz")
+const quizContent = document.getElementById("quiz-container")
+const questionElement = document.getElementById("question")
+const answersElement = document.getElementById("answer--btns")
+const nextButton = document.getElementById("next-btn")
+const nextButtonArea = document.getElementsByClassName("controls")
+const countDownTimer = document.getElementById("countdown-timer")
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -26,7 +26,7 @@ function startGame() {
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
     countDownTimer.style.display = "block"
-    shuffledQuestions = questions.sort(() => Math.random() - .5)
+    shuffledQuestions = questions.sort(() => Math.random()-.5)
     currentQuestionIndex = 0
     setNextQuestion()
     startTimer()
@@ -41,9 +41,9 @@ function startTimer() {
 
     /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
 
-    let timeRemaining = document.getElementById("time")
-    let startingTime = 60
-    let timer = setInterval(function () {
+    const timeRemaining = document.getElementById("time")
+    const startingTime = 60
+    const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
         if (startingTime < 1) {
@@ -79,7 +79,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        let button = document.createElement("button")
+        const button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add("question--btn")
         if (answer.correct) {
@@ -87,7 +87,6 @@ function showQuestion(question) {
         }
         button.addEventListener("click", selectAnswer)
         answersElement.appendChild(button)
-
     });
 }
 
@@ -95,7 +94,6 @@ function showQuestion(question) {
  * hides previous answer buttons 
  */
 function resetState() {
-    nextButton
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
     }
