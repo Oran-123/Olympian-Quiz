@@ -141,8 +141,33 @@ The wireframes are below:
 
 ## Existing Features 
 
-## Features to be implemented 
+### Logo with link back to home page 
 
+### Hero image zoom 
+
+### Start Quiz Section 
+
+### Form to collect email
+
+### Buttons (leader board, how to play and start quiz)
+
+### Leader board page 
+
+### How to play Module 
+
+### Social media icons 
+
+### Check if the user understands the rules 
+
+### Questions displayed
+
+### Progress bar 
+
+### Timer 
+
+### Feedback per question (correct or incorrect) 
+
+## Features to be implemented 
 
 # Technologies 
 
