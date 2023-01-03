@@ -136,6 +136,11 @@ function clearStatusClass(element) {
     element.classList.remove("question--btn--incorrect")
 }
 
+/**
+ * When called by the startTimer function this will:
+ * 1. present the modal
+ * 2. allow users to close the modal
+ */
 function openResultsModal() {
     const modalDialogue = document.getElementById("results-modal")
     modalDialogue.showModal()
