@@ -102,6 +102,9 @@ I have used google fonts to select a font type that best supports the goals of t
 
 ## Images
 
+It is important that the large background image used in the hero section portrays an athlete to highlight the purpose of the site which is a sport quiz 
+
+Again, images associated with the Olympic will be used in the background of the section which includes the form on the landing page and of the page which includes the leader board 
 
 ## Icons
 
