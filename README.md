@@ -113,6 +113,8 @@ The font awesome library will be used throughout the site for social media links
 
 ## Colours 
 
+The inspiration for the colours was taken from the Olympic logo. I used the website colourmind to pick the specific shades for this colour scheme. I tested the colours I selected on the WebAIM contract checker which showed that they have no contrast issues. 
+
  
 
 ![Cheap Chopping Chops logo](assets/images/readme/color-scheme.png)
