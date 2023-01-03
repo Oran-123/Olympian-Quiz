@@ -135,6 +135,8 @@ h1,h2 {
 
 #countdown-timer {
     display: none;
+    text-align: center;
+    margin: auto;
 }
 
 #div-container{

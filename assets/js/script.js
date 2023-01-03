@@ -21,7 +21,7 @@ nextButton.addEventListener("click", () => {
  */
 
 function startGame() {
-/* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
+    /* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
@@ -37,17 +37,20 @@ function startGame() {
  * called during the start game function
  */
 
-function startTimer () {
+function startTimer() {
+
+/* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */ 
+    
     let timeRemaining = document.getElementById("time")
-    let startingTime = 60 
-    let timer = setInterval(function() {
+    let startingTime = 60
+    let timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
-        if (timeRemaining < 1){
+        if (startingTime < 1) {
             clearInterval(timer)
         }
     }, 1000);
-    setTimeout(log,60000,"Time is up")
+    setTimeout(log, 60000, "Time is up")
     console.log("Timer started")
 }
 
@@ -55,7 +58,7 @@ function startTimer () {
  * Logs a message when a timer is finished
  */
 
-function log (msg){
+function log(msg) {
     console.log(msg)
 }
 
@@ -108,7 +111,7 @@ function selectAnswer(e) {
     setStatusClass(selectedButton, correct)
     if (shuffledQuestions.length <= currentQuestionIndex + 1) {
         nextButtonArea.style.display("none")
-}
+    }
 }
 
 /**
@@ -116,9 +119,9 @@ function selectAnswer(e) {
  * and sets a class depending on the result 
  */
 
-function setStatusClass (element, correct) {
+function setStatusClass(element, correct) {
     clearStatusClass(element)
-    if (correct){
+    if (correct) {
         element.classList.add("question--btn--correct")
     } else {
         element.classList.add("question--btn--incorrect")
@@ -129,13 +132,13 @@ function setStatusClass (element, correct) {
  * removes the correct/incorrect class from the answer buttons
  */
 
-function clearStatusClass(element){
+function clearStatusClass(element) {
     element.classList.remove("question--btn--correct")
     element.classList.remove("question--btn--incorrect")
 }
 
-function resultsModal () {
-    
+function resultsModal() {
+
 }
 
 const questions = [{
