@@ -79,7 +79,11 @@
 
 ## Expectations 
 
-
+* I expect to set my own unique username 
+* I expect that there will be quizzes with different levels of difficulty 
+* I expect to be able to see a result on my performance 
+* I expect to see my result listed on the leader board after I complete a game 
+* I expect that the site scales correctly on different size screens 
 
 # Design Choices 
 
