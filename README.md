@@ -115,10 +115,6 @@ The font awesome library will be used throughout the site for social media links
 
 The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker which showed that they have no contrast issues. 
 
- 
-
-![Cheap Chopping Chops logo](assets/images/readme/color-scheme.png)
-
 ## Structure
 
 I will be building my website with a mobile first mindset using the iPhone 5/SE (320px) as the smallest screen size for styling to look good on. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/ "Bootstrap breakpoints").
