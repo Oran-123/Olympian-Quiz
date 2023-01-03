@@ -144,10 +144,6 @@ function clearStatusClass(element) {
 function openResultsModal() {
     const modalDialogue = document.getElementById("results-modal")
     modalDialogue.showModal()
-    const closeResultsModalButton = document.getElementById("button-close-results-modal")
-    closeResultsModalButton.addEventListener("click", () => {
-        modalDialogue.close() 
-    })
 }
 
 
