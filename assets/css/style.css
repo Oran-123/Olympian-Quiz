@@ -138,6 +138,8 @@ h1,h2 {
     display: none;
 }
 
+/*countdown timer that appears when the quiz starts */ 
+
 #countdown-timer {
     display: none;
     text-align: center;
@@ -150,6 +152,8 @@ h1,h2 {
     justify-content: center;
     margin: auto;
 }
+
+/* initial content that is displayed after the user submits the form, this asks the user if they have read the instructions */ 
 
 #how-to-play-check{
     color: var(--primary-white);
@@ -169,11 +173,15 @@ h1,h2 {
     text-align: center;
 }
 
+/*Question text*/
+
 #question{
 
     text-align: center;
     color: var(--primary-white);
 }
+
+/* div that contains both the questio and answers */
 
 #quiz-container{
     display: none;
@@ -186,6 +194,8 @@ h1,h2 {
     box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
 }
+
+/* answers */ 
 
 .btn--grid{
     display: grid;
@@ -228,6 +238,8 @@ h1,h2 {
     background-color: var(--accent-red);
 }
 
+/*next button that appears under the answer buttons */ 
+
 #next-btn {
     font-size: 1.6rem;
     font-weight: bold;
@@ -241,12 +253,16 @@ h1,h2 {
 
 }
 
+/* div that contains the next button */ 
+
 .controls{
     display: flex;
     align-items: center;
     justify-content: center;
     
 }
+
+/* modal style for both the results modal and how to play modal */ 
 
 .modal {
     position: absolute;
@@ -258,7 +274,7 @@ h1,h2 {
 
 }
 
-/* Media Query */
+/* Media Queries */
 
 @media only screen and (min-width:768px) {
     .btn--container{
