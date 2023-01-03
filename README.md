@@ -129,7 +129,7 @@ I will be building my website with a mobile first mindset using the iPhone 5/SE 
 
 # Wireframes 
 
-I have used Balsamic to develop my wireframes for my website. I initially created the mobile version of the wireframes and then designed what the site would look like on larger devices. I did not create a design for each size listed in the structure section, the mobile wireframes cover x-small and small, the tablet covers medium and the desktop covers large and x-large. 
+I have used [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") to develop my wireframes for my website. I initially created the mobile version of the wireframes and then designed what the site would look like on larger devices. I did not create a design for each size listed in the structure section, the mobile wireframes cover x-small and small, the tablet covers medium and the desktop covers large and x-large. 
 
 The wireframes are below:
 
