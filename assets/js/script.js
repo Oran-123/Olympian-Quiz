@@ -42,7 +42,7 @@ function startTimer() {
     /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
 
     const timeRemaining = document.getElementById("time")
-    const startingTime = 60
+    let startingTime = 60
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
@@ -139,7 +139,7 @@ function resultsModal() {
 
 }
 
-const questions = [{
+let questions = [{
     question: "How often are the olympic games held?",
     answers: [{
             text: "4 years",
