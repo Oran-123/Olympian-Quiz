@@ -89,7 +89,7 @@
 
 ## Inspiration  
  
-1. Official Olympic Website 
+1. [Official Olympic Website](https://olympics.com/en/ "Official Olympic Website") 
 
     * The color scheme of the site will follow a similar style to the Olympic website 
     * The logo of the site will be used as the favicon for this site 
