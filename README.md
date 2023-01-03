@@ -207,6 +207,8 @@ The wireframes are below:
 
 ### WebAim Contrast Test 
 
+### User Acceptance Testing 
+
 ## Bugs 
 
 ## Unfixed Bugs
