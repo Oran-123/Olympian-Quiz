@@ -1,8 +1,10 @@
+Logo to be added 
 
 # Goal For This Project 
 
+TBC
 
-![Goals for this project image]
+image of each screen size to be added 
 
 
 # Table of Contens 
