@@ -108,6 +108,8 @@ Again, images associated with the Olympic will be used in the background of the 
 
 ## Icons
 
+The font awesome library will be used throughout the site for social media links and to provide visual aids for the results of questions and to provide overall feedback on the user’s quiz. All icons will be consistent with the style of the Olympic brand. 
+
 
 ## Colours 
 
