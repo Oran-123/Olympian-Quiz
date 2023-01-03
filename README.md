@@ -196,7 +196,9 @@ The wireframes are below:
 * [WebAim](https://webaim.org/resources/contrastchecker/ "WebAim")
 
 # Testing 
+
 ## Tests
+
 ### WC3 Markup Validator 
 
 ### WC3 CSS Validator 
