@@ -41,7 +41,7 @@ function startGame() {
 function startTimer() {
     /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
     const timeRemaining = document.getElementById("time")
-    let startingTime = 60
+    let startingTime = 1
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
