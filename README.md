@@ -50,8 +50,12 @@
 * Form to join the membership to receive updates on prizes, competitions and updates to the quiz
 
 ## User Stories 
-
-
+* As a user, I want to be able to create a username 
+* As a user, I want to be able to choose between three quizzes which vary in their level of difficulty  
+* As a user, I want to see a progress bar during the quiz, so I know how many questions remain 
+* As a user, I want to see my total score at the end of the quiz 
+* As a user, I want to see other player’s results on the leader board 
+* As a user, I want to join the newsletter so that I can keep up to date with competitions, prizes and new quizzes
 
 ## Site Owner Goals 
 
