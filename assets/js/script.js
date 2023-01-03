@@ -45,8 +45,14 @@ function startTimer() {
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
+        if (startingTime <15) {
+            timeRemaining.style.color = "var(--accent-red)"
+        }
         if (startingTime < 1) {
             clearInterval(timer)
+        }
+        if (startingTime < -1) {
+            resultsModal()
         }
     }, 1000);
     setTimeout(log, 60000, "Time is up")
@@ -129,7 +135,9 @@ function clearStatusClass(element) {
     element.classList.remove("question--btn--incorrect")
 }
 
-function resultsModal() {}
+function resultsModal() {
+    
+}
 
 const questions = [{
         question: "How often are the olympic games held?",
