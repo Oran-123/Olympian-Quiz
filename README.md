@@ -41,7 +41,13 @@
 
 ## User Goals 
 
-
+* A visually appealing landing page which clearly communicates the purpose of the site 
+* Buttons that help the user navigate through ought the site 
+* A modal with instructions on how to play the quiz 
+* A leader board to display the results of previous players 
+* Engaging and challenging questions 
+* Easy and intuitive navigation on all screen sizes
+* Form to join the membership to receive updates on prizes, competitions and updates to the quiz
 
 ## User Stories 
 
