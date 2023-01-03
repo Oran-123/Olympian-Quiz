@@ -41,18 +41,18 @@ function startGame() {
 function startTimer() {
     /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
     const timeRemaining = document.getElementById("time")
-    let startingTime = 60
+    let startingTime = 1
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
-        if (startingTime <15) {
+        if (startingTime < 15) {
             timeRemaining.style.color = "var(--accent-red)"
         }
         if (startingTime < 1) {
             clearInterval(timer)
         }
-        if (startingTime < -1) {
-            resultsModal()
+        if (startingTime == 0) {
+            openResultsModal()
         }
     }, 1000);
     setTimeout(log, 60000, "Time is up")
@@ -135,9 +135,17 @@ function clearStatusClass(element) {
     element.classList.remove("question--btn--incorrect")
 }
 
-function resultsModal() {
-    
+function openResultsModal() {
+    const modalDialogue = document.getElementById("results-modal")
+    modalDialogue.showModal()
+    const closeResultsModalButton = document.getElementById("button-close-results-modal")
+    closeResultsModalButton.addEventListener("click", () => {
+        closeResultsModalButton.closeModal()
+    })
+
 }
+
+
 
 const questions = [{
         question: "How often are the olympic games held?",
