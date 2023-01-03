@@ -246,7 +246,7 @@ h1,h2 {
     
 }
 
-#results-modal {
+.modal {
     position: absolute;
     margin: auto;
     text-align: center;
