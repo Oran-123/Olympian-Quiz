@@ -26,7 +26,7 @@ function startGame() {
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
     countDownTimer.style.display = "block"
-    shuffledQuestions = questions.sort(() => Math.random()-.5)
+    shuffledQuestions = questions.sort(() => Math.random()- .5)
     currentQuestionIndex = 0
     setNextQuestion()
     startTimer()
@@ -79,7 +79,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        const button = document.createElement("button")
+        let button = document.createElement("button")
         button.innerText = answer.text
         button.classList.add("question--btn")
         if (answer.correct) {
@@ -94,6 +94,7 @@ function showQuestion(question) {
  * hides previous answer buttons 
  */
 function resetState() {
+    nextButton.classList.add("hide")    
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
     }
@@ -107,9 +108,9 @@ function selectAnswer(e) {
     let selectedButton = e.target
     let correct = selectedButton.dataset.correct
     setStatusClass(selectedButton, correct)
-    if (shuffledQuestions.length <= currentQuestionIndex + 1) {
-        nextButtonArea.style.display("none")
-    }
+    if (correct) {
+        nextButton.classList.remove('hide')
+      } 
 }
 
 /**
@@ -139,7 +140,7 @@ function resultsModal() {
 
 }
 
-let questions = [{
+const questions = [{
     question: "How often are the olympic games held?",
     answers: [{
             text: "4 years",
