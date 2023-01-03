@@ -20,8 +20,10 @@ nextButton.addEventListener("click", () => {
 
 /**
  * Hides the div which asks the player if they understand the rules
- * once the player clicks on the button start quiz
- */
+ * after the player clicks on the start button: 
+ * displays the div that contains the quiz questions 
+ * displays and starts the countdown timer 
+ * */
 function startGame() {
     /* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
     console.log("start quiz button clicked")
@@ -29,7 +31,6 @@ function startGame() {
     howToPlayCheck.style.display = "none";
     countDownTimer.style.display = "block"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
-    console.log(currentQuestionIndex)
     currentQuestionIndex = 0
     setNextQuestion()
     startTimer()
