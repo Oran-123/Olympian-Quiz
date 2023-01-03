@@ -70,7 +70,12 @@
 
 ## Requirments 
 
-
+* Mobile first design, which is responsive on all larger screens 
+* The design uses a colour scheme which is easy to view 
+* From the home page the user can access instructions, the quiz and the leader board 
+* After each question is answered the user is provided with feedback in the form of a visual que which highlights if they answered the question correctly 
+* The user is provided with a result at the end of their quiz 
+* Social media accounts can be accessed via the footer of the site 
 
 ## Expectations 
 
