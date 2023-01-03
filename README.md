@@ -97,8 +97,8 @@
 
 
 ## Fonts
-I have used google fonts to select a font type that best supports the goals of the website. For the main text I have selected Judson because the rounded edges portray an approachable brand. To make the headers and the navigation bar stand out from the text, I decided to use Quando.
 
+I have used google fonts to select a font type that best supports the goals of the website. For the main text I have selected [Judson](https://fonts.google.com/specimen/Judson?preview.text=test&preview.text_type=custom&query=Judson#styles "Judson") because the rounded edges portray an approachable brand. To make the headers and the navigation bar stand out from the text, I decided to use [Quando](https://fonts.google.com/specimen/Quando?preview.text=test&preview.text_type=custom&query=quando "Quando").
 
 ## Images
 
