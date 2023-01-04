@@ -18,6 +18,15 @@ nextButton.addEventListener("click", () => {
     setNextQuestion()
 })
 
+fetch ("assets/data/questions.json") 
+    .then (response => response.json)
+    .then ( data=> {
+        questions=data
+    })
+    .then (console.log)
+    
+
+
 /**
  * Hides the div which asks the player if they understand the rules
  * after the player clicks on the start button: 
