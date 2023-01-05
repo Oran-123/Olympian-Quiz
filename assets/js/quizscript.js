@@ -7,6 +7,8 @@ const answersElement = document.getElementById("answer--btns")
 const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
 const countDownTimer = document.getElementById("countdown-timer")
+const timeRemaining = document.getElementById("time")
+let startingTime = 60
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -26,13 +28,10 @@ fetch ("assets/data/questions.json")
     })
 
 /**
- * Hides the div which asks the player if they understand the rules
- * after the player clicks on the start button: 
- * displays the div that contains the quiz questions 
- * displays and starts the countdown timer 
+ * Hides/displays content when the quiz is started 
+ * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.
  * */
 function startGame() {
-    /* function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.*/
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
@@ -49,8 +48,7 @@ function startGame() {
  */
 function startTimer() {
     /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
-    const timeRemaining = document.getElementById("time")
-    let startingTime = 1
+    
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
