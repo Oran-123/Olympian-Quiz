@@ -64,7 +64,6 @@ function displayCheck () {
 function startGame() {
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
-    howToPlayCheck.style.display = "none";
     countDownTimer.style.display = "flex"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
