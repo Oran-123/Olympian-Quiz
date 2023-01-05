@@ -8,10 +8,9 @@ const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
 const countDownTimer = document.getElementById("countdown-timer")
 const timeRemaining = document.getElementById("time")
-const button = document.createElement('button')
 
-let selectedButton = e.target
-let correct = selectedButton.dataset.correct
+
+
 let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
@@ -83,6 +82,7 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
+        const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add("question--btn")
         if (answer.correct) {
@@ -107,6 +107,8 @@ function resetState() {
  * for the div currently select calls the function setStatusClass 
  */
 function selectAnswer(e) {
+    let selectedButton = e.target
+    let correct = selectedButton.dataset.correct
     setStatusClass(selectedButton, correct)
     if (correct) {
         nextButton.classList.remove('hide')
