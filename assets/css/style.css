@@ -44,7 +44,7 @@ h1,h2 {
 
 .logo{
     padding: 2rem 0;
-    height:18rem;
+    width:10rem;
 }
 
 /* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
