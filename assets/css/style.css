@@ -54,6 +54,10 @@ h1,h2 {
     border-radius: .5rem;
 }
 
+.container {
+    margin: auto 0 ;
+
+}
 
 /* Start quiz form and buttons */ 
 
