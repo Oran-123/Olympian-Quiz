@@ -140,8 +140,9 @@ h1,h2 {
 
 /*countdown timer that appears when the quiz starts */ 
 
-#countdown-timer {
+#scoreboard {
     display: none;
+    flex-direction: row;
     text-align: center;
     margin: auto;
 }
