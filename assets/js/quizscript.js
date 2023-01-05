@@ -168,6 +168,9 @@ function countIncorrectAnswers() {
     incorrectScore.innerHTML = incorrectCount
 }
 
+/**
+ * deducts 5 seconds from the timer for each wrong answer 
+ */
 function deductTime() {
     if (startingTime < 5) {
         startingTime = startingTime - (startingTime - 1)
