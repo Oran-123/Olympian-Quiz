@@ -92,7 +92,7 @@ function showQuestion(question) {
 }
 
 /**
- * hides previous answer buttons 
+ * Removes previous answers  
  */
 function resetState() {
     nextButton.classList.add("hide")
