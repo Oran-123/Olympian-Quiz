@@ -134,9 +134,7 @@ function clearStatusClass(element) {
 }
 
 /**
- * When called by the startTimer function this will:
- * 1. present the modal
- * 2. allow users to close the modal
+ * Displays results when the time runs out
  */
 function openResultsModal() {
     const modalDialogue = document.getElementById("results-modal")
