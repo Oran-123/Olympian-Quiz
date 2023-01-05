@@ -160,7 +160,7 @@ h1,h2 {
 }
 
 #check-container{
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -170,7 +170,7 @@ h1,h2 {
 
 #how-to-play-check{
     color: var(--primary-white);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
