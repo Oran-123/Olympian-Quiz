@@ -145,7 +145,7 @@ h1,h2 {
     justify-content: space-evenly;
     flex-direction: row;
     text-align: center;
-    margin: 0 auto;
+    margin: auto 0;
 }
 
 #correct--answers {

@@ -135,7 +135,7 @@ function countCorrectAnswers() {
 function countIncorrectAnswers() {
     console.log("incorrect count function called")
     incorrectCount++
-    incorrectScore = incorrectCount
+    incorrectScore.innerHTML = incorrectCount
 }
 
 /** 
