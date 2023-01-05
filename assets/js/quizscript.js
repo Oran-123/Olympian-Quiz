@@ -10,6 +10,8 @@ const countDownTimer = document.getElementById("countdown-timer")
 const timeRemaining = document.getElementById("time")
 const button = document.createElement('button')
 
+let selectedButton = e.target
+let correct = selectedButton.dataset.correct
 let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
@@ -105,8 +107,6 @@ function resetState() {
  * for the div currently select calls the function setStatusClass 
  */
 function selectAnswer(e) {
-    let selectedButton = e.target
-    let correct = selectedButton.dataset.correct
     setStatusClass(selectedButton, correct)
     if (correct) {
         nextButton.classList.remove('hide')
