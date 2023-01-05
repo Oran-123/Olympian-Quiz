@@ -124,6 +124,10 @@ h1,h2 {
 
 }
 
+#how-to-play-list {
+    list-style-type: none;
+}
+
 .check-text{
     text-align: center;
 }
