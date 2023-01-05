@@ -51,9 +51,6 @@ function onFormSubmission (submission) {
     displayCheck()
 }
 
-/* the following video was used as inspiration for the modal functions https://www.youtube.com/watch?v=TAB_v6yBXIE*/ 
-
-
 /**
  * asks if the player has read the rules  
  */
