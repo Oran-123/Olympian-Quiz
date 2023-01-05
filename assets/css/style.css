@@ -142,9 +142,10 @@ h1,h2 {
 
 #scoreboard {
     display: none;
+    justify-content: space-evenly;
     flex-direction: row;
     text-align: center;
-    margin: auto;
+    margin: 0 auto;
 }
 
 #correct--answers {
