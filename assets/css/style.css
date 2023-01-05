@@ -55,6 +55,7 @@ h1,h2 {
 }
 
 .container {
+
     margin: auto 0 ;
 
 }
@@ -158,7 +159,7 @@ h1,h2 {
     justify-content: center;
 }
 
-#div-container{
+#check-container{
     display: flex;
     align-items: center;
     justify-content: center;
