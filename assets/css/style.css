@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    align-items: center;
 }
 
 h1,h2 {
@@ -160,7 +161,7 @@ h1,h2 {
 }
 
 #check-container{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -170,7 +171,7 @@ h1,h2 {
 
 #how-to-play-check{
     color: var(--primary-white);
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -178,8 +179,7 @@ h1,h2 {
     width: fit-content;
     padding: 2rem;
     background-color: var(--accent-blue);
-    box-shadow: 0 0 1.6rem var(--accent-blue);
-    
+    box-shadow: 0 0 1.6rem var(--accent-blue);    
 }
 
 .check-text{
@@ -206,6 +206,7 @@ h1,h2 {
     background-color: var(--accent-blue);
     box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
+    margin: auto 0;
 }
 
 /* answers */ 

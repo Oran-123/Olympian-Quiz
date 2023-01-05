@@ -1,7 +1,7 @@
 
-const howToPlayCheck = document.querySelector("#how-to-play-check");
+const howToPlayCheck = document.querySelector("#check-container");
 const startBtn = document.getElementById("btn--start-quiz")
-const quizContent = document.querySelector("#quiz-container")
+const quizContent = document.getElementById("quiz-container")
 const questionElement = document.getElementById("question")
 const answersElement = document.getElementById("answer--btns")
 const nextButton = document.getElementById("next-btn")
@@ -68,6 +68,7 @@ function displayCheck () {
 function startGame() {
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
+    howToPlayCheck.style.display = "none";
     countDownTimer.style.display = "flex"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
