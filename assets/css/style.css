@@ -206,7 +206,7 @@ h1,h2 {
     background-color: var(--accent-blue);
     box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
-    margin: auto 0;
+    margin: auto;
 }
 
 /* answers */ 
