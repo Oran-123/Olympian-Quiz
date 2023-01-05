@@ -84,6 +84,8 @@ h1,h2 {
 .form-label{
     margin: 1rem 0;
     color: var(--primary-white);
+    font-weight: bold;
+    letter-spacing: .2rem;
 }
 
 .form-fields{
