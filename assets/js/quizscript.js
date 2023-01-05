@@ -8,8 +8,8 @@ const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
 const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
-const correctScore = getElementById("correct--answers")
-const incorrectScore = getElementById("incorrect--answers")
+const correctScore = document.getElementById("correct--answers")
+const incorrectScore = document.getElementById("incorrect--answers")
 
 let correctCount = 0 
 let incorrectCount = 0
