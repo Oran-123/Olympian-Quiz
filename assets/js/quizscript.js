@@ -75,8 +75,7 @@ function setNextQuestion() {
 }
 
 /**
- * creates buttons for each answer 
- * sets class and data-type
+ * Displays answers for each button
  */
 function showQuestion(question) {
     questionElement.innerText = question.question
