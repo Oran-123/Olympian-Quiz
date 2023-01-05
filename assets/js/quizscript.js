@@ -20,7 +20,7 @@ let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
 /* event listeners */
-
+usernameForm.addEventListener("submit", hideForm)
 startBtn.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
