@@ -131,6 +131,7 @@ h1,h2 {
 .how-to-play-list-item{
     display: flex;
     flex-direction: row;
+    gap: 2rem;
 }
 
 .rules {
