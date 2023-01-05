@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"  content="quiz on olmypic sports">
+    <meta name="description" content="quiz on olmypic sports">
     <meta name="keywords" content="Olympics, Olympic Games, Sports-Quiz, Quiz,">
     <link rel="stylesheet" href="assets/css/style.css">
-        
+
     <title>Olympic Quiz</title>
 </head>
 
 <body>
     <header class="header">
-       <a href="index.html"><img class="logo" src="assets/images/logo_color.png"></a>
+        <a href="index.html"><img class="logo" src="assets/images/logo_color.png"></a>
     </header>
     <section id="quiz-signup" class="container">
         <h2 class="section-header">The Olympic Quiz</h2>
         <form id="start-quiz-form" method="get">
-        <label class="form-label" for = "uname" id="uname-label">User Name</label>
-        <input class="form-fields" type ="text" id="uname" name="uname" placeholder="Orian192" required>
-        <label class="form-label" for="email" id="uname-label">Email</label>
-        <input class="form-fields" type="email" id="email" name="email" placeholder="john.smith@gmail.com" required>
-        <input class="btn" type="submit" value="Start Quiz">
+            <label class="form-label" for="uname" id="uname-label">User Name</label>
+            <input class="form-fields" type="text" id="uname" name="uname" placeholder="Orian192" required>
+            <label class="form-label" for="email" id="uname-label">Email</label>
+            <input class="form-fields" type="email" id="email" name="email" placeholder="john.smith@gmail.com" required>
+            <input class="btn" type="submit" value="Start Quiz">
         </form>
     </section>
     <section id="leaderboard--&--How-to-play" class="container">
         <h2 class="section-header">Further Information</h2>
         <div class="btn--container">
             <!-- <button type="button" class ="btn" id="btn--how-to-play">How To Play</button> -->
-            <button type="button"  class ="btn" id="btn--leaderboard">Leaderboard</button>
+            <button type="button" class="btn" id="btn--leaderboard">Leaderboard</button>
         </div>
     </section>
     <div id="check-container">
@@ -43,13 +44,34 @@
             </div>
         </div>
     </div>
-    <dialog id ="rules-modal" class="modal">
+    <dialog id="rules-modal" class="modal">
         <H2 id="how-to-play-title">How to play the Olmypic Quiz!</H2>
         <ul id="how-to-play-list">
-            <li class="how-to-play-list-item"><i class="fa-solid fa-circle-xmark" id="wrong-icon"></i><span class="rules">Rule 1</span></li>
-            <li class="how-to-play-list-item">Rule 2</li>
-            <li class="how-to-play-list-item">Rule 3</li>
-            <li class="how-to-play-list-item">Rule 4</li>
+            <li class="how-to-play-list-item">
+                <i class="fa-solid fa-circle-xmark" id="wrong-icon"></i>
+                <span class="rules">
+                    Be carefule when choosing your answer, everytime you get pick a wrong answer you'll loose 5 seconds!
+                </span>
+            </li>
+            <li class="how-to-play-list-item">
+                <i class="fa-solid fa-circle-xmark" id="-icon"></i>
+                <span class="rules">
+                    Watch the time, You have 60 seconds to answer as many questions correctly as you can
+                </span>
+            </li>
+            <li class="how-to-play-list-item">
+                <i class="fa-solid fa-circle-xmark" id="-icon"></i>
+                <span class="rules">
+                    Make sure to click the <strong>next button</strong> to move onto the next question 
+                </span>
+            </li>
+            </li>
+            <li class="how-to-play-list-item">
+                <i class="fa-solid fa-circle-xmark" id="-icon"></i>
+                <span class="rules">
+                    You'll know you got an answer correct if it changes color to green  
+                </span>
+            </li>
         </ul>
         <button id="button-close-rules-modal" class="btn">X</button>
     </dialog>
@@ -59,7 +81,8 @@
         </div>
         <div class="answers">
             <p>Correct Answers:</p>
-            <p id="correct--answers">0</p></div>
+            <p id="correct--answers">0</p>
+        </div>
         <div class="answers">
             <p>Correct Answers:</p>
             <p id="incorrect--answers">0</p>
@@ -82,32 +105,33 @@
         </div>
         <dialog id="results-modal" class="modal">
             <H2 id="results-modal-title">Time is up, Let's see how you did!</H2>
-            <p id = "results-message">well done you got questions correct!</p>
+            <p id="results-message">well done you got questions correct!</p>
             <a href="index.html">
                 <button class="close-modal" id="button-close-results-modal">Exit Quiz</button>
             </a>
         </dialog>
     </div>
     <footer class="footer">
-            <ul class="social-icons-list">
-                <li class="social-icons-list-item">
-                    <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener"
-                        aria-label="Follow us on Twitter" class="social-icons-link">
-                        <i class="fa-brands fa-twitter" id="twitter-icon"></i></a>
-                </li>
-                <li class="social-icons-list-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="Follow us on Facebook" class="social-icons-link">
-                        <i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
-                </li>
-                <li class="social-icons-list-item"><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="Follow us on Instagram" class="social-icons-link">
-                        <i class="fa-brands fa-instagram" id="instagram-icon"></i></a>
-                </li>
-            </ul>
+        <ul class="social-icons-list">
+            <li class="social-icons-list-item">
+                <a href="https://twitter.com/?lang=en" target="_blank" rel="noopener" aria-label="Follow us on Twitter"
+                    class="social-icons-link">
+                    <i class="fa-brands fa-twitter" id="twitter-icon"></i></a>
+            </li>
+            <li class="social-icons-list-item"><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Follow us on Facebook" class="social-icons-link">
+                    <i class="fa-brands fa-facebook" id="facebook-icon"></i></a>
+            </li>
+            <li class="social-icons-list-item"><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Follow us on Instagram" class="social-icons-link">
+                    <i class="fa-brands fa-instagram" id="instagram-icon"></i></a>
+            </li>
+        </ul>
     </footer>
     <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
     <script src="assets/js/quizscript.js"></script>
     <script src="assets/js/howtoplaymodal.js"></script>
-    
+
 </body>
+
 </html>
