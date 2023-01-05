@@ -15,7 +15,6 @@ const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
 
-
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
 let incorrectCount = 0
@@ -166,7 +165,7 @@ function countIncorrectAnswers() {
 }
 
 /**
- * deducts 5 seconds from the timer for each wrong answer 
+ * deducts time for every wrong answer
  */
 function deductTime() {
     if (startingTime < 5) {
@@ -175,6 +174,8 @@ function deductTime() {
     startingTime = (startingTime-5)
 }
 }
+
+
 /** 
  * Highlights if the selected answer is correct/incorrect 
  */
