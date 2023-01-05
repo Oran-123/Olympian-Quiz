@@ -10,6 +10,7 @@ const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
 const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
+const modalDialogue = document.getElementById("results-modal")
 
 let correctCount = 0 
 let incorrectCount = 0
@@ -162,7 +163,6 @@ function clearStatusClass(element) {
  * Displays results when the time runs out
  */
 function openResultsModal() {
-    const modalDialogue = document.getElementById("results-modal")
     modalDialogue.showModal()
 }
 
