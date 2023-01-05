@@ -146,6 +146,7 @@ function selectAnswer(e) {
         countCorrectAnswers()
     } else {
         countIncorrectAnswers()
+        deductTime()
     }
 }
 
@@ -167,6 +168,13 @@ function countIncorrectAnswers() {
     incorrectScore.innerHTML = incorrectCount
 }
 
+function deductTime() {
+    if (startingTime < 5) {
+        startingTime = startingTime - (startingTime - 1)
+    } else {
+    startingTime = (startingTime-5)
+}
+}
 /** 
  * Highlights if the selected answer is correct/incorrect 
  */
