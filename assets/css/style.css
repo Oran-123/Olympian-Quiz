@@ -147,6 +147,14 @@ h1,h2 {
     margin: auto;
 }
 
+#correct--answers {
+    color: var(--accent-green);
+}
+
+#incorrect--answers{
+    color: var(--accent-red);
+}
+
 #div-container{
     display: flex;
     align-items: center;
