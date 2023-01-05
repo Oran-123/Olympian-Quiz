@@ -120,6 +120,7 @@ h1,h2 {
     box-shadow: 0 0 1.6rem var(--accent-blue);    
     background-image: url(../images/background2.jpg);
     background-size: cover;
+    gap: 2rem; 
 
 }
 
