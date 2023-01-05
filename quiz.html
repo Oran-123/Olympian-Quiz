@@ -15,8 +15,12 @@
     <header class="header">
         <a href="index.html"><img class="logo" src="assets/images/logo_color.png"></a>
     </header>
-    <div id="countdown-timer">
-        <p id="time">60s</p>
+    <div id="scoreboard">
+        <div id="countdown-timer">
+            <p id="time">60s</p>
+        </div>
+        <div id="correct--answers"></div>
+        <div id="incorrect--answers"></div>
     </div>
     <dialog id="results-modal" class="modal">
         <H2 id="results-modal-title">Time is up, Let's see how you did!</H2>
@@ -33,7 +37,7 @@
             <li class="how-to-play-list-item">Rule 3</li>
             <li class="how-to-play-list-item">Rule 4</li>
         </ul>
-            <button id="button-close-rules-modal" class="btn">X</button>
+        <button id="button-close-rules-modal" class="btn">X</button>
     </dialog>
     <div id="div-container">
         <div id="how-to-play-check">
