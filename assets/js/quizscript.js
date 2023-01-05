@@ -102,6 +102,7 @@ function startTimer() {
  * Shows random next question 
  */
 function setNextQuestion() {
+    console.log("set next question function called successfully")
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
