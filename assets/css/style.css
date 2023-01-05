@@ -65,8 +65,6 @@ h1,h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-
 }
 
 #start-quiz-form{
@@ -101,29 +99,24 @@ h1,h2 {
     align-items: center;
 }
 
+/* initial content that is displayed after the user submits the form, this asks the user if they have read the instructions */ 
 
-/* footer elements */ 
-
-.footer{
-    margin-top: auto;
-    width: 100%;
-}
-
-/* social media icons in the site footer*/ 
-
-.social-icons-list{
+#how-to-play-check{
+    color: var(--primary-white);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    list-style: none;
-    gap: 1rem;
-    padding: 1rem;
+    align-items: center;
+    border-radius: .5rem;
+    width: fit-content;
+    padding: 2rem;
+    background-color: var(--accent-blue);
+    box-shadow: 0 0 1.6rem var(--accent-blue);    
 }
 
-.social-icons-link {
-    color: #0a0505;
+.check-text{
+    text-align: center;
 }
-
 
 /* style of quiz */ 
 
@@ -155,32 +148,6 @@ h1,h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
-
-#check-container{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-
-/* initial content that is displayed after the user submits the form, this asks the user if they have read the instructions */ 
-
-#how-to-play-check{
-    color: var(--primary-white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: .5rem;
-    width: fit-content;
-    padding: 2rem;
-    background-color: var(--accent-blue);
-    box-shadow: 0 0 1.6rem var(--accent-blue);    
-}
-
-.check-text{
-    text-align: center;
 }
 
 /*Question text*/
@@ -261,7 +228,6 @@ h1,h2 {
 
 #next-btn:active{
     transform: translateY(-.5rem);
-
 }
 
 /* div that contains the next button */ 
@@ -269,8 +235,7 @@ h1,h2 {
 .controls{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 /* modal style for both the results modal and how to play modal */ 
@@ -282,12 +247,45 @@ h1,h2 {
     padding: 2rem;
     border-radius: 1rem;
     max-width: 70%;
-
 }
 
-#results-message{
-    
+#results-message{  
 }
+
+/* footer elements */ 
+
+.footer{
+    margin-top: auto;
+    width: 100%;
+}
+
+/* social media icons in the site footer*/ 
+
+.social-icons-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.social-icons-link {
+    color: #0a0505;
+}
+
+
+
+
+#check-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
 
 /* Media Queries */
 
