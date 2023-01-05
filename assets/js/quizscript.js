@@ -8,10 +8,11 @@ const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
 const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
+const correctScore = getElementById("correct--answers")
+const incorrectScore = getElementById("incorrect--answers")
 
-
-let correctScoreCount = getElementById("correct--answers")
-let incorrectScoreCount = getElementById("incorrect--answers")
+let correctCount = 0 
+let incorrectCount = 0
 let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
@@ -113,9 +114,17 @@ function selectAnswer(e) {
     setStatusClass(selectedButton, correct)
     if (correct) {
         nextButton.classList.remove('hide')
+        countCorrectAnswers()
     }
 }
 
+/**
+ * Counts correct answers 
+ */
+function countCorrectAnswers() {
+    correctCount++
+    correctScore.innerHTML = correctCount
+}
 /**
  * Highlights if the selected answer is correct/incorrect 
  */
