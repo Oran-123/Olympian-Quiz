@@ -6,7 +6,7 @@ const questionElement = document.getElementById("question")
 const answersElement = document.getElementById("answer--btns")
 const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
-const countDownTimer = document.getElementById("countdown-timer")
+const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
 
 
@@ -39,7 +39,7 @@ function startGame() {
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     howToPlayCheck.style.display = "none";
-    countDownTimer.style.display = "block"
+    countDownTimer.style.display = "flex"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
