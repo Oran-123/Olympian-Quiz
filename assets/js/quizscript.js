@@ -126,7 +126,7 @@ function setStatusClass(element, correct) {
 }
 
 /**
- * removes the correct/incorrect class from the answer buttons
+ * Sets default style to answers after the next button is selected
  */
 function clearStatusClass(element) {
     element.classList.remove("question--btn--correct")
