@@ -114,8 +114,7 @@ function selectAnswer(e) {
 }
 
 /**
- * For the selected div checks if the data-type is correct,
- * and sets a class depending on the result 
+ * Highlights if the selected answer is correct/incorrect 
  */
 function setStatusClass(element, correct) {
     clearStatusClass(element)
