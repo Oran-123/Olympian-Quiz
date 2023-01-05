@@ -160,7 +160,7 @@ h1,h2 {
 }
 
 #check-container{
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     margin: auto;
