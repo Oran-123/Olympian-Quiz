@@ -115,6 +115,8 @@ function selectAnswer(e) {
     if (correct) {
         nextButton.classList.remove('hide')
         countCorrectAnswers()
+    } else {
+        countIncorrectAnswers()
     }
 }
 
@@ -125,7 +127,17 @@ function countCorrectAnswers() {
     correctCount++
     correctScore.innerHTML = correctCount
 }
+
 /**
+ * Counts and displays incorrect answers 
+ */
+
+function countIncorrectAnswers() {
+    incorrectCount++
+    incorrectScore = incorrectCount
+}
+
+/** 
  * Highlights if the selected answer is correct/incorrect 
  */
 function setStatusClass(element, correct) {
