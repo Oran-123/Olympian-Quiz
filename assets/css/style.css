@@ -24,6 +24,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    /* background: radial-gradient(var(--primary-white), lightgray,gray) */
+    background: linear-gradient(rgb(121, 121, 121),lightgray,var(--primary-white))
+
 }
 
 h1,h2 {
@@ -39,7 +42,6 @@ h1,h2 {
     justify-content: center;
     position: sticky;
     width: 100%;
-    background-color: lightgray;
 }
 
 .logo{
@@ -55,9 +57,7 @@ h1,h2 {
 }
 
 .container {
-
     margin: auto 0 ;
-
 }
 
 /* Start quiz form and buttons */ 
@@ -108,7 +108,6 @@ h1,h2 {
 .footer{
     margin-top: auto;
     width: 100%;
-    background-color: lightgray;
 }
 
 /* social media icons in the site footer*/ 
