@@ -14,9 +14,6 @@ const modalDialogue = document.getElementById("results-modal")
 const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
-const openModalButton = document.getElementById("btn--how-to-play")
-const closeModalButton = document.getElementById("button-close-rules-modal")
-const rulesModal = document.getElementById("rules-modal")
 
 
 let resultsMessage = document.querySelector("#results-message")
@@ -32,6 +29,7 @@ nextButton.addEventListener("click", () => {
     currentQuestionIndex++
     setNextQuestion()
 })
+
 
 /* retrieves questions and parses data to JS */ 
 
@@ -63,22 +61,6 @@ function displayCheck () {
     howToPlayCheck.style.display = "flex";
 }
 
-/**
- * Opens a modal with instructions for the quiz,
- * when the how to play button is clicked 
- */
-openModalButton.addEventListener("click", () => { 
-    rulesModal.showModal()  
-})
-
-/**
- * Closes the modal with instructions for the quiz,
- * when the X button is clicked 
- */
-closeModalButton.addEventListener("click", () => {
-    rulesModal.close() 
-
-})
 /**
  * Hides/displays content when the quiz is started 
  * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.

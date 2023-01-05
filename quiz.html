@@ -34,7 +34,7 @@
             <button class="close-modal" id="button-close-results-modal">Exit Quiz</button>
         </a>
     </dialog>
-    <div id="div-container">
+    <!-- <div id="div-container">
         <div id="how-to-play-check">
             <p class="check-text">Stop,are you sure you have read the rules and you know how the quiz works?</p>
             <p class="check-text"> If you have not, then click the button below!</p>
@@ -42,18 +42,34 @@
                 <button type="button" class="btn" id="btn--how-to-play">How To Play?</button>
                 <button type="button" class="btn" id="btn--start-quiz">Start Quiz!</button>
             </div>
-        </div>        
+        </div> -->
+        <dialog id="rules-modal" class="modal">
+            <H2 id="how-to-play-title">How to play the Olmypic Quiz!</H2>
+            <ul id="how-to-play-list">
+                <li class="how-to-play-list-item">Rule 1</li>
+                <li class="how-to-play-list-item">Rule 2</li>
+                <li class="how-to-play-list-item">Rule 3</li>
+                <li class="how-to-play-list-item">Rule 4</li>
+            </ul>
+            <button id="button-close-rules-modal" class="btn">X</button>
+        </dialog>
+        <div id="quiz-container">
+            <div id="question-container">
+                <div>
+                    <h2 id="question"> Question</h2>
+                </div>
+                <div id="answer--btns" class="btn--grid">
+                    <button class="question--btn">Question 1</button>
+                    <button class="question--btn">Question 2</button>
+                    <button class="question--btn">Question 3</button>
+                    <button class="question--btn">Question 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="next-btn" class="next-btn--btn--hide">Next</button>
+            </div>
+        </div>
     </div>
-    <dialog id="rules-modal" class="modal">
-        <H2 id="how-to-play-title">How to play the Olmypic Quiz!</H2>
-        <ul id="how-to-play-list">
-            <li class="how-to-play-list-item">Rule 1</li>
-            <li class="how-to-play-list-item">Rule 2</li>
-            <li class="how-to-play-list-item">Rule 3</li>
-            <li class="how-to-play-list-item">Rule 4</li>
-        </ul>
-        <button id="button-close-rules-modal" class="btn">X</button>
-    </dialog>
     <footer class="footer">
         <ul class="social-icons-list">
             <li class="social-icons-list-item">
@@ -73,7 +89,7 @@
     </footer>
     <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
     <script src="assets/js/quizscript.js"></script>
-    <script src="assets/js/howtoplaymodal.js"></script>
+    <!-- <script src="assets/js/howtoplaymodal.js"></script> -->
 </body>
 
 </html>
