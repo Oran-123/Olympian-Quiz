@@ -11,6 +11,7 @@ const timeRemaining = document.getElementById("time")
 const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
 const modalDialogue = document.getElementById("results-modal")
+const usernameForm = document.querySelector("#start-quiz-form")
 
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
@@ -34,6 +35,10 @@ fetch ("assets/data/questions.json")
           questions = data
           console.log(questions)
     })
+
+function hideForm () {
+
+}
 
 /**
  * Hides/displays content when the quiz is started 
