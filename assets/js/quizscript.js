@@ -1,7 +1,7 @@
 
-const howToPlayCheck = document.getElementById("how-to-play-check");
+const howToPlayCheck = document.querySelector("#how-to-play-check");
 const startBtn = document.getElementById("btn--start-quiz")
-const quizContent = document.getElementById("quiz-container")
+const quizContent = document.querySelector("#quiz-container")
 const questionElement = document.getElementById("question")
 const answersElement = document.getElementById("answer--btns")
 const nextButton = document.getElementById("next-btn")
