@@ -276,12 +276,13 @@ h1,h2 {
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
 }
 
 .social-icons-link {
     color: #0a0505;
+    font-size: 2.5rem;
 }
 
 
