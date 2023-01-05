@@ -12,6 +12,7 @@ const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
 const modalDialogue = document.getElementById("results-modal")
 
+let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
 let incorrectCount = 0
 let startingTime = 60
