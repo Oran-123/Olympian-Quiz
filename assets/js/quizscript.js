@@ -43,10 +43,10 @@ fetch ("assets/data/questions.json")
  * hides the signup form on submission
  */
 function onFormSubmission (submission) {
-console.log("onSubmit form triggered") 
-homePageSections.style.display= "none"
-homeButtons.style.display = "none"
-submission.preventDefault()
+    console.log("onSubmit form triggered") 
+    homePageSections.style.display= "none"
+    homeButtons.style.display = "none"
+    submission.preventDefault()
 }
 
 /**
