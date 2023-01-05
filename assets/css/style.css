@@ -24,9 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* background: radial-gradient(var(--primary-white), lightgray,gray) */
     background: linear-gradient(rgb(121, 121, 121),lightgray,var(--primary-white))
-
 }
 
 h1,h2 {
@@ -45,7 +43,8 @@ h1,h2 {
 }
 
 .logo{
-    padding: 1rem 0;
+    padding: 2rem 0;
+    height:18rem;
 }
 
 /* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
