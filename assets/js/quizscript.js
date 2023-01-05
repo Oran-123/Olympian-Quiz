@@ -47,10 +47,9 @@ function startGame() {
 /**
  * Starts a timer
  * called during the start game function
+ * timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
  */
 function startTimer() {
-    /* timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer */
-    
     const timer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
@@ -64,8 +63,7 @@ function startTimer() {
             openResultsModal()
         }
     }, 1000);
-    setTimeout(log, 60000, "Time is up")
-    console.log("Timer started")
+    setTimeout(60000, "Time is up")
 }
 
 /**
