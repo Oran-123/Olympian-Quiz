@@ -126,6 +126,11 @@ h1,h2 {
 
 #how-to-play-list {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50%;
+    margin-left: 4rem;
 }
 
 .how-to-play-list-item{
