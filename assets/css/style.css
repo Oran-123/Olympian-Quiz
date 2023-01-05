@@ -139,6 +139,7 @@ h1,h2 {
 
 #wrong-icon {
     color: var(--accent-red);
+    font-size: 3rem;
 }
 
 .check-text{
