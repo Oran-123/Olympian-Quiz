@@ -8,8 +8,9 @@ const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
 const countDownTimer = document.getElementById("countdown-timer")
 const timeRemaining = document.getElementById("time")
-let startingTime = 60
+const button = document.createElement('button')
 
+let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
 /* event listeners */
@@ -80,7 +81,6 @@ function setNextQuestion() {
 function showQuestion(question) {
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
-        const button = document.createElement('button')
         button.innerText = answer.text
         button.classList.add("question--btn")
         if (answer.correct) {
