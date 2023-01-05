@@ -20,6 +20,8 @@ nextButton.addEventListener("click", () => {
     setNextQuestion()
 })
 
+/* retrieves questions and parses data to JS */ 
+
 fetch ("assets/data/questions.json") 
     .then (response => response.json())
     .then (data => {
