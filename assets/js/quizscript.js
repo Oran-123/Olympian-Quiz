@@ -14,6 +14,9 @@ const modalDialogue = document.getElementById("results-modal")
 const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
+const openModalButton = document.getElementById("btn--how-to-play")
+const closeModalButton = document.getElementById("button-close-rules-modal")
+const rulesModal = document.getElementById("rules-modal")
 
 
 let resultsMessage = document.querySelector("#results-message")
