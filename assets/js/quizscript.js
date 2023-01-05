@@ -50,6 +50,9 @@ function onFormSubmission (submission) {
     displayCheck()
 }
 
+/* the following video was used as inspiration for the modal functions https://www.youtube.com/watch?v=TAB_v6yBXIE*/ 
+
+
 /**
  * asks if the player has read the rules  
  */
@@ -57,6 +60,22 @@ function displayCheck () {
     howToPlayCheck.style.display = "flex";
 }
 
+/**
+ * Opens a modal with instructions for the quiz,
+ * when the how to play button is clicked 
+ */
+openModalButton.addEventListener("click", () => { 
+    rulesModal.showModal()  
+})
+
+/**
+ * Closes the modal with instructions for the quiz,
+ * when the X button is clicked 
+ */
+closeModalButton.addEventListener("click", () => {
+    rulesModal.close() 
+
+})
 /**
  * Hides/displays content when the quiz is started 
  * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.
