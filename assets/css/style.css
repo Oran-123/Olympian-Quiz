@@ -148,6 +148,21 @@ h1,h2 {
     font-size: 3rem;
 }
 
+#correct-icon{
+    color: var(--accent-green);
+    font-size: 3rem;
+}
+
+#next-icon{
+    color: var(--accent-blue);
+    font-size: 3rem;
+}
+
+#time-icon{
+    color: var(--primary-black);
+    font-size: 3rem;
+}
+
 .check-text{
     text-align: center;
 }
