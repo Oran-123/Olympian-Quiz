@@ -12,6 +12,8 @@ const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
 const modalDialogue = document.getElementById("results-modal")
 const usernameForm = document.querySelector("#start-quiz-form")
+const homePageSections = document.getElementsByClassName("sections")
+
 
 
 let resultsMessage = document.querySelector("#results-message")
@@ -21,7 +23,7 @@ let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
 /* event listeners */
-usernameForm.addEventListener("submit", onFormSubmission)
+usernameForm.addEventListener("click", onFormSubmission)
 startBtn.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
@@ -40,9 +42,10 @@ fetch ("assets/data/questions.json")
 /**
  * hides the signup form on submission
  */
-function onFormSubmission (hide) {
+function onFormSubmission () {
 console.log("onSubmit form triggered") 
-hide.preventDefault();
+homePageSections.style.display= "none"
+
 }
 
 /**
