@@ -165,7 +165,7 @@ function clearStatusClass(element) {
  */
 function openResultsModal() {
     modalDialogue.showModal()
-    resultsMessage.innerHTML = `well done you got ${correctCount}questions correct!`
+    resultsMessage.innerHTML = `well done you got ${correctCount} questions correct!`
 }
 
 
