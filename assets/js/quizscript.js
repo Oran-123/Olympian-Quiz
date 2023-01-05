@@ -47,6 +47,14 @@ function onFormSubmission (submission) {
     homePageSections.style.display= "none"
     homeButtons.style.display = "none"
     submission.preventDefault()
+    displayCheck()
+}
+
+/**
+ * asks if the player has read the rules  
+ */
+function displayCheck () {
+    howToPlayCheck.style.display = "flex";
 }
 
 /**
