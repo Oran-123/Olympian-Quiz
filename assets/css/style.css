@@ -251,12 +251,17 @@ h1,h2 {
 /* modal style for both the results modal and how to play modal */ 
 
 .modal {
-    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
     margin: auto;
-    text-align: center;
-    padding: 2rem;
+    text-align: left;
+    padding: 3rem;
     border-radius: 1rem;
-    max-width: 70%;
+    width: 50%;
+    height: 50%;
+    padding: 2rem;
+    
 }
 
 #results-message{  
