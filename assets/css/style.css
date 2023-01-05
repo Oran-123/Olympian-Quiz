@@ -46,16 +46,6 @@ h1,h2 {
     padding: 1rem 0;
 }
 
-#hero-img{
-    background-image: url(../images/hero-img.jpg);
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 60rem;
-    overflow: hidden;
-}
-
 /* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
 
 .btn {
