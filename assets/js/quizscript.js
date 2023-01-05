@@ -10,7 +10,8 @@ const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
 
 
-
+let correctScoreCount = getElementById("correct--answers")
+let incorrectScoreCount = getElementById("incorrect--answers")
 let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
