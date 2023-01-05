@@ -67,13 +67,6 @@ function startTimer() {
 }
 
 /**
- * Logs a message when a timer is finished
- */
-function log(msg) {
-    console.log(msg)
-}
-
-/**
  * Shows random next question 
  */
 function setNextQuestion() {
