@@ -133,6 +133,10 @@ h1,h2 {
     flex-direction: row;
 }
 
+.rules {
+    margin: auto 0;
+}
+
 #wrong-icon {
     color: var(--accent-red);
 }
