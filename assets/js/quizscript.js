@@ -78,14 +78,14 @@ function startGame() {
  * timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
  */
 function startTimer() {
-    const timer = setInterval(function () {
+    setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + "s";
         if (startingTime < 15) {
             timeRemaining.style.color = "var(--accent-red)"
         }
         if (startingTime < 1) {
-            clearInterval(timer)
+            clearInterval(Interval)
         }
         if (startingTime == 0) {
             openResultsModal()
