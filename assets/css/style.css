@@ -256,6 +256,7 @@ h1,h2 {
     padding: 1rem;
     color: var(--primary-white);
     background-color: var(--accent-green);
+    pointer-events: none;
 }
 
 .question--btn--incorrect{
@@ -264,6 +265,7 @@ h1,h2 {
     padding: 1rem;
     color: var(--primary-white);
     background-color: var(--accent-red);
+    pointer-events: none;
 }
 
 /*next button that appears under the answer buttons */ 
