@@ -194,7 +194,6 @@ h1,h2 {
     color: var(--accent-red);
     margin-left: 1rem;
     pointer-events: none;
-
 }
 
 .answers{
