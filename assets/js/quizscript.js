@@ -84,10 +84,8 @@ function startTimer() {
         if (startingTime < 15) {
             timeRemaining.style.color = "var(--accent-red)"
         }
-        if (startingTime < 1) {
+        if (startingTime <= 0) {
             clearInterval(countDownTimer)
-        }
-        if (startingTime == 0) {
             openResultsModal()
         }
     }, 1000);
