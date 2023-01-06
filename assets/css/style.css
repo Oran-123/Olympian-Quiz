@@ -57,6 +57,10 @@ h1,h2 {
     cursor: pointer;
 }
 
+.btn:active {
+    transform: translateY(.5rem);
+}
+
 .container {
     margin: auto 0 ;
 }
@@ -245,11 +249,6 @@ h1,h2 {
     transform: translateY(-.5rem);
 }
 
-.question--btn:active{
-    transform: translateY(.5rem);
-
-}
-
 .question--btn--correct{
     box-shadow: 0 0 .5rem var(--accent-green);
     border-radius: .5rem;
@@ -279,7 +278,7 @@ h1,h2 {
 }
 
 #next-btn:active{
-    transform: translateY(-.5rem);
+    transform: translateY(.5rem);
 }
 
 /* div that contains the next button */ 
