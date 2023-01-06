@@ -14,6 +14,7 @@ const modalDialogue = document.getElementById("results-modal")
 const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
+const userName = form.uname.value
 
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
