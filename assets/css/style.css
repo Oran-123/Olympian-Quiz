@@ -187,11 +187,14 @@ h1,h2 {
 #correct--answers {
     color: var(--accent-green);
     margin-left: 1rem;
+    pointer-events: none;
 }
 
 #incorrect--answers{
     color: var(--accent-red);
     margin-left: 1rem;
+    pointer-events: none;
+
 }
 
 .answers{
@@ -297,7 +300,6 @@ h1,h2 {
     text-align: left;
     padding: 3rem;
     border-radius: 1rem;
-    min-width: 50%;
     min-height: 50%;
     padding: 2rem;
     
