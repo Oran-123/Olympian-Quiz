@@ -185,6 +185,7 @@ function highlightAnswer(button, correct) {
     }
 }
 
+
 /**
  * Sets default style to answers after the next button is selected
  */
