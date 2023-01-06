@@ -134,7 +134,7 @@ function resetState() {
 function selectAnswer(e) {
     let selectedButton = e.target
     let correct = selectedButton.dataset.correct
-    setStatusClass(selectedButton, correct)
+    highlightAnswer(selectedButton, correct)
     if (correct) {
         nextButton.classList.remove('hide')
         countCorrectAnswers()
@@ -173,23 +173,22 @@ function deductTime() {
 }
 }
 
-
 /** 
  * Highlights if the selected answer is correct/incorrect 
  */
-function setStatusClass(element, correct) {
-    clearStatusClass(element)
+function highlightAnswer(button, correct) {
+    clearHighlightedAnswer(button)
     if (correct) {
-        element.classList.add("question--btn--correct")
+        button.classList.add("question--btn--correct")
     } else {
-        element.classList.add("question--btn--incorrect")
+        button.classList.add("question--btn--incorrect")
     }
 }
 
 /**
  * Sets default style to answers after the next button is selected
  */
-function clearStatusClass(element) {
+function clearHighlightedAnswer(element) {
     element.classList.remove("question--btn--correct")
     element.classList.remove("question--btn--incorrect")
 }
