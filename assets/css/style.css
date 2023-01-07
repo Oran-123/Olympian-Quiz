@@ -102,6 +102,10 @@ h1,h2 {
     font-family: "Judson", sans-serif;
     font-size: 1.6rem;
 }
+
+#leaderboard--and--How-to-play{
+    display: none;
+}
 /* div that contains the two buttons How to play and Leaderboard */
 
 .btn--container{
