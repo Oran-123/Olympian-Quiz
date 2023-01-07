@@ -24,7 +24,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(rgb(121, 121, 121),lightgray,var(--primary-white)); 
+    background-image: url(../images/background3.jpeg);
+    background-size: cover;
 }
 
 h1,h2 {
@@ -78,8 +79,8 @@ h1,h2 {
     align-items: center;
     padding: 1rem 0;
     margin: 2rem 0;
-    background-image: url(../images/background2.jpg);
-    background-size: cover;
+    background-image: url(../images/background4.jpeg);
+    background-size: 100%;
     box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
     width: 50%;
