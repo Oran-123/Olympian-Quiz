@@ -372,8 +372,8 @@ h1,h2 {
 }
 
 .social-icons-link {
-    color: #0a0505;
-    font-size: 2.5rem;
+    color: var(--primary-white);
+    font-size: 3.5rem;
 }
 
 
