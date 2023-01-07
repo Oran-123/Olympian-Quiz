@@ -319,6 +319,7 @@ h1,h2 {
 #results-modal{
     background-image: url(../images/rules-modal-image.jpeg);
     background-size: cover;
+    text-align: center;
 }
 
 #results-message{  
