@@ -325,6 +325,10 @@ h1,h2 {
 #results-message{  
 }
 
+#results-icon{
+    font-size: 3rem;
+}
+
 #button-close-results-modal{
     border: .1rem;
     border-radius: 0.5rem;
