@@ -322,6 +322,12 @@ h1,h2 {
     text-align: center;
 }
 
+#results-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 #results-message{  
 }
 

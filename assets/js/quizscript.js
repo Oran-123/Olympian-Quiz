@@ -10,7 +10,7 @@ const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
 const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
-const modalDialogue = document.getElementById("results-modal")
+const resultsModal = document.querySelector("#results-modal")
 const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
@@ -207,7 +207,8 @@ function clearHighlightedAnswer(element) {
  * Displays results when the time runs out
  */
 function openResultsModal() {
-    modalDialogue.showModal()
+    resultsModal.showModal()
+    resultsModal.style.display = "flex"
     resultsMessage.innerHTML = `well done you got ${correctCount} questions correct!`
 }
 
