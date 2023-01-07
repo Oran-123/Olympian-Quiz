@@ -314,7 +314,11 @@ h1,h2 {
     border-radius: 1rem;
     min-height: 50%;
     padding: 2rem;
-    
+}
+
+#results-modal{
+    background-image: url(../images/rules-modal-image.jpeg);
+    background-size: cover;
 }
 
 #results-message{  
