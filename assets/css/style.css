@@ -176,6 +176,16 @@ h1,h2 {
     text-align: center;
 }
 
+#button-close-rules-modal{
+    min-width: 25%;
+    background-color: var(--accent-red);
+    color: var(--primary-white);
+    font-weight: bolder;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    
+}
+
 /* style of quiz */ 
 
 .hide {
