@@ -24,8 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background: linear-gradient(rgb(121, 121, 121),lightgray,var(--primary-white))
-   
+    background: linear-gradient(rgb(121, 121, 121),lightgray,var(--primary-white)); 
 }
 
 h1,h2 {
@@ -126,6 +125,11 @@ h1,h2 {
     background-size: cover;
     gap: 2rem; 
 
+}
+
+#rules-modal{
+    background-image: url(../images/rules-modal-image.jpeg);
+    background-size: cover;
 }
 
 #how-to-play-list {

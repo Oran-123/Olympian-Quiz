@@ -14,7 +14,9 @@ const modalDialogue = document.getElementById("results-modal")
 const usernameForm = document.getElementById("start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
-const userName = form.uname.value
+const checkTitle = document.getElementById("how-to-play-title")
+const userName = document.getElementById('uname').value
+const howToPlayTitle = document.getElementById('how-to-play-title')
 
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
@@ -49,6 +51,7 @@ function onFormSubmission (submission) {
     homeButtons.style.display = "none"
     submission.preventDefault()
     displayCheck()
+    console.log(userName)
 }
 
 /**
@@ -56,6 +59,9 @@ function onFormSubmission (submission) {
  */
 function displayCheck () {
     howToPlayCheck.style.display = "flex";
+    
+    howToPlayTitle.innerHTML = `${userName} Before you play!`
+
 }
 
 /**
