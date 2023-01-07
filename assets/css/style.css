@@ -24,7 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../images/background3.jpeg);
+    background-image: url(../images/background-image.jpeg);
     background-size: cover;
 }
 
@@ -46,6 +46,10 @@ h1,h2 {
 .logo{
     padding: 2rem 0;
     width:10rem;
+}
+
+.section-header{
+    color: var(--primary-white);
 }
 
 /* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
@@ -79,9 +83,6 @@ h1,h2 {
     align-items: center;
     padding: 1rem 0;
     margin: 2rem 0;
-    background-image: url(../images/background4.jpeg);
-    background-size: 100%;
-    box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
     width: 50%;
 }
