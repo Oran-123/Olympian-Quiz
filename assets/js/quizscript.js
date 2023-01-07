@@ -17,6 +17,7 @@ const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
 const checkTitle = document.getElementById("how-to-play-title")
 const userName = document.getElementById('uname').value
 const howToPlayTitle = document.getElementById('how-to-play-title')
+const closeModal = document.querySelector("#button-close-results-modal")
 
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
@@ -31,6 +32,7 @@ nextButton.addEventListener("click", () => {
     currentQuestionIndex++
     setNextQuestion()
 })
+closeModal.addEventListener("click",returnHome)
 
 
 /* retrieves questions and parses data to JS */ 
@@ -207,6 +209,10 @@ function clearHighlightedAnswer(element) {
 function openResultsModal() {
     modalDialogue.showModal()
     resultsMessage.innerHTML = `well done you got ${correctCount} questions correct!`
+}
+
+function returnHome() {
+    window.location=("index.html")
 }
 
 
