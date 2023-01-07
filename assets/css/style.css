@@ -318,7 +318,7 @@ h1,h2 {
 
 #results-modal{
     background-image: url(../images/rules-modal-image.jpeg);
-    background-size: cover;
+    background-size: contain;
     text-align: center;
 }
 
