@@ -389,14 +389,14 @@ h1,h2 {
 }
 
 #twitter{
-    background-color: var(--social-blue) ;
+    background-color: var(--twitter-blue) ;
     border-radius: 50%;
     padding: 1.5rem;
     margin: 1rem;
 }
 
 #facebook{
-    background-color: var(--social-blue) ;
+    background-color: var(--facebook-blue) ;
     border-radius: 50%;
     padding: 1.5rem;
     margin: 1rem;
