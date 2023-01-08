@@ -25,7 +25,7 @@ html {
 
 body {
     font-size: 1.6rem;
-    font-family: "Judson", sans-serif ;
+    font-family: "Judson", sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -33,14 +33,15 @@ body {
     background-size: cover;
 }
 
-h1,h2 {
-    font-family: "Quando",sans-serif;
-    text-align:center;
+h1,
+h2 {
+    font-family: "Quando", sans-serif;
+    text-align: center;
 }
 
-/* site header */ 
+/* site header */
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,16 +49,16 @@ h1,h2 {
     width: 100%;
 }
 
-.logo{
+.logo {
     padding-top: 4rem;
-    width:18rem;
+    width: 18rem;
 }
 
-.section-header{
+.section-header {
     color: var(--primary-white);
 }
 
-/* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */ 
+/* buttons throughout the home page (incl. start quiz, how to play and leaderboard) */
 
 .btn {
     margin: 1rem 0;
@@ -71,18 +72,18 @@ h1,h2 {
 }
 
 .container {
-    margin: auto 0 ;
+    margin: auto 0;
 }
 
-/* Start quiz form and buttons */ 
+/* Start quiz form and buttons */
 
-#quiz-signup{
+#quiz-signup {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#start-quiz-form{
+#start-quiz-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,14 +93,14 @@ h1,h2 {
     min-width: 25%;
 }
 
-.form-label{
+.form-label {
     margin: 1rem 0;
     color: var(--primary-white);
     font-weight: bold;
     letter-spacing: .2rem;
 }
 
-.form-fields{
+.form-fields {
     padding: .5rem;
     margin: 1rem;
     width: 75%;
@@ -108,20 +109,21 @@ h1,h2 {
     font-size: 1.6rem;
 }
 
-#leaderboard--and--How-to-play{
+#leaderboard--and--How-to-play {
     display: none;
 }
+
 /* div that contains the two buttons How to play and Leaderboard */
 
-.btn--container{
+.btn--container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* initial content that is displayed after the user submits the form, this asks the user if they have read the instructions */ 
+/* initial content that is displayed after the user submits the form, this asks the user if they have read the instructions */
 
-#how-to-play-check{
+#how-to-play-check {
     color: var(--primary-white);
     display: flex;
     flex-direction: column;
@@ -130,21 +132,21 @@ h1,h2 {
     border-radius: .5rem;
     width: fit-content;
     padding: 2rem;
-    box-shadow: 
-        rgb(0 0 0 / 17%) 0px -23px 25px 0px inset, 
-        rgb(0 0 0 / 15%) 0px -36px 30px 0px inset, 
-        rgb(0 0 0 / 10%) 0px -79px 40px 0px inset, 
-        rgb(0 0 0 / 6%) 0px 2px 1px, 
-        rgb(0 0 0 / 9%) 0px 4px 2px, 
-        rgb(0 0 0 / 9%) 0px 8px 4px, 
-        rgb(0 0 0 / 9%) 0px 16px 8px, 
-        rgb(0 0 0 / 9%) 0px 32px 16px;    
+    box-shadow:
+        rgb(0 0 0 / 17%) 0px -23px 25px 0px inset,
+        rgb(0 0 0 / 15%) 0px -36px 30px 0px inset,
+        rgb(0 0 0 / 10%) 0px -79px 40px 0px inset,
+        rgb(0 0 0 / 6%) 0px 2px 1px,
+        rgb(0 0 0 / 9%) 0px 4px 2px,
+        rgb(0 0 0 / 9%) 0px 8px 4px,
+        rgb(0 0 0 / 9%) 0px 16px 8px,
+        rgb(0 0 0 / 9%) 0px 32px 16px;
     backdrop-filter: blur(15px);
-    gap: 2rem; 
+    gap: 2rem;
 
 }
 
-#rules-modal{
+#rules-modal {
     background-image: url(../images/rules-modal-image.jpeg);
     background-size: cover;
 }
@@ -161,7 +163,7 @@ h1,h2 {
     width: 75%;
 }
 
-.how-to-play-list-item{
+.how-to-play-list-item {
     display: flex;
     flex-direction: row;
     gap: 3rem;
@@ -177,42 +179,42 @@ h1,h2 {
     font-size: 3rem;
 }
 
-#correct-icon{
+#correct-icon {
     color: var(--accent-green);
     font-size: 3rem;
 }
 
-#next-icon{
+#next-icon {
     color: var(--accent-blue);
     font-size: 3rem;
 }
 
-#time-icon{
+#time-icon {
     color: var(--primary-black);
     font-size: 3rem;
 }
 
-.check-text{
+.check-text {
     text-align: center;
 }
 
-#button-close-rules-modal{
+#button-close-rules-modal {
     min-width: 25%;
     background-color: var(--accent-red);
     color: var(--primary-white);
     font-weight: bolder;
     margin: 0 auto;
     font-size: 1.5rem;
-    
+
 }
 
-/* style of quiz */ 
+/* style of quiz */
 
 .hide {
     display: none;
 }
 
-/*countdown timer that appears when the quiz starts */ 
+/*countdown timer that appears when the quiz starts */
 
 #scoreboard {
     display: none;
@@ -227,12 +229,12 @@ h1,h2 {
     margin-left: 1rem;
 }
 
-#incorrect--answers{
+#incorrect--answers {
     color: var(--accent-red);
     margin-left: 1rem;
 }
 
-.answers{
+.answers {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -240,7 +242,7 @@ h1,h2 {
 
 /*Question text*/
 
-#question{
+#question {
 
     text-align: center;
     color: var(--primary-white);
@@ -248,7 +250,7 @@ h1,h2 {
 
 /* div that contains both the questio and answers */
 
-#quiz-container{
+#quiz-container {
     display: none;
     flex-direction: column;
     align-items: center;
@@ -261,16 +263,16 @@ h1,h2 {
     margin: auto;
 }
 
-/* answers */ 
+/* answers */
 
-.btn--grid{
+.btn--grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
 }
 
-.question--btn{
+.question--btn {
     background-color: var(--primary-white);
     box-shadow: 0 0 .5rem var(--primary-white);
     border-radius: .5rem;
@@ -283,7 +285,7 @@ h1,h2 {
     transform: translateY(-.5rem);
 }
 
-.question--btn--correct{
+.question--btn--correct {
     box-shadow: 0 0 .5rem var(--accent-green);
     border-radius: .5rem;
     padding: 1rem;
@@ -292,7 +294,7 @@ h1,h2 {
     pointer-events: none;
 }
 
-.question--btn--incorrect{
+.question--btn--incorrect {
     box-shadow: 0 0 .5rem var(--accent-red);
     border-radius: .5rem;
     padding: 1rem;
@@ -301,7 +303,7 @@ h1,h2 {
     pointer-events: none;
 }
 
-/*next button that appears under the answer buttons */ 
+/*next button that appears under the answer buttons */
 
 #next-btn {
     font-size: 1.6rem;
@@ -311,19 +313,19 @@ h1,h2 {
     border-radius: .5rem;
 }
 
-#next-btn:active{
+#next-btn:active {
     transform: translateY(.5rem);
 }
 
-/* div that contains the next button */ 
+/* div that contains the next button */
 
-.controls{
+.controls {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-/* modal style for both the results modal and how to play modal */ 
+/* modal style for both the results modal and how to play modal */
 
 .modal {
     flex-direction: column;
@@ -336,26 +338,25 @@ h1,h2 {
     padding: 2rem;
 }
 
-#results-modal{
+#results-modal {
     background-image: url(../images/rules-modal-image.jpeg);
     background-size: contain;
     text-align: center;
 }
 
-#results-container{
+#results-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-#results-message{  
-}
+#results-message {}
 
-#results-icon{
+#results-icon {
     font-size: 3rem;
 }
 
-#button-close-results-modal{
+#button-close-results-modal {
     border: .1rem;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -367,16 +368,16 @@ h1,h2 {
     font-size: 1.5rem;
 }
 
-/* footer elements */ 
+/* footer elements */
 
-.footer{
+.footer {
     margin-top: auto;
     width: 100%;
 }
 
-/* social media icons in the site footer*/ 
+/* social media icons in the site footer*/
 
-.social-icons-list{
+.social-icons-list {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -388,27 +389,27 @@ h1,h2 {
 
 .social-icons-link {
     font-size: 2rem;
-    background-color: var(--primary-white) ;
+    background-color: var(--primary-white);
     border-radius: 50%;
     padding: 1.5rem;
     border: solid .4rem;
-    
+
 }
 
-#twitter-link{
+#twitter-link {
     color: var(--twitter-blue);
 }
 
 
-#facebook-link{
+#facebook-link {
     color: var(--facebook-blue);
 }
 
-#instagram-link{
+#instagram-link {
     color: var(--instagram-red);
 }
 
-#check-container{
+#check-container {
     display: none;
     align-items: center;
     justify-content: center;
@@ -419,10 +420,30 @@ h1,h2 {
 /* Media Queries */
 
 @media only screen and (min-width:768px) {
-    .btn--container{
+    .btn--container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 2rem;
-        margin-top: 2rem;}
+        margin-top: 2rem;
+    }
+
+    .social-icons-link:hover {
+        color: var(--primary-white);
+        border: solid .4rem;
+
+    }
+
+    #twitter-link:hover {
+        background-color: var(--twitter-blue);
+    }
+
+
+    #facebook-link:hover {
+        background-color: var(--facebook-blue);
+    }
+
+    #instagram-link:hover {
+        background-color: var(--instagram-red);
+    }
 }
