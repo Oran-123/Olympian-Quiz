@@ -6,7 +6,8 @@
     --accent-red: #ad1b0b;
     --accent-blue: #2049c5;
     --accent-green: #305a2b;
-    --twitter-blue: #1877F2;
+    --social-icon-blue: #1877F2;
+    --instagram-red: #E4405F;
 }
 
 * {
@@ -387,21 +388,21 @@ h1,h2 {
 }
 
 #twitter{
-    background-color: var(--twitter-blue) ;
+    background-color: var(--social-icon-blue-blue) ;
     border-radius: 50%;
     padding: 1.5rem;
     margin: 1rem;
 }
 
 #facebook{
-    background-color: var(--twitter-blue) ;
+    background-color: var(--social-icon-blue-blue) ;
     border-radius: 50%;
     padding: 1.5rem;
     margin: 1rem;
 }
 
 #instagram{
-    background-color: var(--twitter-blue) ;
+    background-color: var(--instagram-red) ;
     border-radius: 50%;
     padding: 1.5rem;
     margin: 1rem;
