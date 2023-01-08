@@ -385,9 +385,6 @@ h1,h2 {
     font-size: 3.5rem;
 }
 
-
-
-
 #check-container{
     display: none;
     align-items: center;
@@ -395,9 +392,6 @@ h1,h2 {
     margin: auto;
 
 }
-
-
-
 
 /* Media Queries */
 
