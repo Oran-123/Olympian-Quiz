@@ -385,30 +385,20 @@ h1,h2 {
 
 .social-icons-link {
     font-size: 2rem;
-    /* color: var(--primary-white); */
-}
-
-#twitter-link{
     background-color: var(--primary-white) ;
     border-radius: 50%;
-    padding: .5rem;
-    margin: 1rem;
+    padding: .5rem;}
+
+#twitter-link{
+    
     color: var(--twitter-blue);
 }
 
 #facebook-link{
-    background-color: var(--primary-white) ;
-    border-radius: 50%;
-    padding: .5rem;
-    margin: 1rem;
     color: var(--facebook-blue);
 }
 
 #instagram-link{
-    background-color: var(--primary-white) ;
-    border-radius: 50%;
-    padding: .5rem;
-    margin: 1rem;
     color: var(--instagram-red);
 }
 
