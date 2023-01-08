@@ -390,11 +390,17 @@ h1,h2 {
     font-size: 2rem;
     background-color: var(--primary-white) ;
     border-radius: 50%;
-    padding: 1.5rem;}
+    box-sizing: border-box;
+    border: dotted transparent .4rem;
+    padding: 1.5rem;
+    background-origin: border-box;
+    background-clip: border-box, padding-box;
+}
 
 #twitter-link{
     
     color: var(--twitter-blue);
+    background: conic-gradient( from var(---angle),blue 45deg, white 315deg);
 }
 
 #facebook-link{
