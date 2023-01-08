@@ -428,22 +428,19 @@ h2 {
         margin-top: 2rem;
     }
 
-    .social-icons-link:hover {
-        color: var(--primary-white);
-        border: solid .4rem;
-
-    }
-
     #twitter-link:hover {
         background-color: var(--twitter-blue);
+        color: var(--primary-white);
     }
 
 
     #facebook-link:hover {
         background-color: var(--facebook-blue);
+        color: var(--primary-white);
     }
 
     #instagram-link:hover {
         background-color: var(--instagram-red);
+        color: var(--primary-white);
     }
 }
