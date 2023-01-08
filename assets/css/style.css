@@ -383,6 +383,7 @@ h1,h2 {
 
 .social-icons-link {
     font-size: 2rem;
+    color: var(--primary-white);
 }
 
 #twitter{
