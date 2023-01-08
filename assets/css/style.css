@@ -385,28 +385,31 @@ h1,h2 {
 
 .social-icons-link {
     font-size: 2rem;
-    color: var(--primary-white);
+    /* color: var(--primary-white); */
 }
 
-#twitter{
-    background-color: var(--twitter-blue) ;
+#twitter-link{
+    background-color: var(--primary-white) ;
     border-radius: 50%;
-    padding: 1.5rem;
+    padding: .5rem;
     margin: 1rem;
+    color: var(--twitter-blue);
 }
 
-#facebook{
-    background-color: var(--facebook-blue) ;
+#facebook-link{
+    background-color: var(--primary-white) ;
     border-radius: 50%;
-    padding: 1.5rem;
+    padding: .5rem;
     margin: 1rem;
+    color: var(--facebook-blue);
 }
 
-#instagram{
-    background-color: var(--instagram-red) ;
+#instagram-link{
+    background-color: var(--primary-white) ;
     border-radius: 50%;
-    padding: 1.5rem;
+    padding: .5rem;
     margin: 1rem;
+    color: var(--instagram-red);
 }
 
 #check-container{
