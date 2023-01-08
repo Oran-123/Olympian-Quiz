@@ -125,10 +125,8 @@ h1,h2 {
     border-radius: .5rem;
     width: fit-content;
     padding: 2rem;
-    /* background-color: var(--accent-blue); */
     box-shadow: 0 0 1.6rem var(--accent-blue);    
-    background-image: url(../images/background2.jpg);
-    background-size: cover;
+    backdrop-filter: blur(15px);
     gap: 2rem; 
 
 }
