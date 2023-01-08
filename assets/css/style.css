@@ -10,7 +10,7 @@
     --instagram-red: #E4405F;
     --facebook-blue: #3b5998;
 
-    --angle: 0deg;
+    -webkit-margin-collapse: 45deg;
 }
 
 * {
@@ -390,18 +390,15 @@ h1,h2 {
     font-size: 2rem;
     background-color: var(--primary-white) ;
     border-radius: 50%;
-    box-sizing: border-box;
-    border: dotted transparent .4rem;
     padding: 1.5rem;
-    background-origin: border-box;
-    background-clip: border-box, padding-box;
+    border: solid .4rem;
+    
 }
 
 #twitter-link{
-    
     color: var(--twitter-blue);
-    background: conic-gradient( from var(---angle),blue 45deg, white 315deg);
 }
+
 
 #facebook-link{
     color: var(--facebook-blue);
@@ -410,6 +407,8 @@ h1,h2 {
 #instagram-link{
     color: var(--instagram-red);
 }
+
+
 
 #check-container{
     display: none;
