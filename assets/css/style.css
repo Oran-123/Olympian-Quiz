@@ -152,7 +152,9 @@ h2 {
 
 #how-to-play-title{}
 
-#btn--start-quiz{}
+#btn--start-quiz{
+    width: 100%;
+}
 
 /* general style of all modals */
 
