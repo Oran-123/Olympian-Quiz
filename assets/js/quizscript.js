@@ -1,31 +1,48 @@
+// Form Variables
+const usernameForm = document.getElementById("start-quiz-form")
+const homePageSections = document.querySelector("#quiz-signup")
+const userName = document.getElementById('uname').value
 
-const howToPlayCheck = document.querySelector("#check-container");
+// Home page section  
+const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
+
+// How to play content 
+const howToPlayCheck = document.querySelector("#check-container")
 const startBtn = document.getElementById("btn--start-quiz")
+const checkTitle = document.getElementById("how-to-play-title")
+const howToPlayTitle = document.getElementById('how-to-play-title')
+
+// Rules Modal
+const closeModal = document.querySelector("#button-close-results-modal")
+
+// Quiz questions
 const quizContent = document.getElementById("quiz-container")
 const questionElement = document.getElementById("question")
+
+// Quiz answesr
 const answersElement = document.getElementById("answer--btns")
+
+// Quiz Controls
 const nextButton = document.getElementById("next-btn")
 const nextButtonArea = document.getElementsByClassName("controls")
+
+// Quiz scorboard 
 const countDownTimer = document.getElementById("scoreboard")
 const timeRemaining = document.getElementById("time")
 const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
-const resultsModal = document.getElementById("results-modal")
-const usernameForm = document.getElementById("start-quiz-form")
-const homePageSections = document.querySelector("#quiz-signup")
-const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
-const checkTitle = document.getElementById("how-to-play-title")
-const userName = document.getElementById('uname').value
-const howToPlayTitle = document.getElementById('how-to-play-title')
-const closeModal = document.querySelector("#button-close-results-modal")
 
+// Results modal
+const resultsModal = document.getElementById("results-modal")
+
+// Game variable
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
 let incorrectCount = 0
 let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
-/* event listeners */
+// event listeners 
 usernameForm.addEventListener("submit", onFormSubmission)
 startBtn.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
@@ -35,7 +52,7 @@ nextButton.addEventListener("click", () => {
 closeModal.addEventListener("click",returnHome)
 
 
-/* retrieves questions and parses data to JS */ 
+// retrieves questions and parses data to JS
 
 fetch ("assets/data/questions.json") 
     .then (response => response.json())
