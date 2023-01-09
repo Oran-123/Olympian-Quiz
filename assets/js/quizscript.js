@@ -1,6 +1,6 @@
 // Form Variables
 const usernameFormField = document.querySelector("#start-quiz-form")
-const homePageSections = document.querySelector("#quiz-signup")
+const signupForm = document.querySelector("#quiz-signup")
 const userName = document.querySelector('#uname').value
 
 // Home page section  
@@ -67,7 +67,7 @@ fetch ("assets/data/questions.json")
 function onFormSubmission (submission) {
     submission.preventDefault()
     console.log("onSubmit form triggered") 
-    homePageSections.style.display= "none"
+    signupForm.style.display= "none"
     // homeButtons.style.display = "none"
     displayCheck()
     console.log(userName)
