@@ -260,8 +260,7 @@ h2 {
 
 #scoreboard {
     display: none;
-    justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     margin: auto 0;
 }
