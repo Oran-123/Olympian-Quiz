@@ -27,12 +27,12 @@ const nextButtonArea = document.querySelector("#controls")
 
 // Quiz scorboard 
 const countDownTimer = document.querySelector("#scoreboard")
-const timeRemaining = document.getElementById("time")
-const correctScore = document.getElementById("correct--answers")
-const incorrectScore = document.getElementById("incorrect--answers")
+const timeRemaining = document.querySelector("#time")
+const correctScore = document.querySelector("#correct--answers")
+const incorrectScore = document.querySelector("#incorrect--answers")
 
 // Results modal
-const resultsModal = document.getElementById("results-modal")
+const resultsModal = document.querySelector("#results-modal")
 
 // Game variable
 let resultsMessage = document.querySelector("#results-message")
