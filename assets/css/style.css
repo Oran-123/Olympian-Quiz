@@ -176,6 +176,7 @@ h2 {
     padding: 3rem;
     border-radius: 1rem;
     min-height: 50%;
+    min-width: 65%;
     padding: 2rem;
 }
 
@@ -184,7 +185,9 @@ h2 {
 #rules-modal {
     background-image: url(../images/rules-modal-image.jpeg);
     background-size: cover;
-    margin: auto 2rem;
+    margin: auto ;
+    width: 75%;
+
 }
 
 #how-to-play-list {
@@ -196,7 +199,6 @@ h2 {
     margin-left: 4rem;
     position: relative;
     left: 0;
-    width: 75%;
 }
 
 .how-to-play-list-item {
@@ -475,10 +477,6 @@ h2 {
 }
 
 @media only screen and (min-width:768px) {
-
-    #rules-modal {
-        margin: auto;
-    }
     
     .btn--container {
         display: flex;
