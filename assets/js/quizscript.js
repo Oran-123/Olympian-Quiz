@@ -8,9 +8,8 @@ const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
 
 // How to play content 
 const howToPlayCheck = document.querySelector("#check-container")
-const startBtn = document.getElementById("btn--start-quiz")
-const checkTitle = document.getElementById("how-to-play-title")
-const howToPlayTitle = document.getElementById('how-to-play-title')
+const startBtn = document.querySelector("#btn--start-quiz")
+const howToPlayTitle = document.querySelector("#how-to-play-title")
 
 // Rules Modal
 const closeModal = document.querySelector("#button-close-results-modal")
