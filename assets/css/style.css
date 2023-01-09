@@ -232,6 +232,8 @@ h2 {
     margin: auto 0;
 }
 
+#time{}
+
 #correct--answers {
     color: var(--accent-green);
     margin-left: 1rem;

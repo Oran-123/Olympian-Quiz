@@ -15,18 +15,18 @@ const howToPlayTitle = document.querySelector("#how-to-play-title")
 const closeModal = document.querySelector("#button-close-results-modal")
 
 // Quiz questions
-const quizContent = document.getElementById("quiz-container")
-const questionElement = document.getElementById("question")
+const quizContent = document.querySelector("#quiz-container")
+const questionElement = document.querySelector("#question")
 
 // Quiz answesr
-const answersElement = document.getElementById("answer--btns")
+const answersElement = document.querySelector("#answer--btns")
 
 // Quiz Controls
-const nextButton = document.getElementById("next-btn")
-const nextButtonArea = document.getElementsByClassName("controls")
+const nextButton = document.querySelector("#next-btn")
+const nextButtonArea = document.querySelector("#controls")
 
 // Quiz scorboard 
-const countDownTimer = document.getElementById("scoreboard")
+const countDownTimer = document.querySelector("#scoreboard")
 const timeRemaining = document.getElementById("time")
 const correctScore = document.getElementById("correct--answers")
 const incorrectScore = document.getElementById("incorrect--answers")
