@@ -393,8 +393,9 @@ h2 {
 
 #results-modal {
     background-image: url(../images/rules-modal-image.jpeg);
-    background-size: contain;
-    text-align: center;
+    background-size: cover;
+    margin: auto;
+    width: 75%;
 }
 
 #results-container {
