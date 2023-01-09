@@ -97,6 +97,7 @@ function startGame() {
     startTimer()
 }
 
+
 /**
  * Starts a timer
  * called during the start game function
