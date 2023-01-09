@@ -456,9 +456,7 @@ h2 {
 
 @media only screen and (min-width:768px) {
 
-    #rules-modal {
-        margin: auto;
-    }
+   
     
     .btn--container {
         display: flex;
