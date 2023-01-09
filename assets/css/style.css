@@ -287,12 +287,13 @@ h2 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 120rem;
+    max-width: 100rem;
+    width: 65%;
     padding: 2rem;
     background-color: var(--accent-blue);
     box-shadow: 0 0 1.6rem var(--accent-blue);
     border-radius: .5rem;
-    margin: auto 2rem;
+    margin: auto;
 }
 
 /* answers */
@@ -458,11 +459,6 @@ h2 {
 
     #rules-modal {
         margin: auto;
-    }
-
-    
-    #quiz-container{
-        margin: auto 2rem;
     }
     
     .btn--container {
