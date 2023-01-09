@@ -299,7 +299,7 @@ h2 {
 
 .btn--grid {
     display: grid;
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
     gap: 1rem;
     margin: 2rem 0;
 }
@@ -502,6 +502,10 @@ h2 {
    
     #check-container{
         margin: auto;
+    }
+
+    .btn--grid {
+        grid-template-columns: repeat(2, auto); 
     }
 
     
