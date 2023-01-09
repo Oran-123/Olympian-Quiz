@@ -15,9 +15,12 @@
 </head>
 
 <body>
+
+    <!-- header incliding logo -->
     <header class="header">
         <a href="index.html"><img class="logo" src="assets/images/olympic_rings.svg"></a>
     </header>
+    <!-- Quiz signup form -->
     <section id="quiz-signup" class="container">
         <h2 class="section-header">The Olympic Quiz</h2>
         <form id="start-quiz-form" method="get">
@@ -28,6 +31,7 @@
             <input class="btn" type="submit" value="Start Quiz">
         </form>
     </section>
+    <!-- More info section with Leaderboard and learn more buttons -->
     <section id="leaderboard--and--How-to-play" class="container">
         <h2 class="section-header">Further Information</h2>
         <div class="btn--container">
@@ -35,6 +39,7 @@
             <button type="button" class="btn" id="btn--leaderboard">Leaderboard</button>
         </div>
     </section>
+    <!-- Content to check if user understands the rules, intitially hdden -->
     <div id="check-container">
         <div id="how-to-play-check">
             <h2 id="how-to-play-title">Before you play!</h2>
@@ -46,6 +51,7 @@
             </div>
         </div>
     </div>
+    <!-- Rules modal -->
     <dialog id="rules-modal" class="modal">
         <H2 id="how-to-play-title">How to play the Olmypic Quiz!</H2>
         <ul id="how-to-play-list">
@@ -77,6 +83,7 @@
         </ul>
         <button id="button-close-rules-modal" class="btn">X</button>
     </dialog>
+    <!-- Quiz scoraboard and  timer -->
     <div id="scoreboard">
         <div id="countdown-timer">
             <p id="time">60s</p>
@@ -90,6 +97,7 @@
             <p id="incorrect--answers">0</p>
         </div>
     </div>
+    <!-- Quiz questions, answers and controls -->
     <div id="quiz-container">
         <div id="question-container">
             <div>
@@ -105,6 +113,7 @@
         <div id="controls">
             <button id="next-btn" class="next-btn--btn--hide">Next</button>
         </div>
+        <!-- Results of quiz -->
         <dialog id="results-modal" class="modal">
             <H2 id="results-modal-title">Time is up, Let's see how you did!</H2>
             <p id="results-message">well done you got questions correct!</p>
@@ -114,6 +123,7 @@
             </button>
         </dialog>
     </div>
+    <!-- Footer, including social media icons and links -->
     <footer class="footer">
         <ul class="social-icons-list">
             <li class="social-icons-list-item" id="twitter">
@@ -132,6 +142,7 @@
             </li>
         </ul>
     </footer>
+    <!-- script links -->
     <script src="https://kit.fontawesome.com/fe350ff5b2.js" crossorigin="anonymous"></script>
     <script src="assets/js/quizscript.js"></script>
     <script src="assets/js/howtoplaymodal.js"></script>
