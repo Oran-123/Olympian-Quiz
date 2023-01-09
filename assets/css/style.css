@@ -101,7 +101,7 @@ h2 {
 }
 
 .form-fields {
-    padding: .5rem;
+    padding: 1rem;
     margin: 1rem;
     width: 75%;
     border-radius: 1rem;
@@ -290,7 +290,6 @@ h2 {
     max-width: 100rem;
     width: 65%;
     padding: 2rem;
-    background-color: var(--accent-blue);
     border-radius: .5rem;
     margin: auto;
     box-shadow:
@@ -303,6 +302,7 @@ h2 {
         rgb(0 0 0 / 9%) 0px 16px 8px,
         rgb(0 0 0 / 9%) 0px 32px 16px;
     backdrop-filter: blur(15px);
+    min-height: 38rem;
 }
 
 /* answers */
