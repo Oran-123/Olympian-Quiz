@@ -265,6 +265,16 @@ h2 {
     margin: auto 0;
 }
 
+.pie{
+    width:3rem;
+    height: 3rem;
+    display: block;
+    border-radius: 50%;
+    border: .5rem var(--accent-blue);
+}
+
+
+
 #time{}
 
 #correct--answers {
