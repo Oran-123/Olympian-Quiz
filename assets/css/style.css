@@ -517,13 +517,15 @@ h2 {
         margin: auto;
     }
 
+    #quiz-container {
+        min-height: 23rem;
+        }
+
     .btn--grid {
         grid-template-columns: repeat(2, auto); 
     }
 
-    #how-to-play-check {
-    min-height: 23rem;
-    }
+    
 
     
 }
