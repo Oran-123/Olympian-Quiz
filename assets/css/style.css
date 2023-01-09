@@ -113,11 +113,11 @@ h2 {
 
 }
 
+/*section with buttons to access the quiz rules and leaderboard*/ 
+
 #leaderboard--and--How-to-play {
     display: none;
 }
-
-/* div that contains the two buttons How to play and Leaderboard */
 
 .btn--container {
     display: flex;
@@ -154,6 +154,21 @@ h2 {
 
 #btn--start-quiz{}
 
+/* general style of all modals */
+
+.modal {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    text-align: left;
+    padding: 3rem;
+    border-radius: 1rem;
+    min-height: 50%;
+    padding: 2rem;
+}
+
+/*modal  that contains the quiz rules */ 
+
 #rules-modal {
     background-image: url(../images/rules-modal-image.jpeg);
     background-size: cover;
@@ -182,6 +197,8 @@ h2 {
     margin: auto 0;
 }
 
+/*icons in the rules list*/ 
+
 #wrong-icon {
     color: var(--accent-red);
     font-size: 3rem;
@@ -205,6 +222,8 @@ h2 {
 .check-text {
     text-align: center;
 }
+
+/*close button on rules modal*/ 
 
 #button-close-rules-modal {
     min-width: 25%;
@@ -337,18 +356,7 @@ h2 {
     justify-content: center;
 }
 
-/* modal style for both the results modal and how to play modal */
-
-.modal {
-    flex-direction: column;
-    justify-content: space-between;
-    margin: auto;
-    text-align: left;
-    padding: 3rem;
-    border-radius: 1rem;
-    min-height: 50%;
-    padding: 2rem;
-}
+/*results modal*/
 
 #results-modal {
     background-image: url(../images/rules-modal-image.jpeg);
@@ -362,11 +370,15 @@ h2 {
     justify-content: space-evenly;
 }
 
+/*message and icon that change depending on result*/ 
+
 #results-message {}
 
 #results-icon {
     font-size: 3rem;
 }
+
+/*results modal close button*/ 
 
 #button-close-results-modal {
     border: .1rem;
