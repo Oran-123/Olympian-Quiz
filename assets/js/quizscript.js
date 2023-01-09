@@ -1,5 +1,5 @@
 // Form Variables
-const usernameForm = document.getElementById("start-quiz-form")
+const usernameForm = document.querySelector("#start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
 const userName = document.getElementById('uname').value
 
