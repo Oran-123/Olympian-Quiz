@@ -1,7 +1,7 @@
 // Form Variables
-const usernameForm = document.querySelector("#start-quiz-form")
+const usernameFormField = document.querySelector("#start-quiz-form")
 const homePageSections = document.querySelector("#quiz-signup")
-const userName = document.getElementById('uname').value
+const userName = document.querySelector('#uname').value
 
 // Home page section  
 const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
@@ -43,7 +43,7 @@ let startingTime = 60
 let shuffledQuestions, currentQuestionIndex
 
 // event listeners 
-usernameForm.addEventListener("submit", onFormSubmission)
+usernameFormField.addEventListener("submit", onFormSubmission)
 startBtn.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
