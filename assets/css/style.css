@@ -329,7 +329,7 @@ h2 {
 
 /* div that contains the next button */
 
-.controls {
+#controls {
     display: flex;
     align-items: center;
     justify-content: center;
