@@ -110,7 +110,7 @@ h2 {
 }
 
 #uname{
-    
+
 }
 
 #leaderboard--and--How-to-play {
@@ -148,6 +148,10 @@ h2 {
     backdrop-filter: blur(15px);
     gap: 2rem;
 
+}
+
+#btn--start-quiz{
+    
 }
 
 #rules-modal {
