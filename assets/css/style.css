@@ -235,10 +235,8 @@ h2 {
 #scoreboard {
     display: none;
     flex-direction: row;
-    gap:4rem;
+    gap:2rem;
     padding: 1rem;
-    width: 65%;
-    justify-content: space-around;
 }
 
 #score-container{
@@ -254,6 +252,7 @@ h2 {
     border-radius: 1rem;
     box-shadow: inset 0px 0px 10px 2px var(--primary-black);
     width: 100%;
+    text-align: center;
 
 }
 
@@ -555,9 +554,10 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         grid-template-columns: repeat(2, auto); 
     }
 
-    
+    #scoreboard {
+        gap: 4rem;
+        width: 65%;
+        justify-content: space-around;
+    }
 
-    
-
-    
 }
