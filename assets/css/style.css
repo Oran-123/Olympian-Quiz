@@ -235,9 +235,10 @@ h2 {
 #scoreboard {
     display: none;
     flex-direction: row;
-    margin: auto;
     gap:4rem;
     padding: 1rem;
+    width: 65%;
+    justify-content: space-around;
 }
 
 #score-container{
