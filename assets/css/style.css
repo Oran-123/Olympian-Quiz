@@ -485,6 +485,12 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 }
 
 @media only screen and (min-width:992px) { 
+
+    #how-to-play-list {
+        margin-left: 4rem;
+        width: 75%;
+    }
+    
    
 }
 
@@ -567,11 +573,6 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
    
     #check-container{
         margin: auto;
-    }
-
-    #how-to-play-list {
-        margin-left: 4rem;
-        width: 75%;
     }
     
 
