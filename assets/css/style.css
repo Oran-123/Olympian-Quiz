@@ -490,12 +490,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         margin-left: 4rem;
         width: 75%;
     }
-    
-   
-}
 
-@media only screen and (min-width:768px) {
-    
     #rules-modal {
         background-image: url(../images/rules-modal-image.jpeg);
         background-size: cover;
@@ -505,7 +500,13 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         background-image: url(../images/rules-modal-image.jpeg);
         background-size: cover;   
     }
+    
+   
+}
 
+@media only screen and (min-width:768px) {
+    
+   
     .btn--container {
         display: flex;
         flex-direction: row;
