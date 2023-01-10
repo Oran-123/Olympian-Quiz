@@ -499,24 +499,22 @@ h2 {
     #btn--start-quiz{
         width: initial;
     }
-
-    .social-icons-link {
-        background-color: var(--primary-white);
-        
-    
-    }
     
     #twitter-link {
         color: var(--twitter-blue);
+        background-color: var(--primary-white);
+
     }
     
     
     #facebook-link {
         color: var(--facebook-blue);
+        background-color: var(--primary-white);
     }
     
     #instagram-link {
         color: var(--instagram-red);
+        background-color: var(--primary-white);
     }
 
     #twitter-link:hover {
