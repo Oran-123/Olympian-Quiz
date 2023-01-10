@@ -359,11 +359,6 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     color: var(--primary-black);
 }
 
-.question--btn:hover {
-    box-shadow: 0 0 .5rem var(--primary-black);
-    transform: translateY(-.5rem);
-}
-
 .question--btn--correct {
     box-shadow: 0 0 .5rem var(--accent-green);
     border-radius: .5rem;
@@ -514,6 +509,11 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 
     .btn:active {
         transform: translateY(.5rem);
+    }
+
+    .question--btn:hover {
+        box-shadow: 0 0 .5rem var(--primary-black);
+        transform: translateY(-.5rem);
     }
 
     #next-btn:active {
