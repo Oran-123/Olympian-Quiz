@@ -410,6 +410,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 #results-modal-container{
     display: flex;
     flex-direction: column;
+    gap: 5rem;
 }
 
 #results-container {
