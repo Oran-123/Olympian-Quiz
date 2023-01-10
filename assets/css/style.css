@@ -279,13 +279,14 @@ box-shadow: inset 0px 0px 10px 2px black;
 #incorrect-answer-container {
 background-color: var(--accent-red);
 padding: 2rem;
-box-shadow:inset 0px 0px 10px 2px black;
+box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 }
 
 .answers {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-shadow: 3px 3px 1rem 1rem var(--primary-white);
     color: var(--primary-white);
     font-size: 2rem;
     padding: 1rem;
