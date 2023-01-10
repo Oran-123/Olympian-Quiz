@@ -263,25 +263,31 @@ h2 {
     display: none;
     flex-direction: column;
     text-align: center;
-    margin: auto 0;
+    margin: auto;
+    width: 65%;
 }
 
 #time{}
 
-#correct--answers {
-    color: var(--accent-green);
-    margin-left: 1rem;
+#correct-answer-container {
+background-color: var(--accent-green);
+padding: 2rem;
+
 }
 
-#incorrect--answers {
-    color: var(--accent-red);
-    margin-left: 1rem;
+#incorrect-answer-container {
+background-color: var(--accent-red);
+padding: 2rem;
 }
 
 .answers {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    color: var(--primary-white);
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 15%;
 }
 
 #score-container{
