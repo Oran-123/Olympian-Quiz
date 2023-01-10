@@ -302,6 +302,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     box-shadow: inset 0px 0px 10px 2px black;
     backdrop-filter: blur(15px) contrast(70%);
     min-height: 38rem;
+    gap: 3rem;
 }
 
 /* answers */
