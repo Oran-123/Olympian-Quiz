@@ -199,6 +199,9 @@ function deductTime() {
 highlightDeductedTime()
 }
 
+/**
+ * highlights when time is deducted
+ */
 function highlightDeductedTime() {
     let originalColor = timeRemaining.style.color; 
     let originalBackgroundColor = timeRemaining.style.backgroundColor;
