@@ -261,13 +261,29 @@ h2 {
 
 #scoreboard {
     display: none;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
     margin: auto;
-    width: 65%;
+    gap:4rem;
+    align-items: center;
+    border: outset;
+    background-color: gainsboro;
+    padding: 1rem;
+    box-shadow: 0 0 1rem .5rem gainsboro;
 }
 
-#time{}
+#score-container{
+    display: flex;
+    gap: 2rem;
+}
+
+#time{
+    font-size: 4rem;
+    color: var(--primary-white);
+    background-color: grey;
+    padding: 1rem;
+    border-radius: 15%;
+    box-shadow: inset 0px 0px 10px 2px var(--primary-black);
+}
 
 #correct-answer-container {
 background-color: var(--accent-green);
@@ -293,14 +309,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     border-radius: 15%;
 }
 
-#score-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 5rem;
-}
+
 
 /*Question text*/
 
