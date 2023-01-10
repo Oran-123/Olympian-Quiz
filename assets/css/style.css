@@ -428,7 +428,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 #results-message {}
 
 #results-icon {
-    font-size: 3rem;
+    font-size: 12rem;
 }
 
 /*results modal close button*/ 
