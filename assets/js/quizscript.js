@@ -223,8 +223,15 @@ function clearHighlightedAnswer(element) {
  */
 function openResultsModal() {
     resultsModal.showModal()
-    // resultsModal.style.display = "flex"
-    resultsMessage.innerHTML = `well done you got ${correctCount} questions correct!`
+    if (correctCount <= 5) {
+    resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
+    }  else if (correctCount > 5 ){
+        resultsMessage.innerHTML = `Well done you did better then average but there is still room to improve, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
+    } else if (correctCount > 10){
+        resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
+
+    }
+
 }
 
 function returnHome() {
