@@ -67,10 +67,6 @@ h2 {
     cursor: pointer;
 }
 
-.btn:active {
-    transform: translateY(.5rem);
-}
-
 .container {
     margin: auto 0;
 }
@@ -514,6 +510,10 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 
     #btn--start-quiz{
         width: initial;
+    }
+
+    .btn:active {
+        transform: translateY(.5rem);
     }
 
     #next-btn:active {
