@@ -236,11 +236,7 @@ h2 {
     flex-direction: row;
     margin: auto;
     gap:4rem;
-    align-items: center;
-    border: outset;
-    background-color: gainsboro;
     padding: 1rem;
-    box-shadow: 0 0 1rem .5rem gainsboro;
 }
 
 #score-container{
