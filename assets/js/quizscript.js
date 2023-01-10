@@ -225,7 +225,7 @@ function clearHighlightedAnswer(element) {
  */
 function openResultsModal() {
     resultsModal.showModal()
-    resultsModal.style.display = "flex"
+    // resultsModal.style.display = "flex"
     resultsMessage.innerHTML = `well done you got ${correctCount} questions correct!`
 }
 

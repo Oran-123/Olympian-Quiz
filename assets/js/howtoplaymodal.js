@@ -12,7 +12,6 @@ const rulesModal = document.getElementById("rules-modal")
 openModalButton.addEventListener("click", () => { 
     console.log("rules modal open")
     rulesModal.showModal()  
-    rulesModal.style.display= "flex"
 })
 
 /**
@@ -21,5 +20,4 @@ openModalButton.addEventListener("click", () => {
  */
 closeModalButton.addEventListener("click", () => {
     rulesModal.close() 
-    rulesModal.style.display= "none"
 })
