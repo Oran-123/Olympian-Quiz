@@ -196,6 +196,21 @@ function deductTime() {
     } else {
     startingTime = (startingTime-5)
 }
+highlightDeductedTime()
+}
+
+function highlightDeductedTime() {
+    let originalColor = timeRemaining.style.color; 
+    let originalBackgroundColor = timeRemaining.style.backgroundColor;
+    let originalTimeRemaining = timeRemaining.text
+    timeRemaining.style.backgroundColor = "var(--accent-red)"
+    timeRemaining.style.color="var(--primary-white)"
+    timeRemaining.innerHTML = `- 5s`
+    setTimeout(function(){
+        timeRemaining.style.color = originalColor;
+        timeRemaining.style.backgroundColor = originalBackgroundColor;
+        timeRemaining = originalTimeRemaining
+    },1000);
 }
 
 /** 
