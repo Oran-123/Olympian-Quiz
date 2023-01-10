@@ -177,10 +177,7 @@ h2 {
 
 /*modal  that contains the quiz rules */ 
 
-#rules-modal {
-    background-image: url(../images/rules-modal-image.jpeg);
-    background-size: cover;
-}
+
 
 #how-to-play-list {
     list-style-type: none;
@@ -500,6 +497,11 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 }
 
 @media only screen and (min-width:768px) {
+    
+    #rules-modal {
+        background-image: url(../images/rules-modal-image.jpeg);
+        background-size: cover;
+    }
     
     .btn--container {
         display: flex;
