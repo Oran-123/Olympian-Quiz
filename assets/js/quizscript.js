@@ -122,7 +122,7 @@ function startTimer() {
  */
 function setNextQuestion() {
     console.log("set next question function called successfully")
-    resetState()
+    resetQuiz()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
@@ -146,7 +146,7 @@ function showQuestion(question) {
 /**
  * Removes previous answers  
  */
-function resetState() {
+function resetQuiz() {
     nextButton.classList.add("hide")
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
