@@ -205,6 +205,7 @@ h2 {
 #time-icon {
     color: var(--primary-black);
     font-size: 3rem;
+
 }
 
 .check-text {
@@ -249,8 +250,10 @@ h2 {
     color: var(--primary-white);
     background-color: grey;
     padding: 1rem;
-    border-radius: 15%;
+    border-radius: 1rem;
     box-shadow: inset 0px 0px 10px 2px var(--primary-black);
+    width: 100%;
+
 }
 
 #correct-answer-container {
