@@ -404,6 +404,12 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     background-size: cover;
     margin: auto;
     width: 75%;
+    max-width: 55rem;
+}
+
+#results-modal-container{
+    display: flex;
+    flex-direction: column;
 }
 
 #results-container {
