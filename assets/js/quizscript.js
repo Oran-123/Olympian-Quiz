@@ -39,6 +39,7 @@ let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
 let incorrectCount = 0
 let startingTime = 60
+let quizAward = document.querySelector("#results-icon")
 let shuffledQuestions, currentQuestionIndex
 
 // event listeners 
@@ -67,7 +68,6 @@ function onFormSubmission (submission) {
     submission.preventDefault()
     console.log("onSubmit form triggered") 
     signupForm.style.display= "none"
-    // homeButtons.style.display = "none"
     displayCheck()
     console.log(userName)
 }
@@ -225,11 +225,13 @@ function openResultsModal() {
     resultsModal.showModal()
     if (correctCount <= 5) {
     resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
-    }  else if (correctCount > 5 ){
+    quizAward.style.color= "#967444"
+} else if (correctCount > 5 ){
         resultsMessage.innerHTML = `Well done you did better then average but there is still room to improve, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
+        quizAward.style.color= "#CCCCCC"
     } else if (correctCount > 10){
         resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
-
+        quizAward.style.color= "##E69900"
     }
 
 }
