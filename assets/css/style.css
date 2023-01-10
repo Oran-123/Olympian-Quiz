@@ -496,11 +496,6 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         background-size: cover;
     }
 
-    #results-modal {
-        background-image: url(../images/rules-modal-image.jpeg);
-        background-size: cover;   
-    }
-    
    
 }
 
