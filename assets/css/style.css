@@ -197,7 +197,6 @@ h2 {
     flex-direction: column;
     justify-content: space-around;
     min-height: 50%;
-    margin-left: 4rem;
     position: relative;
     left: 0;
 }
@@ -527,6 +526,11 @@ h2 {
         margin: auto;
     }
 
+    #how-to-play-list {
+        margin-left: 4rem;
+    }
+    
+
     #quiz-container {
         min-height: 23rem;
         }
@@ -534,6 +538,8 @@ h2 {
     .btn--grid {
         grid-template-columns: repeat(2, auto); 
     }
+
+    
 
     
 
