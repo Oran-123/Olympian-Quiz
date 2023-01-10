@@ -97,7 +97,6 @@ function startGame() {
     startTimer()
 }
 
-
 /**
  * Starts a timer
  * called during the start game function
@@ -210,7 +209,6 @@ function highlightAnswer(button, correct) {
         button.classList.add("question--btn--incorrect")
     }
 }
-
 
 /**
  * Sets default style to answers after the next button is selected
