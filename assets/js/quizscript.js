@@ -157,8 +157,8 @@ function resetState() {
 /**
  * for the div currently select calls the function setStatusClass 
  */
-function selectAnswer(e) {
-    let selectedButton = e.target
+function selectAnswer(buttonClicked) {
+    let selectedButton = buttonClicked.target
     let correct = selectedButton.dataset.correct
     highlightAnswer(selectedButton, correct)
     if (correct) {
