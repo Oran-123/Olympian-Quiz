@@ -198,7 +198,7 @@ h2 {
     justify-content: space-around;
     min-height: 50%;
     position: relative;
-    left: 0;
+    margin: 3rem 0;
 }
 
 .how-to-play-list-item {
