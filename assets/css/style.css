@@ -448,7 +448,7 @@ h2 {
 
 .social-icons-link {
     font-size: 2rem;
-    background-color: var(--primary-white);
+    color: var(--primary-white);
     border-radius: 50%;
     padding: 1.5rem;
     border: solid .4rem;
@@ -456,16 +456,16 @@ h2 {
 }
 
 #twitter-link {
-    color: var(--twitter-blue);
+    background-color: var(--twitter-blue);
 }
 
 
 #facebook-link {
-    color: var(--facebook-blue);
+    background-color: var(--facebook-blue);
 }
 
 #instagram-link {
-    color: var(--instagram-red);
+    background-color: var(--instagram-red);
 }
 
 #check-container {
@@ -498,6 +498,25 @@ h2 {
 
     #btn--start-quiz{
         width: initial;
+    }
+
+    .social-icons-link {
+        background-color: var(--primary-white);
+        
+    
+    }
+    
+    #twitter-link {
+        color: var(--twitter-blue);
+    }
+    
+    
+    #facebook-link {
+        color: var(--facebook-blue);
+    }
+    
+    #instagram-link {
+        color: var(--instagram-red);
     }
 
     #twitter-link:hover {
