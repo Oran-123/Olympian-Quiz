@@ -272,12 +272,14 @@ h2 {
 #correct-answer-container {
 background-color: var(--accent-green);
 padding: 2rem;
+box-shadow: inset 0px 0px 10px 2px black;
 
 }
 
 #incorrect-answer-container {
 background-color: var(--accent-red);
 padding: 2rem;
+box-shadow:inset 0px 0px 10px 2px black;
 }
 
 .answers {
