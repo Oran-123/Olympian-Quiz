@@ -396,9 +396,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     border-radius: .5rem;
 }
 
-#next-btn:active {
-    transform: translateY(.5rem);
-}
+
 
 /* div that contains the next button */
 
@@ -516,6 +514,10 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 
     #btn--start-quiz{
         width: initial;
+    }
+
+    #next-btn:active {
+        transform: translateY(.5rem);
     }
     
     #twitter-link {
