@@ -298,15 +298,21 @@ Eeach of the results messages will include three of the same variables
 
 #### Below 5 
 
-The icon presented to the user will be bronze and the message will encourage the user to brush up on their knowledge of the Olympic games 
+The icon presented to the user will be bronze and the message will encourage the user to brush up on their knowledge of the Olympic games
+
+![results modal with a score below 5](images-readme/results-modal-bronze.png)
 
 #### Between 5 and 10 
 
 The icon presented to the user will be silver and the message will congratulate the user for getting a respectable score 
 
+![results modal with a score between 5-10](images-readme/results-modal-silver.png)
+
 #### Above 10 
 
 The icon presented to the user will be gold and the message will congratulate the user for getting an impressive score 
+
+![results modal with a score above 10](images-readme/results-modal-gold.png)
 
 ### Social media icons 
 
