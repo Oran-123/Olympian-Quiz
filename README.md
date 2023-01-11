@@ -1,3 +1,4 @@
+![Goals for this project image](assets/images/olympic_rings.svg)
 
 # Goal For This Project 
 
@@ -141,6 +142,8 @@ The wireframes are below:
 ## Existing Features 
 
 ### Logo with link back to home page 
+
+
 
 ### Hero image zoom 
 
