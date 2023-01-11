@@ -79,7 +79,8 @@ function displayCheck() {
 
 /**
  * Hides/displays content when the quiz is started 
- * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.
+ * function inspired by 
+ * https://sebhastian.com/javascript-show-hide-div-onclick-toggle/
  * */
 function startGame() {
     quizContent.style.display = `flex`
