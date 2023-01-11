@@ -66,10 +66,8 @@ fetch ("assets/data/questions.json")
  */
 function hideQuizSignup (submission) {
     submission.preventDefault()
-    console.log("onSubmit form triggered") 
     signupSectionRef.style.display= "none"
     displayCheck()
-    console.log(userNameValueRef)
 }
 
 /**
@@ -87,7 +85,6 @@ function displayCheck () {
  * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.
  * */
 function startGame() {
-    console.log("start quiz button clicked")
     quizContent.style.display = "flex"
     checkContainerRef.style.display = "none";
     countDownTimer.style.display = "flex"
@@ -121,7 +118,6 @@ function startTimer() {
  * Shows random next question 
  */
 function setNextQuestion() {
-    console.log("set next question function called successfully")
     resetQuiz()
     showQuestion(shuffledQuestions[currentQuestionIndex])
 }
@@ -182,7 +178,6 @@ function countCorrectAnswers() {
  */
 
 function countIncorrectAnswers() {
-    console.log("incorrect count function called")
     incorrectCount++
     incorrectScore.innerHTML = incorrectCount
 }
