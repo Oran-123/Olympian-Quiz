@@ -207,6 +207,22 @@ The modal and its contents, like the close button, scale in size depending on th
 
 ### Social media icons 
 
+The site's footer remains uncluttered and includes only the social media icons and links for the three platforms:
+
+1. Facebook
+2. Twitter
+3. Instagram
+
+Clicking on any of the icons will link you to that specific social media site in a new tab
+
+#### Medium to Large Screens 
+
+The social media icons will change colour if the user hovers over the icon. The colours will invert. The background colour will change to white, and the font colour will change to the original colour of the background. 
+
+#### Small Screens
+
+The default style of the icons on smaller devices is the inverted style on larger devices.  It would be incorrect to apply the hover effect on mobile devices because once it is used, the user can only remove it by refreshing the page, creating a poor user experience. 
+
 ### Check if the user understands the rules 
 
 ### Questions displayed
