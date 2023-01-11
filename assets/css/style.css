@@ -113,11 +113,11 @@ h2 {
 
 /*section with buttons to access the quiz rules and leaderboard*/ 
 
-#leaderboard--and--How-to-play {
+#leaderboard-and-How-to-play {
     display: none;
 }
 
-.btn--container {
+.btn-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,7 +142,7 @@ h2 {
 
 #how-to-play-title{}
 
-#btn--start-quiz{
+#btn-start-quiz{
     width: 100%;
 }
 
@@ -308,16 +308,16 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 
 /* answers */
 
-.btn--grid {
+.btn-grid {
     display: grid;
     grid-template-columns: repeat(1, auto);
     gap: 1rem;
     margin: 2rem 0;
 }
 
-#answer--btns{}
+#answer-btns{}
 
-.question--btn {
+.question-btn {
     background-color: var(--primary-white);
     box-shadow: 0 0 .5rem var(--primary-white);
     border-radius: .5rem;
@@ -325,7 +325,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     color: var(--primary-black);
 }
 
-.question--btn--correct {
+.question-btn-correct {
     box-shadow: 0 0 .5rem var(--accent-green);
     border-radius: .5rem;
     padding: 1rem;
@@ -334,7 +334,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     pointer-events: none;
 }
 
-.question--btn--incorrect {
+.question-btn-incorrect {
     box-shadow: 0 0 .5rem var(--accent-red);
     border-radius: .5rem;
     padding: 1rem;
@@ -476,7 +476,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
 @media only screen and (min-width:768px) {
     
    
-    .btn--container {
+    .btn-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -492,7 +492,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         transform: translateY(.5rem);
     }
 
-    .question--btn:hover {
+    .question-btn:hover {
         box-shadow: 0 0 .5rem var(--primary-black);
         transform: translateY(-.5rem);
     }
@@ -550,7 +550,7 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         min-height: 23rem;
         }
 
-    .btn--grid {
+    .btn-grid {
         grid-template-columns: repeat(2, auto); 
     }
 
