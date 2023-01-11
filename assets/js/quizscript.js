@@ -33,7 +33,7 @@ const resultsModal = document.querySelector(`#results-modal`)
 
 // Game varriables
 let resultsMessage = document.querySelector(`#results-message`)
-let correctCount = 0 
+let correctCount = 0
 let incorrectCount = 0
 let startingTime = 60
 let quizAward = document.querySelector(`#results-icon`)
@@ -41,7 +41,7 @@ let shuffledQuestions
 let currentQuestionIndex
 
 //Scoreboard varriables 
-let originalColor = timeRemaining.style.color; 
+let originalColor = timeRemaining.style.color;
 let originalBackgroundColor = timeRemaining.style.backgroundColor;
 let originalTimeRemaining = timeRemaining.textContent
 
@@ -52,32 +52,29 @@ nextButton.addEventListener(`click`, () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-closeModal.addEventListener(`click`,returnHome)
-
+closeModal.addEventListener(`click`, returnHome)
 
 // retrieves questions and parses data to JS
 
-fetch (`assets/data/questions.json`) 
-    .then (response => response.json())
-    .then (data => questions = data)
+fetch(`assets/data/questions.json`)
+    .then(response => response.json())
+    .then(data => questions = data)
 
 /**
  * hides the signup form on submission
  */
-function hideQuizSignup (submission) {
+function hideQuizSignup(submission) {
     submission.preventDefault()
-    signupSectionRef.style.display= `none`
+    signupSectionRef.style.display = `none`
     displayCheck()
 }
 
 /**
  * asks if the player has read the rules  
  */
-function displayCheck () {
+function displayCheck() {
     checkContainerRef.style.display = `flex`;
-    
     howToPlayTitleRef.innerHTML = `${userNameValueRef} Before you play!`
-
 }
 
 /**
@@ -100,7 +97,7 @@ function startGame() {
  * timer inspired by https://stackoverflow.com/questions/10541609/make-a-countdown-from-timer
  */
 function startTimer() {
-    const countDownTimer =setInterval(function () {
+    const countDownTimer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + `s`;
         if (startingTime < 15) {
@@ -176,7 +173,6 @@ function countCorrectAnswers() {
 /**
  * Counts and displays incorrect answers 
  */
-
 function countIncorrectAnswers() {
     incorrectCount++
     incorrectScore.innerHTML = incorrectCount
@@ -189,26 +185,23 @@ function deductTime() {
     if (startingTime < 5) {
         startingTime = startingTime - (startingTime - 1)
     } else {
-    startingTime = (startingTime-5)
-}
-highlightDeductedTime()
+        startingTime = (startingTime - 5)
+    }
+    highlightDeductedTime()
 }
 
 /**
  * highlights when time is deducted
  */
-
-
-
 function highlightDeductedTime() {
     timeRemaining.style.backgroundColor = `var(--accent-red)`
-    timeRemaining.style.color=`var(--primary-white)`
+    timeRemaining.style.color = `var(--primary-white)`
     timeRemaining.innerHTML = `- 5s`
-    setTimeout(function(){
+    setTimeout(function () {
         timeRemaining.style.color = originalColor;
         timeRemaining.style.backgroundColor = originalBackgroundColor;
         timeRemaining = originalTimeRemaining
-    },1000);
+    }, 1000);
 }
 
 /** 
@@ -227,7 +220,7 @@ function highlightAnswer(button, correct) {
  * Sets default style to answers after the next button is selected
  */
 function clearHighlightedAnswer(button) {
-    button.classList.remove(`question-btn-correct`,`question-btn-incorrect`)
+    button.classList.remove(`question-btn-correct`, `question-btn-incorrect`)
 }
 
 /**
@@ -237,34 +230,27 @@ function openResultsModal() {
     resultsModal.showModal()
     if (correctCount <= 5) {
 
-    resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> 
+        resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> 
     questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-    quizAward.style.color= `#967444`
+        quizAward.style.color = `#967444`
 
-} else if (correctCount > 5 && correctCount < 10 ){
+    } else if (correctCount > 5 && correctCount < 10) {
 
         resultsMessage.innerHTML = `Well done you did better then average but there is still room to improve, you got <strong>${correctCount}</strong> 
         questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-        quizAward.style.color= `#CCCCCC`
+        quizAward.style.color = `#CCCCCC`
 
-    } else if (correctCount >= 10){
+    } else if (correctCount >= 10) {
 
         resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost 
         <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-        quizAward.style.color= `#E69900`
+        quizAward.style.color = `#E69900`
     }
-
 }
 
 function returnHome() {
-    window.location=(`index.html`)
+    window.location = (`index.html`)
 }
-
-
-
-
-
-
