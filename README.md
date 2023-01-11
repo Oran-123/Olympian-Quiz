@@ -268,13 +268,13 @@ Once an answer is selected it is disabled and cannot be selected again, this pre
 
 On a large screen the questions are presented to the user in a 2 x 2 grid. The buttons also have an active pseudo effect applied so it looks like the user is pressing button down when they click. 
 
-![answers on a large screen ]()
+![answers on a large screen ](images-readme/answers-large-screen.png)
 
 #### Medium to Small Screens 
 
 On a small to medium screens the questions are presented to the user in a single column 
 
-![answers on a small to medium screens ]()
+![answers on a small to medium screens ](images-readme/answers-small%20screen.png)
 
 ### Next button 
 
