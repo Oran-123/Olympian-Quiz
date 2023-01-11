@@ -59,10 +59,7 @@ closeModal.addEventListener("click",returnHome)
 
 fetch ("assets/data/questions.json") 
     .then (response => response.json())
-    .then (data => {
-          questions = data
-          console.log(questions)
-    })
+    .then (data => questions = data)
 
 /**
  * hides the signup form on submission
