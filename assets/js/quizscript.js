@@ -1,22 +1,22 @@
 // Form Variables
-const usernameFormField = document.querySelector("#start-quiz-form")
-const signupForm = document.querySelector("#quiz-signup")
-const userName = document.querySelector('#uname').value
+const signupFormRef = document.querySelector("#start-quiz-form")
+const signupSectionRef = document.querySelector("#quiz-signup")
+const userNameValueRef = document.querySelector('#uname').value
 
 // How to play content 
-const howToPlayCheck = document.querySelector("#check-container")
-const startBtn = document.querySelector("#btn-start-quiz")
-const howToPlayTitle = document.querySelector("#how-to-play-title")
+const checkContainerRef = document.querySelector("#check-container")
+const quizStartButtonRef = document.querySelector("#btn-start-quiz")
+const howToPlayTitleRef = document.querySelector("#how-to-play-title")
 
 // Rules Modal
 const closeModal = document.querySelector("#button-close-results-modal")
 
 // Quiz questions
 const quizContent = document.querySelector("#quiz-container")
-const questionElement = document.querySelector("#question")
+const questionText = document.querySelector("#question")
 
 // Quiz answesr
-const answersElement = document.querySelector("#answer-btns")
+const answerButtonRef = document.querySelector("#answer-btns")
 
 // Quiz Controls
 const nextButton = document.querySelector("#next-btn")
@@ -37,7 +37,8 @@ let correctCount = 0
 let incorrectCount = 0
 let startingTime = 60
 let quizAward = document.querySelector("#results-icon")
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions
+let currentQuestionIndex
 
 //Scoreboard varriables 
 let originalColor = timeRemaining.style.color; 
@@ -45,8 +46,8 @@ let originalBackgroundColor = timeRemaining.style.backgroundColor;
 let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
-usernameFormField.addEventListener("submit", onFormSubmission)
-startBtn.addEventListener("click", startGame)
+signupFormRef.addEventListener("submit", onFormSubmission)
+quizStartButtonRef.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
     setNextQuestion()
@@ -69,18 +70,18 @@ fetch ("assets/data/questions.json")
 function onFormSubmission (submission) {
     submission.preventDefault()
     console.log("onSubmit form triggered") 
-    signupForm.style.display= "none"
+    signupSectionRef.style.display= "none"
     displayCheck()
-    console.log(userName)
+    console.log(userNameValueRef)
 }
 
 /**
  * asks if the player has read the rules  
  */
 function displayCheck () {
-    howToPlayCheck.style.display = "flex";
+    checkContainerRef.style.display = "flex";
     
-    howToPlayTitle.innerHTML = `${userName} Before you play!`
+    howToPlayTitleRef.innerHTML = `${userNameValueRef} Before you play!`
 
 }
 
@@ -91,7 +92,7 @@ function displayCheck () {
 function startGame() {
     console.log("start quiz button clicked")
     quizContent.style.display = "flex"
-    howToPlayCheck.style.display = "none";
+    checkContainerRef.style.display = "none";
     countDownTimer.style.display = "flex"
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
@@ -132,7 +133,7 @@ function setNextQuestion() {
  * Displays answers for each button
  */
 function showQuestion(question) {
-    questionElement.innerText = question.question
+    questionText.innerText = question.question
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
@@ -141,7 +142,7 @@ function showQuestion(question) {
             button.dataset.correct = answer.correct
         }
         button.addEventListener("click", selectAnswer)
-        answersElement.appendChild(button)
+        answerButtonRef.appendChild(button)
     });
 }
 
