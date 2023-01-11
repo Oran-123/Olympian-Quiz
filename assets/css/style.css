@@ -343,6 +343,15 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     pointer-events: none;
 }
 
+#question-btn-1{}
+#question-btn-2{}
+#question-btn-3{}
+#question-btn-4{}
+
+.disable-button{
+    pointer-events: none;
+}
+
 /*next button that appears under the answer buttons */
 
 #next-btn {
@@ -352,8 +361,6 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
     box-shadow: 0 0 .5rem var(--primary-white);
     border-radius: .5rem;
 }
-
-
 
 /* div that contains the next button */
 
@@ -469,9 +476,9 @@ box-shadow:inset 0px 0px 10px 2px var(--primary-black);
         background-image: url(../images/rules-modal-image.jpeg);
         background-size: cover;
     }
-
-   
 }
+
+/* */
 
 @media only screen and (min-width:768px) {
     

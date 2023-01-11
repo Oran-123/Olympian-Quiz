@@ -17,7 +17,11 @@ const questionText = document.querySelector(`#question`)
 
 // Quiz answesr
 const answerButtonRef = document.querySelector(`#answer-btns`)
-const allAnswerButtonsRef = array.from(querySelectorAll(".question-btn"))
+const allAnswerButtons = Array.from(document.querySelectorAll(".question-btn"))
+const answerButtonOne = document.querySelector("#question-btn-1")
+const answerButtonTwo = document.querySelector("#question-btn-2")
+const answerButtonThree = document.querySelector("#question-btn-3")
+const answerButtonFour = document.querySelector("#question-btn-4")
 
 // Quiz Controls
 const nextButton = document.querySelector(`#next-btn`)
@@ -38,13 +42,12 @@ let correctCount = 0
 let incorrectCount = 0
 let startingTime = 60
 let quizAward = document.querySelector(`#results-icon`)
-let shuffledQuestions
-let currentQuestionIndex
+let shuffledQuestions;
+let currentQuestionIndex;
 
 //Scoreboard varriables 
 let originalColor = timeRemaining.style.color;
 let originalBackgroundColor = timeRemaining.style.backgroundColor;
-let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
 signupFormRef.addEventListener(`submit`, hideQuizSignup)
@@ -143,8 +146,9 @@ function showQuestion(question) {
  */
 function resetQuiz() {
     nextButton.classList.add(`hide`)
-    while (answersElement.firstChild) {
-        answersElement.removeChild(answersElement.firstChild)
+    answerButtonRef.style.pointerEvents= ""
+    while (answerButtonRef.firstChild) {
+        answerButtonRef.removeChild(answerButtonRef.firstChild)
     }
 }
 
@@ -158,6 +162,7 @@ function selectAnswer(buttonClicked) {
     if (correct) {
         nextButton.classList.remove('hide')
         countCorrectAnswers()
+        answerButtonRef.style.pointerEvents = "none"
     } else {
         countIncorrectAnswers()
         deductTime()
@@ -202,7 +207,6 @@ function highlightDeductedTime() {
     setTimeout(function () {
         timeRemaining.style.color = originalColor;
         timeRemaining.style.backgroundColor = originalBackgroundColor;
-        timeRemaining = originalTimeRemaining
     }, 1000);
 }
 
