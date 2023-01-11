@@ -105,9 +105,6 @@ function startTimer() {
     const countDownTimer = setInterval(function () {
         (startingTime--);
         timeRemaining.innerHTML = startingTime + `s`;
-        if (startingTime < 15) {
-            timeRemaining.style.color = `var(--accent-red)`
-        }
         if (startingTime <= 0) {
             clearInterval(countDownTimer)
             openResultsModal()
