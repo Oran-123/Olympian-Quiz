@@ -334,7 +334,7 @@ The social media icons will change colour if the user hovers over the icon. The 
 
 The default style of the icons on smaller devices is the inverted style on larger devices.  It would be incorrect to apply the hover effect on mobile devices because once it is used, the user can only remove it by refreshing the page, creating a poor user experience. 
 
-# add image of social media icons on small screen
+![social media icons](images-readme/hover-and-small-screens-social-icons.png)
 
 ## Features to be implemented 
 
