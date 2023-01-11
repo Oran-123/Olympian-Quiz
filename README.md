@@ -280,6 +280,12 @@ On a small to medium screens the questions are presented to the user in a single
 
 The next button is dispalyed only after a correct answer is selected. This prevents users from skipping a question and avoiding the penalty of selecting an incorrect answer. 
 
+![the next button](images-readme/correct%20answer%20selected.png)
+
+Before an answer is selected and when only an incorrect answer has been selected the next button will not be displayed
+
+![quiz without the next button]()
+
 ### Results Modal 
 
 ### Social media icons 
