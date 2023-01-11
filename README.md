@@ -395,24 +395,50 @@ On selection the answers simply change color but if I had more time I would have
 
 ![html test](images-readme/html-validator.png)
 
-### WC3 CSS Validator 
+![html pass test](images-readme/html-validator-pass.png)
 
-![CSS test](images-readme/css-validator-pass-result.png)
+### WC3 CSS Validator 
+Initially when I completed the CSS validator there was two issues flagged:
+
+1. I applied text shadow to the text in the answer buttons but accidently added a duplicate value of 1rem which I simply removed 
+
+2. I had added a vendor extension accidently which I completely removed 
+
+![CSS failed test](images-readme/css-validator.png)
+
+After resolving the issues I ran the test again and no issues were detected 
+
+![CSS passed test](images-readme/css-validator-pass-result.png)
 
 ### Light house test 
 
+Initially when completing the lighthouse test the site a low score of 75 for performance, this was in part due to the fact that there was images such as the logo without set height and width values. 
+
 ![Light house test fail](images-readme/light_house_test_performance_fail.png)
+
+After adding set height and width to the images I ran the test again and recieved a much higher performance score
 
 ![Light house test pass](images-readme/light_house_test_performance_pass.png)
 
+I did not receive a score of 100 for performance because of the following reasons:
+
+![Light house test pass](images-readme/performance_diagnostic_!.png)
+
+![Light house test pass](images-readme/performance_diagnostic_3.png)
+
 ### WebAim Contrast Test 
+
+
 
 ## Bugs 
 
 ### Selecting Answers 
 
-I initially faced 
+I initially faced an issue where users could select multiple incorrect answers after they had selected the correct answers to the question. As the attributes on the answer buttons were reset everytime the next button was pressed it proved dificult to find a solution to disable the buttons. I eventually added to the selectAnswer function so that each time a select answer was created the entire grid of buttons had the event-pointer: none style added, which was then removed when the next was button was pressed. 
 
+### Esc button not working on modals
+
+I original created the modals with function that changed the display value from none to flex if certain buttons were clicked. However, I later moved away from this appraoach and added a dialogue to my html. This allowed me to use standard showmodal and close functions, this also enabled users to use the esc button to close the modals. 
 
 ## Unfixed Bugs
 
@@ -428,13 +454,11 @@ The backdrop filter does not seem to work as well on mobile devices, the blur ef
 
 ![Mobile bug backdrop filter](images-readme/mobile-bug-back-drop-filter.jpg)
 
-
 ### buttons mobile 
 
 The buttons do not have the same style on mobile devices as they do on desktop. 
 
 ![Mobile bug button style](images-readme/mobile-bug-button-style.jpg)
-
 
 ### timer 
 
