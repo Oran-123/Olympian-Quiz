@@ -227,12 +227,6 @@ The initial value of the timer is set at sixty seconds, and as soon as the quiz 
 
 ![quiz timer](images-readme/timer.png)
 
-#### > 15 seconds 
-
-When the value of the timer falls below fifteen seconds, the colour of the font will change from white to red to highlight to the user that their time is nearly out. 
-
-![quiz timer](images-readme/timer-under-15s.png)
-
 #### incorrect answer 
 
 If the user selects an incorrect answer, the timer will flash red for one second and display a value of "-5",  highlighting that the timer was reduced by five seconds for incorrectly selecting the incorrect answer 
