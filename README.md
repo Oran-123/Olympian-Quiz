@@ -164,6 +164,8 @@ The form on the site includes only two fields:
 1. The username
 2. The Email address 
 
+The form field username will default be autofocused, so the cursor is displayed inside this field when the site is loaded. 
+
 ![Site Logo small screens](images-readme/login.png)
 
 Both of these fields are required. If a user attempts to submit the form without occupying either field, the form will prevent them from doing so, and an error message will be displayed. 
@@ -174,12 +176,14 @@ Furthermore, the form applies validation to the email field, which prevents the 
 
 ![Email field validation](images-readme/form_validation_email.png)
 
-### Form to collect email
+### Start Quiz Form Button
 
-### Buttons (leader board, how to play and start quiz)
+Once the form fields
 
-### Leader board page 
 
+### Before you play 
+
+After the 
 ### How to play Module 
 
 ### Social media icons 
