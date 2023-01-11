@@ -147,11 +147,11 @@ The site's header remains clean and simple. The only item within it is the site 
 
 The logo has two sizes 
 
-1) Medium to large devices 
+#### Medium to large devices 
 
 ![Site Logo medium to large screens](images-readme/logo_large_screens.png)
 
-2) Small
+#### Small
 
 ![Site Logo small screens](images-readme/logo_small_screen.png)
 
