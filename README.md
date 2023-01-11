@@ -258,6 +258,22 @@ The questions are in a JSON file. A fetch function gets the array once the site 
 
 ### Possible answers
 
+Four possible answers are displayed with each question. 
+
+The four answers are stored in the JSON array with the questions. Every time the next button is clicked, the four answers associated with the randomly selected questions are displayed.
+
+#### large screens 
+
+On a large screen the questions are presented to the user in a 2 x 2 grid 
+
+![answers on a large screen ]()
+
+#### Medium to Small Screens 
+
+On a small to medium screens the questions are presented to the user in a single column 
+
+![answers on a small to medium screens ]()
+
 ### Next button 
 
 ### Results Modal 
