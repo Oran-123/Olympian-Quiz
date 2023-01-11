@@ -31,13 +31,18 @@ const incorrectScore = document.querySelector("#incorrect-answers")
 // Results modal
 const resultsModal = document.querySelector("#results-modal")
 
-// Game variable
+// Game varriables
 let resultsMessage = document.querySelector("#results-message")
 let correctCount = 0 
 let incorrectCount = 0
 let startingTime = 60
 let quizAward = document.querySelector("#results-icon")
 let shuffledQuestions, currentQuestionIndex
+
+//Scoreboard varriables 
+let originalColor = timeRemaining.style.color; 
+let originalBackgroundColor = timeRemaining.style.backgroundColor;
+let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
 usernameFormField.addEventListener("submit", onFormSubmission)
@@ -199,10 +204,10 @@ highlightDeductedTime()
 /**
  * highlights when time is deducted
  */
+
+
+
 function highlightDeductedTime() {
-    let originalColor = timeRemaining.style.color; 
-    let originalBackgroundColor = timeRemaining.style.backgroundColor;
-    let originalTimeRemaining = timeRemaining.text
     timeRemaining.style.backgroundColor = "var(--accent-red)"
     timeRemaining.style.color="var(--primary-white)"
     timeRemaining.innerHTML = `- 5s`
