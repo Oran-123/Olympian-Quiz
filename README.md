@@ -239,12 +239,12 @@ If the user selects an incorrect answer, the timer will flash red for one second
 
 ### Score Counters
 
-The two score counters are identifiable by their background color:
+The two score counters are identifiable by their background colour:
 
 1. The incorrect score counter has a background colour of red
 2. The correct score counter has a background colour of green
 
-For each correct/incorrect answer selected the relevant counter will increase by a value of one. 
+For each correct/incorrect answer selected, the relevant counter will increase by a value of one
 
 ![score counters](images-readme/score-counters.png)
 
