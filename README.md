@@ -178,12 +178,17 @@ Furthermore, the form applies validation to the email field, which prevents the 
 
 ### Start Quiz Form Button
 
-Once the form fields
-
+Once the form fields are populated the user can click the button labeled "start quiz". This button will call a function that hides the content initially displayed on the home screen i.e. the form. The same function will display content that checks if the user has read the rules of the quiz and fully understands them. 
 
 ### Before you play 
 
-After the 
+This content is displayed after the user submits the form. The section will prevent users from starting the quiz before the understand the rules.The section displays two buttons:
+
+1. The How to play will button will display a modal that includes the rules of the quiz 
+2. The Start Quiz button will display the quiz and hide the this content 
+
+![How to play check](images-readme/how-to-play-check.png)
+
 ### How to play Module 
 
 ### Social media icons 
