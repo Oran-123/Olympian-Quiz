@@ -254,7 +254,7 @@ The questions are styled in H2 and are positioned above the answer boxes.
 
 The questions are in a JSON file. A fetch function gets the array once the site is loaded. A random question is displayed when the quiz starts and when a user clicks the next button. 
 
-![quiz question]()
+![quiz question](images-readme/quiz-question.png)
 
 ### Possible answers
 
