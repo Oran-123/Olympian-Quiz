@@ -288,6 +288,26 @@ Before an answer is selected and when only an incorrect answer has been selected
 
 ### Results Modal 
 
+Once the timer reaches a value of 0 the results modal will display. The contnets of the results modald will change depending on the number of correct answers acheived by the user. 
+
+Eeach of the results messages will include three of the same variables 
+
+1. The number of selected answers that were correct
+2. The number of selected answers that were incorrect
+3. The total amount of time lost by the user for incorrect answers 
+
+#### Below 5 
+
+The icon presented to the user will be bronze and the message will encourage the user to brush up on their knowledge of the Olympic games 
+
+#### Between 5 and 10 
+
+The icon presented to the user will be silver and the message will congratulate the user for getting a respectable score 
+
+#### Above 10 
+
+The icon presented to the user will be gold and the message will congratulate the user for getting an impressive score 
+
 ### Social media icons 
 
 The site's footer remains uncluttered and includes only the social media icons and links for the three platforms:
