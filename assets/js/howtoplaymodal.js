@@ -1,6 +1,6 @@
-const openModalButton = document.getElementById("btn-how-to-play")
-const closeModalButton = document.getElementById("button-close-rules-modal")
-const rulesModal = document.getElementById("rules-modal")
+const openModalButton = document.querySelector("#btn-how-to-play")
+const closeModalButton = document.querySelector("#button-close-rules-modal")
+const rulesModal = document.querySelector("#rules-modal")
 
 
 /* the following video was used as inspiration for the modal functions https://www.youtube.com/watch?v=TAB_v6yBXIE*/ 
