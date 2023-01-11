@@ -153,7 +153,7 @@ The logo has two sizes
 
 2) Small
 
-![Site Logo small screens](images-readme/logo_small_screens.png)
+![Site Logo small screens](images-readme/logo_small_screen.png)
 
 Clicking on the logo will link you to the home page of the site
 
