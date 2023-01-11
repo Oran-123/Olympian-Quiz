@@ -250,6 +250,12 @@ For each correct/incorrect answer selected, the relevant counter will increase b
 
 ### Questions  
 
+The questions are stlye in H2 and are positoned above the answer boxes. 
+
+The questions are written in a JSON file and a fetch function is used to get the array once the site is loaded. A random question is displayed when the quiz is started and when the next button is clicked. 
+
+![quiz question](images-readme/qu)
+
 ### Possible answers
 
 ### Next button 
