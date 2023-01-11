@@ -1,10 +1,11 @@
-Logo to be added 
 
 # Goal For This Project 
 
-TBC
+Welcome to the "Olympic Quiz". This quiz aims to test your knowledge on the Olympic games.
 
-image of each screen size to be added 
+Your knowledge will be put to the test against the clock as you have only 60 seconds to answer as many questions correctly as you can. Howevever, you must becareful because for each wrong answer you will be deducted 5 seconds from your remaining time. 
+
+![Goals for this project image](images-readme/home-screen.png)
 
 
 # Table of Contens 
@@ -44,27 +45,23 @@ image of each screen size to be added
 ## User Goals 
 
 * A visually appealing landing page which clearly communicates the purpose of the site 
-* Buttons that help the user navigate through ought the site 
 * A modal with instructions on how to play the quiz 
-* A leader board to display the results of previous players 
 * Engaging and challenging questions 
+* Results page to see how well you did in the quiz 
 * Easy and intuitive navigation on all screen sizes
-* Form to join the membership to receive updates on prizes, competitions and updates to the quiz
 
 ## User Stories 
 
 * As a user, I want to be able to create a username 
-* As a user, I want to be able to choose between three quizzes which vary in their level of difficulty  
-* As a user, I want to see a progress bar during the quiz, so I know how many questions remain 
 * As a user, I want to see my total score at the end of the quiz 
-* As a user, I want to see other player’s results on the leader board 
-* As a user, I want to join the newsletter so that I can keep up to date with competitions, prizes and new quizzes
+* As a user, I want to have my time reduced for each incorrect answer I selected 
+* As a user, I want to be able to access the quiz's social media accounts 
+* As a user, I want to be able to restart the quiz once it is over 
 
 ## Site Owner Goals 
 
 * Create a site that is intuitive to navigate for visitors 
 * Provide users with feedback after they finish a quiz 
-* Provide a leader board with results of all users who played the quiz 
 * Create a positive user experience through a visually appealing site 
 * Capture user emails for email marketing purposes 
 
@@ -74,17 +71,18 @@ image of each screen size to be added
 
 * Mobile first design, which is responsive on all larger screens 
 * The design uses a colour scheme which is easy to view 
-* From the home page the user can access instructions, the quiz and the leader board 
+* Before any user starts the quiz check if they understand the rules  
 * After each question is answered the user is provided with feedback in the form of a visual que which highlights if they answered the question correctly 
+* The user is deducted 5 seconds for every incorrect answer they select 
 * The user is provided with a result at the end of their quiz 
 * Social media accounts can be accessed via the footer of the site 
 
 ## Expectations 
 
-* I expect to set my own unique username 
-* I expect that there will be quizzes with different levels of difficulty 
-* I expect to be able to see a result on my performance 
-* I expect to see my result listed on the leader board after I complete a game 
+* I expect to be able to see a result of how I did in the quiz 
+* I expect the site to be easy to navigate 
+* I expect to find information laid out in a logical and clear manner 
+* I expect the quiz to include logic to negative mark me for submitting wrong answers 
 * I expect that the site scales correctly on different size screens 
 
 # Design Choices 

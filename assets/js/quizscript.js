@@ -246,12 +246,12 @@ function openResultsModal() {
     if (correctCount <= 5) {
     resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
     quizAward.style.color= "#967444"
-} else if (correctCount > 5 ){
+} else if (correctCount > 5 && correctCount < 10 ){
         resultsMessage.innerHTML = `Well done you did better then average but there is still room to improve, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
         quizAward.style.color= "#CCCCCC"
-    } else if (correctCount > 10){
+    } else if (correctCount >= 10){
         resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
-        quizAward.style.color= "##E69900"
+        quizAward.style.color= "#E69900"
     }
 
 }
