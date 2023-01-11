@@ -46,7 +46,7 @@ let originalBackgroundColor = timeRemaining.style.backgroundColor;
 let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
-signupFormRef.addEventListener("submit", onFormSubmission)
+signupFormRef.addEventListener("submit", quizSignup)
 quizStartButtonRef.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
@@ -67,7 +67,7 @@ fetch ("assets/data/questions.json")
 /**
  * hides the signup form on submission
  */
-function onFormSubmission (submission) {
+function quizSignup (submission) {
     submission.preventDefault()
     console.log("onSubmit form triggered") 
     signupSectionRef.style.display= "none"
