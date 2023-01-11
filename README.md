@@ -284,7 +284,7 @@ The next button is dispalyed only after a correct answer is selected. This preve
 
 Before an answer is selected and when only an incorrect answer has been selected the next button will not be displayed
 
-![quiz without the next button]()
+![quiz without the next button](images-readme/quiz-without-next-button.png)
 
 ### Results Modal 
 
