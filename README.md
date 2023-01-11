@@ -159,7 +159,20 @@ Clicking on the logo will link you to the home page of the site
 
 ### Start Quiz Form
 
-The form o
+The form on the site includes only two fields:
+
+1. The username
+2. The Email address 
+
+![Site Logo small screens](images-readme/login.png)
+
+Both of these fields are required. If a user attempts to submit the form without occupying either field, the form will prevent them from doing so, and an error message will be displayed. 
+
+![Form](images-readme/form_validation_uname.png)
+
+Furthermore, the form applies validation to the email field, which prevents the form from being submitted unless the value entered follows a valid email format. 
+
+![Email field validation](images-readme/form_validation_email.png)
 
 ### Form to collect email
 
