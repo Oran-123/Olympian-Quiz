@@ -46,7 +46,7 @@ let originalBackgroundColor = timeRemaining.style.backgroundColor;
 let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
-signupFormRef.addEventListener("submit", quizSignup)
+signupFormRef.addEventListener("submit", hideQuizSignup)
 quizStartButtonRef.addEventListener("click", startGame)
 nextButton.addEventListener("click", () => {
     currentQuestionIndex++
@@ -67,7 +67,7 @@ fetch ("assets/data/questions.json")
 /**
  * hides the signup form on submission
  */
-function quizSignup (submission) {
+function hideQuizSignup (submission) {
     submission.preventDefault()
     console.log("onSubmit form triggered") 
     signupSectionRef.style.display= "none"
@@ -234,9 +234,9 @@ function highlightAnswer(button, correct) {
 /**
  * Sets default style to answers after the next button is selected
  */
-function clearHighlightedAnswer(element) {
-    element.classList.remove("question-btn-correct")
-    element.classList.remove("question-btn-incorrect")
+function clearHighlightedAnswer(button) {
+    button.classList.remove("question-btn-correct")
+    button.classList.remove("question-btn-incorrect")
 }
 
 /**
