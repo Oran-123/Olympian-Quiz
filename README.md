@@ -215,6 +215,8 @@ The site's footer remains uncluttered and includes only the social media icons a
 
 Clicking on any of the icons will link you to that specific social media site in a new tab
 
+![social media icons](images-readme/social_icons.png)
+
 #### Medium to Large Screens 
 
 The social media icons will change colour if the user hovers over the icon. The colours will invert. The background colour will change to white, and the font colour will change to the original colour of the background. 
