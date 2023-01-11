@@ -191,6 +191,20 @@ This content is displayed after the user submits the form. The section will prev
 
 ### How to play Module 
 
+The rules modal is displayed only when the user clicks the button "How to play". 
+
+The rules modal includes four bullet points, with icons to help the user visually understnad hte rules. 
+
+![close modal button](images-readme/rules-modal-large-screen.png)
+
+To close the modal, the user can simply click the "X" button.
+
+![close modal button](images-readme/rules-modal-close-button.png)
+
+The contents of the modal such as the close button scale in size depending on the screen size of the device i.e. the below image is the same modal as above but on a mobile.
+
+![close modal button](images-readme/rules-modal-small-screen.png)
+
 ### Social media icons 
 
 ### Check if the user understands the rules 
