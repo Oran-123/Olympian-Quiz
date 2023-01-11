@@ -262,9 +262,11 @@ Four possible answers are displayed with each question.
 
 The four answers are stored in the JSON array with the questions. Every time the next button is clicked, the four answers associated with the randomly selected questions are displayed.
 
+Once an answer is selected it is disabled and cannot be selected again, this prevents users from being negatively impacted for accidently selecting the same incorrect asnwer twice. 
+
 #### large screens 
 
-On a large screen the questions are presented to the user in a 2 x 2 grid 
+On a large screen the questions are presented to the user in a 2 x 2 grid. The buttons also have an active pseudo effect applied so it looks like the user is pressing button down when they click. 
 
 ![answers on a large screen ]()
 
@@ -275,6 +277,8 @@ On a small to medium screens the questions are presented to the user in a single
 ![answers on a small to medium screens ]()
 
 ### Next button 
+
+The next button is dispalyed only after a correct answer is selected. This prevents users from skipping a question and avoiding the penalty of selecting an incorrect answer. 
 
 ### Results Modal 
 
