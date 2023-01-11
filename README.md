@@ -1,4 +1,4 @@
-![Goals for this project image](assets/images/olympic_rings.svg)
+![Site Logo](assets/images/olympic_rings.svg)
 
 # Goal For This Project 
 
@@ -143,11 +143,23 @@ The wireframes are below:
 
 ### Logo with link back to home page 
 
+The site's header remains clean and simple. The only item within it is the site logo. 
 
+The logo has two sizes 
 
-### Hero image zoom 
+1) Medium to large devices 
 
-### Start Quiz Section 
+![Site Logo medium to large screens](images-readme/logo_large_screens.png)
+
+2) Small
+
+![Site Logo small screens](images-readme/logo_small_screens.png)
+
+Clicking on the logo will link you to the home page of the site
+
+### Start Quiz Form
+
+The form o
 
 ### Form to collect email
 
