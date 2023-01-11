@@ -338,6 +338,18 @@ The default style of the icons on smaller devices is the inverted style on large
 
 ## Features to be implemented 
 
+### Leaderboard
+
+### Personalised user dashboard
+
+### Different levels of difficulty 
+
+### Timer bar 
+
+### Animations on answers 
+
+flip answers and show the user if they answered correctly via a icon check for correct and x for incorrect.
+
 # Technologies 
 
 ## Languages 
