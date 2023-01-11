@@ -221,6 +221,22 @@ The quiz contains the following components:
 
 ### Timer 
 
+The timer is displayed in a box with a grey box and an inset box shadow effect. 
+
+The initial value of the timer is set at sixty seconds and as soon as the quiz is displayed a function begins to deduct one unit from the original value every second 
+
+![quiz timer](images-readme/timer.png)
+
+#### > 15 seconds 
+
+When the value of the timer falls below fifteen seconds the color of the font will change from white to red to highlight to the user that their time is nearly out. 
+
+![quiz timer](images-readme/timer-under-15s.png)
+
+#### incorrect answer 
+
+If the user selects an incorrect answer the timer will flash red for once second and display a value of "-5" highlighting that the timer was reduced by five seconds for incorrectly selceting the incorrect answer 
+
 ### Score Counters
 
 ### Questions  
