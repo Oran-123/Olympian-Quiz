@@ -3,12 +3,9 @@ const usernameFormField = document.querySelector("#start-quiz-form")
 const signupForm = document.querySelector("#quiz-signup")
 const userName = document.querySelector('#uname').value
 
-// Home page section  
-const homeButtons = document.getElementById ("leaderboard--&--How-to-play")
-
 // How to play content 
 const howToPlayCheck = document.querySelector("#check-container")
-const startBtn = document.querySelector("#btn--start-quiz")
+const startBtn = document.querySelector("#btn-start-quiz")
 const howToPlayTitle = document.querySelector("#how-to-play-title")
 
 // Rules Modal
@@ -19,7 +16,7 @@ const quizContent = document.querySelector("#quiz-container")
 const questionElement = document.querySelector("#question")
 
 // Quiz answesr
-const answersElement = document.querySelector("#answer--btns")
+const answersElement = document.querySelector("#answer-btns")
 
 // Quiz Controls
 const nextButton = document.querySelector("#next-btn")
@@ -28,8 +25,8 @@ const nextButtonArea = document.querySelector("#controls")
 // Quiz scorboard 
 const countDownTimer = document.querySelector("#scoreboard")
 const timeRemaining = document.querySelector("#time")
-const correctScore = document.querySelector("#correct--answers")
-const incorrectScore = document.querySelector("#incorrect--answers")
+const correctScore = document.querySelector("#correct-answers")
+const incorrectScore = document.querySelector("#incorrect-answers")
 
 // Results modal
 const resultsModal = document.querySelector("#results-modal")
@@ -134,7 +131,7 @@ function showQuestion(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
-        button.classList.add("question--btn")
+        button.classList.add("question-btn")
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
@@ -222,9 +219,9 @@ function highlightDeductedTime() {
 function highlightAnswer(button, correct) {
     clearHighlightedAnswer(button)
     if (correct) {
-        button.classList.add("question--btn--correct")
+        button.classList.add("question-btn-correct")
     } else {
-        button.classList.add("question--btn--incorrect")
+        button.classList.add("question-btn-incorrect")
     }
 }
 
@@ -232,8 +229,8 @@ function highlightAnswer(button, correct) {
  * Sets default style to answers after the next button is selected
  */
 function clearHighlightedAnswer(element) {
-    element.classList.remove("question--btn--correct")
-    element.classList.remove("question--btn--incorrect")
+    element.classList.remove("question-btn-correct")
+    element.classList.remove("question-btn-incorrect")
 }
 
 /**
