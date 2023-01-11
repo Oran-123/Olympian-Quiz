@@ -340,15 +340,24 @@ The default style of the icons on smaller devices is the inverted style on large
 
 ### Leaderboard
 
+A leaderboard would increase the gamification of the quiz by adding an element of competiviness. It would more likely to see repeat visitors to teh quiz as users return in an attempt to maintain their position on the leaderboard.
+
 ### Personalised user dashboard
+
+The signup form captures both the username and email address of the user, this create an oportunity to provide the user with a personalised dashboard. During each session the users results could be printed to this dashboard, a personalised welcome message could be created and from the dasboard the user would be able to select the dificulty level of the quiz. 
 
 ### Different levels of difficulty 
 
+Currently, the quiz pulls random questions from a set of 20 questions stored in a JSON file. There is no categorisation based on their dificulty. 
+
+In the future multiple JSON files could be created, each file would contain a set of questions based on their diificulty rating, and the fetch function would call a particular file based on the level the user selects.  
+
 ### Timer bar 
 
+In this quiz the timer has a simple design, if I had more time I would have added a progress tracker that reduced in height as the timer approached zero. 
 ### Animations on answers 
 
-flip answers and show the user if they answered correctly via a icon check for correct and x for incorrect.
+On selection the answers simply change color but if I had more time I would have added an animation so that when a user slected an answer it would flip over and display an icon that would make it clear if the user selected the correct/incorrect answer i.e. check/ x icon 
 
 # Technologies 
 
@@ -375,6 +384,8 @@ flip answers and show the user if they answered correctly via a icon check for c
 * [Pexles](https://www.pexels.com/ "Pexles")
 * [Chrome Dev Tools](http://colormind.io/ "Chrome Dev Tools")
 * [WebAim](https://webaim.org/resources/contrastchecker/ "WebAim")
+* [Adobe Stock Images](https://stock.adobe.com/ie/ "Adobe Stock Images")
+* [Am I Responsive](https://ui.dev/amiresponsive "Am I Responsive")
 
 # Testing 
 
@@ -396,19 +407,27 @@ flip answers and show the user if they answered correctly via a icon check for c
 
 ### WebAim Contrast Test 
 
-### User Acceptance Testing 
-
 ## Bugs 
+
+
+
+## Unfixed Bugs
 
 ### mobile layout 
 
+on some mobile devices the layout is displayed before the relevant java script function is called to display it. 
+
 ### backdrop filter mobile 
+
+The backdrop filter does not seem to work as well on mobile devices, the blur effect is severly reduced. 
 
 ### buttons mobile 
 
+The buttons do not have the same style on mobile devices as they do on desktop. 
+
 ### timer 
 
-## Unfixed Bugs
+Every second the value of the timer is reduced by 1, and if the user answers a question incorrectly they are deducted five seconds off of their current time. The timer background color changes to red and the value changes to -5 when the user answers a question incorrectly. However, if the user answers a question towards the end of the one second interval then the value of -5 is displayed for less then a second. 
 
 # Deployment
 
@@ -416,5 +435,7 @@ flip answers and show the user if they answered correctly via a icon check for c
 
 For code inspiration:
 
+* https://www.youtube.com/@WebDevSimplified 
+* 
 
 For content and style inspiration: 
