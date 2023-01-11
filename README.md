@@ -215,16 +215,19 @@ The quiz contains the following components:
 2. The timer
 3. The possible answers  
 4. Correct and incorrect score counters 
+5. Next button 
 
 ![the quiz](images-readme/quiz.png)
 
-### Questions  
-
 ### Timer 
+
+### Score Counters
+
+### Questions  
 
 ### Possible answers
 
-### Score Counters
+### Next button 
 
 ### Results Modal 
 
