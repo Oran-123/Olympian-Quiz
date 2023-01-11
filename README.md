@@ -306,7 +306,7 @@ The icon presented to the user will be bronze and the message will encourage the
 
 The icon presented to the user will be silver and the message will congratulate the user for getting a respectable score 
 
-![results modal with a score between 5-10](images-readme/results-modal-silver.png)
+![results modal with a score between 5-10](images-readme/reults-modal-silver.png)
 
 #### Above 10 
 
