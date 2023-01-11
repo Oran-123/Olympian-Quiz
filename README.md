@@ -133,9 +133,9 @@ I have used [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") to develop m
 
 The wireframes are below:
 
-### [Mobile Wireframes](docs-readme/Mobiles%20Wireframes.pdf "Mobile Wireframes")
-### [Tablet Wireframes](docs-readme/Tablet%20Concept.pdf "Tablet Wireframes")
-### [Desktop Wireframes](docs-readme/Desktop%20Concept.pdf "Desktop Wireframes")
+### [Mobile Wireframes](docs-readme/mobiles-wireframes.pdf "Mobile Wireframes")
+### [Tablet Wireframes](docs-readme/tablet-concept.pdf "Tablet Wireframes")
+### [Desktop Wireframes](docs-readme/desktop-concept.pdf "Desktop Wireframes")
 
 # Features 
 
