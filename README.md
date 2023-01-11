@@ -409,6 +409,9 @@ On selection the answers simply change color but if I had more time I would have
 
 ## Bugs 
 
+### Selecting Answers 
+
+I initially faced 
 
 
 ## Unfixed Bugs
@@ -417,13 +420,21 @@ On selection the answers simply change color but if I had more time I would have
 
 on some mobile devices the layout is displayed before the relevant java script function is called to display it. 
 
+![Mobile bug content layout](images-readme/mobile-bug-content-layout.jpg)
+
 ### backdrop filter mobile 
 
 The backdrop filter does not seem to work as well on mobile devices, the blur effect is severly reduced. 
 
+![Mobile bug backdrop filter](images-readme/mobile-bug-back-drop-filter.jpg)
+
+
 ### buttons mobile 
 
 The buttons do not have the same style on mobile devices as they do on desktop. 
+
+![Mobile bug button style](images-readme/mobile-bug-button-style.jpg)
+
 
 ### timer 
 
