@@ -382,15 +382,31 @@ flip answers and show the user if they answered correctly via a icon check for c
 
 ### WC3 Markup Validator 
 
+![html test](images-readme/html-validator.png)
+
 ### WC3 CSS Validator 
 
+![CSS test](images-readme/css-validator-pass-result.png)
+
 ### Light house test 
+
+![Light house test fail](images-readme/light_house_test_performance_fail.png)
+
+![Light house test pass](images-readme/light_house_test_performance_pass.png)
 
 ### WebAim Contrast Test 
 
 ### User Acceptance Testing 
 
 ## Bugs 
+
+### mobile layout 
+
+### backdrop filter mobile 
+
+### buttons mobile 
+
+### timer 
 
 ## Unfixed Bugs
 
