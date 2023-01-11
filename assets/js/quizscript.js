@@ -1,42 +1,42 @@
 // Form Variables
-const signupFormRef = document.querySelector("#start-quiz-form")
-const signupSectionRef = document.querySelector("#quiz-signup")
+const signupFormRef = document.querySelector(`#start-quiz-form`)
+const signupSectionRef = document.querySelector(`#quiz-signup`)
 const userNameValueRef = document.querySelector('#uname').value
 
 // How to play content 
-const checkContainerRef = document.querySelector("#check-container")
-const quizStartButtonRef = document.querySelector("#btn-start-quiz")
-const howToPlayTitleRef = document.querySelector("#how-to-play-title")
+const checkContainerRef = document.querySelector(`#check-container`)
+const quizStartButtonRef = document.querySelector(`#btn-start-quiz`)
+const howToPlayTitleRef = document.querySelector(`#how-to-play-title`)
 
 // Rules Modal
-const closeModal = document.querySelector("#button-close-results-modal")
+const closeModal = document.querySelector(`#button-close-results-modal`)
 
 // Quiz questions
-const quizContent = document.querySelector("#quiz-container")
-const questionText = document.querySelector("#question")
+const quizContent = document.querySelector(`#quiz-container`)
+const questionText = document.querySelector(`#question`)
 
 // Quiz answesr
-const answerButtonRef = document.querySelector("#answer-btns")
+const answerButtonRef = document.querySelector(`#answer-btns`)
 
 // Quiz Controls
-const nextButton = document.querySelector("#next-btn")
-const nextButtonArea = document.querySelector("#controls")
+const nextButton = document.querySelector(`#next-btn`)
+const nextButtonArea = document.querySelector(`#controls`)
 
 // Quiz scorboard 
-const countDownTimer = document.querySelector("#scoreboard")
-const timeRemaining = document.querySelector("#time")
-const correctScore = document.querySelector("#correct-answers")
-const incorrectScore = document.querySelector("#incorrect-answers")
+const countDownTimer = document.querySelector(`#scoreboard`)
+const timeRemaining = document.querySelector(`#time`)
+const correctScore = document.querySelector(`#correct-answers`)
+const incorrectScore = document.querySelector(`#incorrect-answers`)
 
 // Results modal
-const resultsModal = document.querySelector("#results-modal")
+const resultsModal = document.querySelector(`#results-modal`)
 
 // Game varriables
-let resultsMessage = document.querySelector("#results-message")
+let resultsMessage = document.querySelector(`#results-message`)
 let correctCount = 0 
 let incorrectCount = 0
 let startingTime = 60
-let quizAward = document.querySelector("#results-icon")
+let quizAward = document.querySelector(`#results-icon`)
 let shuffledQuestions
 let currentQuestionIndex
 
@@ -46,18 +46,18 @@ let originalBackgroundColor = timeRemaining.style.backgroundColor;
 let originalTimeRemaining = timeRemaining.textContent
 
 // event listeners 
-signupFormRef.addEventListener("submit", hideQuizSignup)
-quizStartButtonRef.addEventListener("click", startGame)
-nextButton.addEventListener("click", () => {
+signupFormRef.addEventListener(`submit`, hideQuizSignup)
+quizStartButtonRef.addEventListener(`click`, startGame)
+nextButton.addEventListener(`click`, () => {
     currentQuestionIndex++
     setNextQuestion()
 })
-closeModal.addEventListener("click",returnHome)
+closeModal.addEventListener(`click`,returnHome)
 
 
 // retrieves questions and parses data to JS
 
-fetch ("assets/data/questions.json") 
+fetch (`assets/data/questions.json`) 
     .then (response => response.json())
     .then (data => questions = data)
 
@@ -66,7 +66,7 @@ fetch ("assets/data/questions.json")
  */
 function hideQuizSignup (submission) {
     submission.preventDefault()
-    signupSectionRef.style.display= "none"
+    signupSectionRef.style.display= `none`
     displayCheck()
 }
 
@@ -74,7 +74,7 @@ function hideQuizSignup (submission) {
  * asks if the player has read the rules  
  */
 function displayCheck () {
-    checkContainerRef.style.display = "flex";
+    checkContainerRef.style.display = `flex`;
     
     howToPlayTitleRef.innerHTML = `${userNameValueRef} Before you play!`
 
@@ -85,9 +85,9 @@ function displayCheck () {
  * function inspired by https://sebhastian.com/javascript-show-hide-div-onclick-toggle/#:~:text=To%20display%20or%20hide%20a,which%20is%20block%20)%20to%20none%20.
  * */
 function startGame() {
-    quizContent.style.display = "flex"
-    checkContainerRef.style.display = "none";
-    countDownTimer.style.display = "flex"
+    quizContent.style.display = `flex`
+    checkContainerRef.style.display = `none`;
+    countDownTimer.style.display = `flex`
     shuffledQuestions = questions.sort(() => Math.random() - .5)
     currentQuestionIndex = 0
     setNextQuestion()
@@ -102,16 +102,16 @@ function startGame() {
 function startTimer() {
     const countDownTimer =setInterval(function () {
         (startingTime--);
-        timeRemaining.innerHTML = startingTime + "s";
+        timeRemaining.innerHTML = startingTime + `s`;
         if (startingTime < 15) {
-            timeRemaining.style.color = "var(--accent-red)"
+            timeRemaining.style.color = `var(--accent-red)`
         }
         if (startingTime <= 0) {
             clearInterval(countDownTimer)
             openResultsModal()
         }
     }, 1000);
-    setTimeout(60000, "Time is up")
+    setTimeout(60000, `Time is up`)
 }
 
 /**
@@ -130,11 +130,11 @@ function showQuestion(question) {
     question.answers.forEach(answer => {
         const button = document.createElement('button')
         button.innerText = answer.text
-        button.classList.add("question-btn")
+        button.classList.add(`question-btn`)
         if (answer.correct) {
             button.dataset.correct = answer.correct
         }
-        button.addEventListener("click", selectAnswer)
+        button.addEventListener(`click`, selectAnswer)
         answerButtonRef.appendChild(button)
     });
 }
@@ -143,7 +143,7 @@ function showQuestion(question) {
  * Removes previous answers  
  */
 function resetQuiz() {
-    nextButton.classList.add("hide")
+    nextButton.classList.add(`hide`)
     while (answersElement.firstChild) {
         answersElement.removeChild(answersElement.firstChild)
     }
@@ -201,8 +201,8 @@ highlightDeductedTime()
 
 
 function highlightDeductedTime() {
-    timeRemaining.style.backgroundColor = "var(--accent-red)"
-    timeRemaining.style.color="var(--primary-white)"
+    timeRemaining.style.backgroundColor = `var(--accent-red)`
+    timeRemaining.style.color=`var(--primary-white)`
     timeRemaining.innerHTML = `- 5s`
     setTimeout(function(){
         timeRemaining.style.color = originalColor;
@@ -217,9 +217,9 @@ function highlightDeductedTime() {
 function highlightAnswer(button, correct) {
     clearHighlightedAnswer(button)
     if (correct) {
-        button.classList.add("question-btn-correct")
+        button.classList.add(`question-btn-correct`)
     } else {
-        button.classList.add("question-btn-incorrect")
+        button.classList.add(`question-btn-incorrect`)
     }
 }
 
@@ -227,7 +227,7 @@ function highlightAnswer(button, correct) {
  * Sets default style to answers after the next button is selected
  */
 function clearHighlightedAnswer(button) {
-    button.classList.remove("question-btn-correct","question-btn-incorrect")
+    button.classList.remove(`question-btn-correct`,`question-btn-incorrect`)
 }
 
 /**
@@ -240,27 +240,27 @@ function openResultsModal() {
     resultsMessage.innerHTML = `Better luck next time, you only got <strong>${correctCount}</strong> 
     questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-    quizAward.style.color= "#967444"
+    quizAward.style.color= `#967444`
 
 } else if (correctCount > 5 && correctCount < 10 ){
 
         resultsMessage.innerHTML = `Well done you did better then average but there is still room to improve, you got <strong>${correctCount}</strong> 
         questions correct! You lost <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-        quizAward.style.color= "#CCCCCC"
+        quizAward.style.color= `#CCCCCC`
 
     } else if (correctCount >= 10){
 
         resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost 
         <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
 
-        quizAward.style.color= "#E69900"
+        quizAward.style.color= `#E69900`
     }
 
 }
 
 function returnHome() {
-    window.location=("index.html")
+    window.location=(`index.html`)
 }
 
 
