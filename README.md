@@ -205,6 +205,31 @@ The modal and its contents, like the close button, scale in size depending on th
 
 ![close modal button](images-readme/rules-modal-small-screen.png)
 
+### Quiz displayed
+
+The second button on the how to play check, "Start Button", will hide the content currently displayed and display the quiz contents. 
+
+The quiz contains the following components:
+
+1. The question 
+2. The timer
+3. The possible answers  
+4. Correct and incorrect score counters 
+
+![the quiz](images-readme/quiz.png)
+
+### Questions  
+
+### Timer 
+
+### Possible answers
+
+### Score Counters
+
+### Results Modal 
+
+## Features to be implemented 
+
 ### Social media icons 
 
 The site's footer remains uncluttered and includes only the social media icons and links for the three platforms:
@@ -224,18 +249,6 @@ The social media icons will change colour if the user hovers over the icon. The 
 #### Small Screens
 
 The default style of the icons on smaller devices is the inverted style on larger devices.  It would be incorrect to apply the hover effect on mobile devices because once it is used, the user can only remove it by refreshing the page, creating a poor user experience. 
-
-### Check if the user understands the rules 
-
-### Questions displayed
-
-### Progress bar 
-
-### Timer 
-
-### Feedback per question (correct or incorrect) 
-
-## Features to be implemented 
 
 # Technologies 
 
