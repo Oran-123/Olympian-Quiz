@@ -91,7 +91,6 @@ Your knowledge will be put to the test against the clock as you have only 60 sec
  
 1. [Official Olympic Website](https://olympics.com/en/ "Official Olympic Website") 
 
-    * The color scheme of the site will follow a similar style to the Olympic website 
     * The logo of the site will be used as the favicon for this site 
     * The logo of this site will be used as inspiration for this site 
 
