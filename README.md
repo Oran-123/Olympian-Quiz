@@ -470,7 +470,12 @@ Every second the value of the timer is reduced by 1, and if the user answers a q
 
 For code inspiration:
 
-* https://www.youtube.com/@WebDevSimplified 
-* 
+* [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified "Web Dev Simplified")
+* [Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setInterval "Mozilla") 
+* [w3Schools](https://www.w3schools.com/jsreF/met_win_settimeout.asp "W3schools")
+* [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch "Developer Mozilla")
+
 
 For content and style inspiration: 
+* [color codes](https://colorcodes.io/gold-color-codes/harvest-gold-color-codes/ "Color Codes")
+* [Official Olympic Website](https://olympics.com/en/ "Official Olympic Website") 
