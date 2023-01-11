@@ -235,8 +235,7 @@ function highlightAnswer(button, correct) {
  * Sets default style to answers after the next button is selected
  */
 function clearHighlightedAnswer(button) {
-    button.classList.remove("question-btn-correct")
-    button.classList.remove("question-btn-incorrect")
+    button.classList.remove("question-btn-correct","question-btn-incorrect")
 }
 
 /**
@@ -262,7 +261,7 @@ function openResultsModal() {
 
         resultsMessage.innerHTML = `Excellent you know your stuff, you got <strong>${correctCount}</strong> questions correct! You lost 
         <strong>${incorrectCount * 5}s</strong> because you answer <strong>${incorrectCount}</strong> questions wrong`
-        
+
         quizAward.style.color= "#E69900"
     }
 
