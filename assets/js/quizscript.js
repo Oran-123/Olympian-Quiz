@@ -17,6 +17,7 @@ const questionText = document.querySelector(`#question`)
 
 // Quiz answesr
 const answerButtonRef = document.querySelector(`#answer-btns`)
+const allAnswerButtonsRef = array.from(querySelectorAll(".question-btn"))
 
 // Quiz Controls
 const nextButton = document.querySelector(`#next-btn`)
