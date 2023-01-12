@@ -70,21 +70,22 @@ Your knowledge will be put to the test against the clock as you have only 60 sec
 
 ## Requirments 
 
-* Mobile first design, which is responsive on all larger screens 
+* Mobile-first design, which is responsive on all larger screens 
 * The design uses a colour scheme which is easy to view 
-* Before any user starts the quiz check if they understand the rules  
-* After each question is answered the user is provided with feedback in the form of a visual que which highlights if they answered the question correctly 
+* Before any user starts the quiz, check if they understand the rules  
+* After each question is answered, the user is provided with feedback in the form of a visual que which highlights if they responded to the question correctly 
 * The user is deducted 5 seconds for every incorrect answer they select 
 * The user is provided with a result at the end of their quiz 
 * Social media accounts can be accessed via the footer of the site 
 
+
 ## Expectations 
 
-* I expect to be able to see a result of how I did in the quiz 
+* I expect to be able to see the result of how I did on the quiz 
 * I expect the site to be easy to navigate 
-* I expect to find information laid out in a logical and clear manner 
-* I expect the quiz to include logic to negative mark me for submitting wrong answers 
-* I expect that the site scales correctly on different size screens 
+* I expect to find information laid out in a logical and straightforward manner 
+* I expect the quiz to include logic to negatively mark me for submitting wrong answers 
+* I expect that the site scales correctly on the different size screen
 
 # Design Choices 
 
@@ -98,13 +99,13 @@ Your knowledge will be put to the test against the clock as you have only 60 sec
 
 ## Fonts
 
-I have used google fonts to select a font type that best supports the goals of the website. For the main text I have selected [Judson](https://fonts.google.com/specimen/Judson?preview.text=test&preview.text_type=custom&query=Judson#styles "Judson") because the rounded edges portray an approachable brand. To make the headers and the navigation bar stand out from the text, I decided to use [Quando](https://fonts.google.com/specimen/Quando?preview.text=test&preview.text_type=custom&query=quando "Quando").
+I have used google fonts to select a font type that best supports the website's goals. For the main text, I have chosen [Judson](https://fonts.google.com/specimen/Judson?preview.text=test&preview.text_type=custom&query=Judson#styles "Judson") because the rounded edges portray an approachable brand. To make the headers and the navigation bar stand out from the text, I decided to use [Quando](https://fonts.google.com/specimen/Quando?preview.text=test&preview.text_type=custom&query=quando "Quando").
 
 ## Images
 
-It is important that the large background image used in the hero section portrays an athlete to highlight the purpose of the site which is a sport quiz 
+It is essential that the large background image used in the hero section portrays an athlete to highlight the purpose of the site, which is a sports quiz. 
 
-Again, images associated with the Olympic will be used in the background of the section which includes the form on the landing page and of the page which includes the leader board 
+Again, images associated with the Olympics will be used in the background of the section, which includes the form on the landing page.
 
 ## Icons
 
@@ -113,15 +114,15 @@ The font awesome library will be used throughout the site for social media links
 
 ## Colours 
 
-The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker which showed that they have no contrast issues.
+The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker, which showed that they have no contrast issues.
 
-The color scheme used the following colors 
+The colour scheme used the following colours 
 
 ![color shceme](images-readme/color-scheme.png)
 
 ## Structure
 
-I will be building my website with a mobile first mindset using the iPhone 5/SE (320px) as the smallest screen size for styling to look good on. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/ "Bootstrap breakpoints").
+I will build my website with a mobile-first mindset using the iPhone 5/SE (320px) as the smallest screen size for styling to look good. The screen size breakpoints that I will be using are from [Bootstrap breakpoints](https://getbootstrap.com/docs/5.0/layout/breakpoints/ "Bootstrap breakpoints").
 
 | Screen Size | Breakpoint |
 | ----------- | ---------- |
@@ -133,7 +134,7 @@ I will be building my website with a mobile first mindset using the iPhone 5/SE 
 
 # Wireframes 
 
-I have used [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") to develop my wireframes for my website. I initially created the mobile version of the wireframes and then designed what the site would look like on larger devices. I did not create a design for each size listed in the structure section, the mobile wireframes cover x-small and small, the tablet covers medium and the desktop covers large and x-large. 
+I have used [Balsamic](https://balsamiq.com/wireframes/ "Balsamic") to develop my wireframes for my website. I initially created the mobile version of the wireframes and then designed what the site would look like on larger devices. I did not make a design for each size listed in the structure section. The mobile wireframes cover x-small and small, the tablet covers medium, and the desktop covers large and x-large. 
 
 The wireframes are below:
 
@@ -338,24 +339,25 @@ The default style of the icons on smaller devices is the inverted style on large
 
 ### Leaderboard
 
-A leaderboard would increase the gamification of the quiz by adding an element of competiviness. It would more likely to see repeat visitors to teh quiz as users return in an attempt to maintain their position on the leaderboard.
+A leaderboard would increase the gamification of the quiz by adding an element of competitiveness. It would be more likely to see repeat visitors to the quiz as users return in an attempt to maintain their position on the leaderboard.
 
 ### Personalised user dashboard
 
-The signup form captures both the username and email address of the user, this create an oportunity to provide the user with a personalised dashboard. During each session the users results could be printed to this dashboard, a personalised welcome message could be created and from the dasboard the user would be able to select the dificulty level of the quiz. 
+The signup form captures both the username and email address of the user. This creates an opportunity to provide the user with a personalised dashboard. During each session, the user's results could be printed on this dashboard, a personalised welcome message could be created, and from the dashboard, the user would be able to select the difficulty level of the quiz. 
 
 ### Different levels of difficulty 
 
-Currently, the quiz pulls random questions from a set of 20 questions stored in a JSON file. There is no categorisation based on their dificulty. 
+The quiz pulls random questions from a set of questions stored in a JSON file. There needs to be categorisation based on their difficulty. 
 
-In the future multiple JSON files could be created, each file would contain a set of questions based on their diificulty rating, and the fetch function would call a particular file based on the level the user selects.  
+In the future, multiple JSON files could be created, each file would contain a set of questions based on their difficulty rating, and the fetch function would call a particular file based on the level the user selects.
 
 ### Timer bar 
 
-In this quiz the timer has a simple design, if I had more time I would have added a progress tracker that reduced in height as the timer approached zero. 
+In this quiz, the timer has a simple design. If I had more time, I would have added a progress tracker that reduced in height as the timer approached zero. 
+
 ### Animations on answers 
 
-On selection the answers simply change color but if I had more time I would have added an animation so that when a user slected an answer it would flip over and display an icon that would make it clear if the user selected the correct/incorrect answer i.e. check/ x icon 
+On selection, the answers change colour, but if I had more time, I would have added an animation so that when a user selected a button, it would flip over and display an icon would make it clear if the user chose the correct/incorrect answer, i.e. check/ x icon 
 
 # Technologies 
 
@@ -391,38 +393,39 @@ On selection the answers simply change color but if I had more time I would have
 
 ### WC3 Markup Validator
 
-Upon initially completin the HTML Markup Validator there was several issues which I had to address, these included:
+Upon initially completing the HTML Markup Validator, there were several issues which I had to address. These included:
 
-1. Duplicate IDs on the form - I simply removed the duplicate email ID 
-2. Duplicate ID on the how to play check - removed the duplicate id 
+1. Duplicate IDs on the form - I removed the duplicate email ID 
+2. Duplicate ID on the how-to-play check - removed the duplicate id 
 3. Uncessecary closing li element that was deleted
 
 ![html test](images-readme/html-validator.png)
 
-After addressing each issue I ran the test again and the site passed 
+After addressing each issue, I reran the test, and the site passed 
 
 ![html pass test](images-readme/html-validator-pass.png)
 
 ### WC3 CSS Validator 
-Initially when I completed the CSS validator there was two issues flagged:
 
-1. I applied text shadow to the text in the answer buttons but accidently added a duplicate value of 1rem which I simply removed 
+Initially, when I completed the CSS validator, there were two issues flagged:
 
-2. I had added a vendor extension accidently which I completely removed 
+1. I applied text shadow to the text in the answer buttons but accidentally added a duplicate value of 1rem, which I removed 
+
+2. I had added a vendor extension accidentally, which I completely removed 
 
 ![CSS failed test](images-readme/css-validator.png)
 
-After resolving the issues I ran the test again and no issues were detected 
+After resolving the issues, I ran the test again, and no issues were detected 
 
 ![CSS passed test](images-readme/css-validator-pass-result.png)
 
 ### Light house test 
 
-Initially when completing the lighthouse test the site a low score of 75 for performance, this was in part due to the fact that there was images such as the logo without set height and width values. 
+Initially, when completing the lighthouse test, the site had a low score of 75 for performance. This was partly because there were images such as the logo without set height and width values. 
 
 ![Light house test fail](images-readme/light_house_test_performance_fail.png)
 
-After adding set height and width to the images I ran the test again and recieved a much higher performance score
+After adding fixed height and width to the images, I reran the test and received a much higher performance score.
 
 ![Light house test pass](images-readme/light_house_test_performance_pass.png)
 
@@ -434,7 +437,7 @@ I did not receive a score of 100 for performance because of the following reason
 
 ### WebAim Contrast Test 
 
-I tested the main brand colors against the font color of #ffffff white and both tests passed. Both of these colors are consistent in the background image 
+I tested the primary brand colours against the font colour of #ffffff white, and both tests passed. Both of these colours are consistent in the background image 
 
 Color 1: #0d51af 
 
@@ -449,35 +452,35 @@ Color 2: #884111
 
 ### Selecting Answers 
 
-I initially faced an issue where users could select multiple incorrect answers after they had selected the correct answers to the question. As the attributes on the answer buttons were reset everytime the next button was pressed it proved dificult to find a solution to disable the buttons. I eventually added to the selectAnswer function so that each time a select answer was created the entire grid of buttons had the event-pointer: none style added, which was then removed when the next was button was pressed. 
+I initially faced an issue where users could select multiple incorrect answers after they had chosen the correct answers to the question. The attributes on the answer buttons were reset every time a user pressed the next button. This issue made it difficult to find a solution to disable the buttons. I eventually added to the selectAnswer function so that each time a select answer was created, the entire grid of buttons had the event pointer: none style added, which was then removed when the next button was pressed. 
 
 ### Esc button not working on modals
 
-I original created the modals with function that changed the display value from none to flex if certain buttons were clicked. However, I later moved away from this appraoach and added a dialogue to my html. This allowed me to use standard showmodal and close functions, this also enabled users to use the esc button to close the modals. 
+I created the modals with a function that changed the display value from none to flex if a user clicked certain buttons. However, I later moved away from this approach and added a dialogue element to my HTML. This allowed me to use standard show-modal and close functions. This also enabled users to use the ESC button to close the modals. 
 
 ## Unfixed Bugs
 
 ### Mobile layout 
 
-on some mobile devices the layout is displayed before the relevant java script function is called to display it. 
+On some mobile devices, the layout is displayed before the relevant javascript function is called to display it. 
 
 ![Mobile bug content layout](images-readme/mobile-bug-content-layout.jpg)
 
 ### Backdrop filter mobile 
 
-The backdrop filter does not seem to work as well on mobile devices, the blur effect is severly reduced. 
+The backdrop filter does not work as well on mobile devices. The blur effect is severely reduced. 
 
 ![Mobile bug backdrop filter](images-readme/mobile-bug-back-drop-filter.jpg)
 
 ### Buttons mobile 
 
-The buttons do not have the same style on mobile devices as they do on desktop. 
+The buttons do not have the same style on mobile devices as on desktop. 
 
 ![Mobile bug button style](images-readme/mobile-bug-button-style.jpg)
 
 ### Timer 
 
-Every second the value of the timer is reduced by 1, and if the user answers a question incorrectly they are deducted five seconds off of their current time. The timer background color changes to red and the value changes to -5 when the user answers a question incorrectly. However, if the user answers a question towards the end of the one second interval then the value of -5 is displayed for less then a second. 
+Every second, the value of the timer is reduced by 1, and if the user answers a question incorrectly, they are deducted five seconds off of their current time. The timer background colour changes to red, and the value changes to -5 when the user answers a question incorrectly. However, if the user answers a question towards the end of the one-second interval, the value of -5 is displayed for less than a second.
 
 # Deployment
 
