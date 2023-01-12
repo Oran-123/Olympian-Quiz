@@ -2,9 +2,9 @@
 
 # Goal For This Project 
 
-Welcome to the "Olympic Quiz". This quiz aims to test your knowledge on the Olympic games.
+Welcome to the "Olympic Quiz". This quiz aims to test your knowledge of the Olympic games.
 
-Your knowledge will be put to the test against the clock as you have only 60 seconds to answer as many questions correctly as you can. Howevever, you must becareful because for each wrong answer you will be deducted 5 seconds from your remaining time. 
+Your knowledge will be tested against the clock, as you have only 60 seconds to answer as many questions correctly as you can. However, you must be careful because for each wrong answer, you will be deducted 5 seconds from your remaining time. 
 
 ![Goals for this project image](images-readme/home-screen.png)
 
