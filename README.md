@@ -113,7 +113,11 @@ The font awesome library will be used throughout the site for social media links
 
 ## Colours 
 
-The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker which showed that they have no contrast issues. 
+The inspiration for the colours was taken from the Olympic logo. I used the website [colourmind](http://colormind.io/ "colourmind") to pick the specific shades for this colour scheme. I tested the colours I selected on the [WebAIM](https://webaim.org/ "WebAIM") contract checker which showed that they have no contrast issues.
+
+The color scheme used the following colors 
+
+![color shceme](images-readme/color-scheme.png)
 
 ## Structure
 
@@ -385,9 +389,17 @@ On selection the answers simply change color but if I had more time I would have
 
 ## Tests
 
-### WC3 Markup Validator 
+### WC3 Markup Validator
+
+Upon initially completin the HTML Markup Validator there was several issues which I had to address, these included:
+
+1. Duplicate IDs on the form - I simply removed the duplicate email ID 
+2. Duplicate ID on the how to play check - removed the duplicate id 
+3. Uncessecary closing li element that was deleted
 
 ![html test](images-readme/html-validator.png)
+
+After addressing each issue I ran the test again and the site passed 
 
 ![html pass test](images-readme/html-validator-pass.png)
 
@@ -422,6 +434,15 @@ I did not receive a score of 100 for performance because of the following reason
 
 ### WebAim Contrast Test 
 
+I tested the main brand colors against the font color of #ffffff white and both tests passed. Both of these colors are consistent in the background image 
+
+Color 1: #0d51af 
+
+![main brand color 1](images-readme/main-brand-color.png)
+
+Color 2: #884111
+
+![main brand color 2](images-readme/main-brand-color-2.png)
 
 
 ## Bugs 
@@ -436,25 +457,25 @@ I original created the modals with function that changed the display value from 
 
 ## Unfixed Bugs
 
-### mobile layout 
+### Mobile layout 
 
 on some mobile devices the layout is displayed before the relevant java script function is called to display it. 
 
 ![Mobile bug content layout](images-readme/mobile-bug-content-layout.jpg)
 
-### backdrop filter mobile 
+### Backdrop filter mobile 
 
 The backdrop filter does not seem to work as well on mobile devices, the blur effect is severly reduced. 
 
 ![Mobile bug backdrop filter](images-readme/mobile-bug-back-drop-filter.jpg)
 
-### buttons mobile 
+### Buttons mobile 
 
 The buttons do not have the same style on mobile devices as they do on desktop. 
 
 ![Mobile bug button style](images-readme/mobile-bug-button-style.jpg)
 
-### timer 
+### Timer 
 
 Every second the value of the timer is reduced by 1, and if the user answers a question incorrectly they are deducted five seconds off of their current time. The timer background color changes to red and the value changes to -5 when the user answers a question incorrectly. However, if the user answers a question towards the end of the one second interval then the value of -5 is displayed for less then a second. 
 
