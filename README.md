@@ -489,6 +489,7 @@ For code inspiration:
 * [Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/setInterval "Mozilla") 
 * [w3Schools](https://www.w3schools.com/jsreF/met_win_settimeout.asp "W3schools")
 * [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch "Developer Mozilla")
+* [Simen Daehlin](https://github.com/Eventyret "Simen Daehlin")
 
 
 For content and style inspiration: 
